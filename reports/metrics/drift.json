@@ -1,0 +1,175 @@
+{
+  "reference": {
+    "start": "2008-07-19 11:55:00",
+    "end": "2008-09-20 05:34:00",
+    "runs": 940
+  },
+  "current": {
+    "start": "2008-10-02 21:32:00",
+    "end": "2008-10-17 06:07:00",
+    "runs": 313
+  },
+  "thresholds": {
+    "warn": 0.1,
+    "alert": 0.25,
+    "missing_rate_delta_alert": 0.1
+  },
+  "sensors": 444,
+  "counts": {
+    "ok": 74,
+    "warn": 109,
+    "alert": 261
+  },
+  "top": [
+    {
+      "sensor": "sensor_117",
+      "psi": 4.8113057034,
+      "missing_rate_delta": 0.0,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_133",
+      "psi": 4.0854470483,
+      "missing_rate_delta": 0.0042655156,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_488",
+      "psi": 3.4938997958,
+      "missing_rate_delta": 0.0766773163,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_543",
+      "psi": 3.377944779,
+      "missing_rate_delta": 0.0063897764,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_081",
+      "psi": 3.1242022648,
+      "missing_rate_delta": 0.0766773163,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_546",
+      "psi": 2.7606449939,
+      "missing_rate_delta": 0.0063897764,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_023",
+      "psi": 2.5597157201,
+      "missing_rate_delta": -0.0021276596,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_041",
+      "psi": 2.538578159,
+      "missing_rate_delta": -0.0138297872,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_549",
+      "psi": 2.5367768692,
+      "missing_rate_delta": -0.2510468357,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_520",
+      "psi": 2.464326669,
+      "missing_rate_delta": 0.6882264972,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_248",
+      "psi": 2.3962260155,
+      "missing_rate_delta": 0.6882264972,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_544",
+      "psi": 2.3712140187,
+      "missing_rate_delta": 0.0063897764,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_073",
+      "psi": 2.2718614026,
+      "missing_rate_delta": 0.2901094419,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_059",
+      "psi": 2.2610362055,
+      "missing_rate_delta": -0.0042553191,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_079",
+      "psi": 2.0495941031,
+      "missing_rate_delta": 0.0766773163,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_007",
+      "psi": 2.0430129927,
+      "missing_rate_delta": 0.0181088981,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_313",
+      "psi": 1.9041745513,
+      "missing_rate_delta": -0.0010638298,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_057",
+      "psi": 1.7954175745,
+      "missing_rate_delta": -0.0042553191,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_029",
+      "psi": 1.7877420923,
+      "missing_rate_delta": -0.0021276596,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_026",
+      "psi": 1.7011110068,
+      "missing_rate_delta": -0.0021276596,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_044",
+      "psi": 1.6265112675,
+      "missing_rate_delta": -0.0010638298,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_038",
+      "psi": 1.5959535271,
+      "missing_rate_delta": -0.0010638298,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_032",
+      "psi": 1.5901512854,
+      "missing_rate_delta": -0.0021276596,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_320",
+      "psi": 1.5845084178,
+      "missing_rate_delta": -0.0010638298,
+      "level": "alert"
+    },
+    {
+      "sensor": "sensor_332",
+      "psi": 1.5479715753,
+      "missing_rate_delta": -0.0042553191,
+      "level": "alert"
+    }
+  ]
+}

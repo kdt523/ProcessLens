@@ -86,6 +86,21 @@ def rank_suspects(
     return out
 
 
+def pass_fail_histogram(values: pd.Series, y: np.ndarray, bins: int = 20) -> dict[str, Any]:
+    """Shared-bin histogram counts of a sensor for passing vs failing runs (1st–99th pct)."""
+    v = values.to_numpy(dtype=float)
+    ok = ~np.isnan(v)
+    lo, hi = np.nanpercentile(v, [1, 99])
+    edges = np.linspace(lo, hi if hi > lo else lo + 1, bins + 1)
+    clipped = np.clip(v[ok], edges[0], edges[-1])
+    fail = np.asarray(y)[ok] == 1
+    return {
+        "edges": edges.tolist(),
+        "pass": np.histogram(clipped[~fail], edges)[0].tolist(),
+        "fail": np.histogram(clipped[fail], edges)[0].tolist(),
+    }
+
+
 def resolve_window(
     df: pd.DataFrame, start: str | None, end: str | None
 ) -> tuple[pd.Timestamp, pd.Timestamp]:
@@ -109,6 +124,7 @@ def run_rootcause(
     top_k: int | None = None,
     cfg: dict[str, Any] | None = None,
     root: Path = PROJECT_ROOT,
+    write: bool = True,
 ) -> dict[str, Any]:
     """Analyse a time window of the real data and write ``reports/metrics/rootcause.json``."""
     cfg = cfg or load_config("rootcause")
@@ -158,6 +174,10 @@ def run_rootcause(
             m: res[m].head(top_k)["representative"].tolist() for m in SINGLE_METHODS if m in res
         },
         "temporal": temporal,
+        "distributions": {
+            r.representative: pass_fail_histogram(x[r.representative], y)
+            for r in cons.head(t["top_n"]).itertuples()
+        },
         "missingness_signal": _records(miss[miss["missing_q"] < cfg["fdr_alpha"]].reset_index()),
         "sensor_stats": _records(
             res["sensors"]
@@ -166,6 +186,8 @@ def run_rootcause(
         ),
         "clusters": {s: int(c) for s, c in res["clusters"].items()},
     }
+    if not write:
+        return result
     out = root / cfg["output"]
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(result, indent=2, default=float), encoding="utf-8")

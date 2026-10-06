@@ -242,6 +242,7 @@ def run_train(
         "reliability_test": reliability,
         "policy_test": policy,
         "dropped_on_train": cands[best]["pipeline"].named_steps["drop"].dropped_,
+        "test_predictions": {"y": yte.tolist(), "p_calibrated": p_best.tolist()},
     }
     out = root / "reports" / "metrics" / "model.json"
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -254,7 +255,13 @@ def run_train(
     art = root / ARTIFACT_DIR
     art.mkdir(exist_ok=True)
     joblib.dump(
-        {"model": calibrated, "name": best, "features": list(x.columns)}, art / "model.joblib"
+        {
+            "model": calibrated,
+            "pipeline": cands[best]["pipeline"],
+            "name": best,
+            "features": list(x.columns),
+        },
+        art / "model.joblib",
     )
     if use_mlflow:
         result["mlflow_model_uri"] = log_to_mlflow(

@@ -36,6 +36,15 @@ def build_schema(expected_rows: int | None, label_values: list[int]) -> pa.DataF
     )
 
 
+def sensor_schema(allowed: list[str]) -> pa.DataFrameSchema:
+    """Contract for scoring requests: only known sensor columns, all numeric (NaN allowed)."""
+    return pa.DataFrameSchema(
+        columns={c: pa.Column("float64", nullable=True, required=False) for c in allowed},
+        strict=True,
+        coerce=True,
+    )
+
+
 def validate(df: pd.DataFrame, cfg: dict[str, Any] | None = None) -> pd.DataFrame:
     """Validate ``df`` against the contract and return it (raises on violation)."""
     contract = (cfg or load_config("data"))["contract"]

@@ -37,7 +37,7 @@ api:
 	uv run uvicorn processlens.api.main:app --reload
 
 app:
-	uv run streamlit run app/Home.py
+	uv run streamlit run app/streamlit_app.py
 
 test:
 	uv run pytest

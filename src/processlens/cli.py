@@ -106,9 +106,15 @@ def agent_eval(
 
 
 @app.command()
-def drift() -> None:
-    """Compute PSI drift between reference and recent windows."""
-    _not_yet(6)
+def drift(
+    start: str | None = typer.Option(None, help="Current window start (default: test window)"),
+    end: str | None = typer.Option(None, help="Current window end"),
+) -> None:
+    """Compute PSI drift between the training window and a recent window."""
+    from processlens.monitoring.drift import run_drift
+
+    res = run_drift(start, end)
+    typer.echo(json.dumps({"current": res["current"], "counts": res["counts"]}, indent=2))
 
 
 if __name__ == "__main__":
