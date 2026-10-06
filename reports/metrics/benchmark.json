@@ -1,0 +1,3443 @@
+{
+  "n_scenarios": 480,
+  "n_planted": 450,
+  "n_null": 30,
+  "overall_by_method": {
+    "consensus": {
+      "sensor_hit@1": 0.2885,
+      "cluster_hit@1": 0.3537,
+      "cluster_precision@1": 0.6022,
+      "sensor_hit@3": 0.4622,
+      "cluster_hit@3": 0.5552,
+      "cluster_precision@3": 0.3481,
+      "sensor_hit@5": 0.5444,
+      "cluster_hit@5": 0.6181,
+      "cluster_precision@5": 0.236
+    },
+    "shap": {
+      "sensor_hit@1": 0.2044,
+      "cluster_hit@1": 0.2467,
+      "cluster_precision@1": 0.4222,
+      "sensor_hit@3": 0.3367,
+      "cluster_hit@3": 0.407,
+      "cluster_precision@3": 0.2585,
+      "sensor_hit@5": 0.3996,
+      "cluster_hit@5": 0.4626,
+      "cluster_precision@5": 0.1782
+    },
+    "stability": {
+      "sensor_hit@1": 0.2167,
+      "cluster_hit@1": 0.2437,
+      "cluster_precision@1": 0.42,
+      "sensor_hit@3": 0.3674,
+      "cluster_hit@3": 0.4363,
+      "cluster_precision@3": 0.277,
+      "sensor_hit@5": 0.423,
+      "cluster_hit@5": 0.517,
+      "cluster_precision@5": 0.1991
+    },
+    "univariate": {
+      "sensor_hit@1": 0.2911,
+      "cluster_hit@1": 0.3889,
+      "cluster_precision@1": 0.6378,
+      "sensor_hit@3": 0.4574,
+      "cluster_hit@3": 0.5874,
+      "cluster_precision@3": 0.3659,
+      "sensor_hit@5": 0.5489,
+      "cluster_hit@5": 0.6393,
+      "cluster_precision@5": 0.2458
+    }
+  },
+  "by_beta": {
+    "sensor_hit@1": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.12777777777777777,
+        "std": 0.2424465550511991,
+        "count": 30,
+        "ci": 0.08675838549809374
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.3277777777777778,
+        "std": 0.3700557412018141,
+        "count": 30,
+        "ci": 0.13242274630047798
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3722222222222222,
+        "std": 0.378247960729014,
+        "count": 30,
+        "ci": 0.13535429440878466
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.06666666666666667,
+        "std": 0.17287295182088022,
+        "count": 30,
+        "ci": 0.061861791325935916
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.28888888888888886,
+        "std": 0.32440140374775217,
+        "count": 30,
+        "ci": 0.11608555145907005
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.35,
+        "std": 0.35110662492890315,
+        "count": 30,
+        "ci": 0.12564189212786975
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.43333333333333335,
+        "std": 0.34072269373053,
+        "count": 30,
+        "ci": 0.12192605007062174
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.48333333333333334,
+        "std": 0.3343375677296859,
+        "count": 30,
+        "ci": 0.11964116207574738
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.2722222222222222,
+        "std": 0.3260213345783607,
+        "count": 30,
+        "ci": 0.11666523626198468
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.4777777777777778,
+        "std": 0.3908271348020419,
+        "count": 30,
+        "ci": 0.13985569403991127
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5555555555555556,
+        "std": 0.32850915221752475,
+        "count": 30,
+        "ci": 0.11755549037073856
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.55,
+        "std": 0.3308817894969284,
+        "count": 30,
+        "ci": 0.11840452771709385
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.03888888888888888,
+        "std": 0.1213220069657677,
+        "count": 30,
+        "ci": 0.04341452262547391
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.1888888888888889,
+        "std": 0.3296733938545559,
+        "count": 30,
+        "ci": 0.11797210888997117
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.16666666666666666,
+        "std": 0.29361010975735174,
+        "count": 30,
+        "ci": 0.10506702841410388
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.1268540658512312,
+        "count": 30,
+        "ci": 0.045394144473603876
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.09444444444444443,
+        "std": 0.22181476054332236,
+        "count": 30,
+        "ci": 0.07937539265229389
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.29444444444444445,
+        "std": 0.34375471667494356,
+        "count": 30,
+        "ci": 0.1230110455468204
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.35,
+        "std": 0.35919770114206906,
+        "count": 30,
+        "ci": 0.12853724656608012
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.3722222222222222,
+        "std": 0.3465299612566441,
+        "count": 30,
+        "ci": 0.12400415406601474
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.4,
+        "std": 0.3880395761306805,
+        "count": 30,
+        "ci": 0.1388581789803244
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5444444444444444,
+        "std": 0.3416584897629142,
+        "count": 30,
+        "ci": 0.12226092038011337
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.5666666666666667,
+        "std": 0.31440511241492825,
+        "count": 30,
+        "ci": 0.11250842454620778
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.11111111111111112,
+        "std": 0.27796928264559795,
+        "count": 30,
+        "ci": 0.09947003031370188
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.1888888888888889,
+        "std": 0.32967339385455585,
+        "count": 30,
+        "ci": 0.11797210888997114
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.1888888888888889,
+        "std": 0.32967339385455585,
+        "count": 30,
+        "ci": 0.11797210888997114
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.17777777777777776,
+        "std": 0.2933925401759676,
+        "count": 30,
+        "ci": 0.10498917213930387
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.3277777777777778,
+        "std": 0.36220729583988553,
+        "count": 30,
+        "ci": 0.1296142161973089
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.3777777777777778,
+        "std": 0.3388433484883757,
+        "count": 30,
+        "ci": 0.1212535350127427
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.4222222222222222,
+        "std": 0.34942024598097476,
+        "count": 30,
+        "ci": 0.12503842917155203
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.2111111111111111,
+        "std": 0.2695722926138423,
+        "count": 30,
+        "ci": 0.09646520602141667
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.3111111111111111,
+        "std": 0.36549796329797524,
+        "count": 30,
+        "ci": 0.1307917664240576
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5222222222222223,
+        "std": 0.3575494857193706,
+        "count": 30,
+        "ci": 0.1279474402518754
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.3944444444444445,
+        "std": 0.3648422042087551,
+        "count": 30,
+        "ci": 0.13055710604769372
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.22222222222222224,
+        "std": 0.3255803346002586,
+        "count": 30,
+        "ci": 0.11650742644655235
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.35,
+        "std": 0.38988651458196594,
+        "count": 30,
+        "ci": 0.13951909741702495
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3944444444444445,
+        "std": 0.395092824180634,
+        "count": 30,
+        "ci": 0.14138215137994178
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.17777777777777776,
+        "std": 0.33025397556734,
+        "count": 30,
+        "ci": 0.11817986738767483
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.4222222222222222,
+        "std": 0.380897642482244,
+        "count": 30,
+        "ci": 0.1363024708468679
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.3555555555555555,
+        "std": 0.3521508442609011,
+        "count": 30,
+        "ci": 0.12601556121684035
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.4388888888888889,
+        "std": 0.3648422042087551,
+        "count": 30,
+        "ci": 0.13055710604769372
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.49444444444444446,
+        "std": 0.3230699642306522,
+        "count": 30,
+        "ci": 0.11560910194685671
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.21666666666666667,
+        "std": 0.35598333940092536,
+        "count": 30,
+        "ci": 0.12738700198945754
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.38333333333333336,
+        "std": 0.4155732780452652,
+        "count": 30,
+        "ci": 0.14871098767208202
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.4888888888888889,
+        "std": 0.38886152065711643,
+        "count": 30,
+        "ci": 0.13915230805164702
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.38333333333333336,
+        "std": 0.4224313859812846,
+        "count": 30,
+        "ci": 0.15116513007874585
+      }
+    ],
+    "sensor_hit@3": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.3277777777777778,
+        "std": 0.3622072958398856,
+        "count": 30,
+        "ci": 0.12961421619730892
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.4277777777777778,
+        "std": 0.3832791899127565,
+        "count": 30,
+        "ci": 0.13715469664984853
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.49444444444444446,
+        "std": 0.4321454393085712,
+        "count": 30,
+        "ci": 0.15464125941842566
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.19444444444444445,
+        "std": 0.3335727109823777,
+        "count": 30,
+        "ci": 0.11936746160382368
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.48333333333333334,
+        "std": 0.3565210788908373,
+        "count": 30,
+        "ci": 0.12757942959459911
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.5777777777777777,
+        "std": 0.3732772262163199,
+        "count": 30,
+        "ci": 0.1335755399077363
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.7055555555555556,
+        "std": 0.3437547166749436,
+        "count": 30,
+        "ci": 0.12301104554682041
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.7555555555555556,
+        "std": 0.32083862014850933,
+        "count": 30,
+        "ci": 0.1148106257217911
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.19044882124112192,
+        "count": 30,
+        "ci": 0.06815123542343392
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.4166666666666667,
+        "std": 0.4123337932890325,
+        "count": 30,
+        "ci": 0.14755175293996925
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.6833333333333333,
+        "std": 0.3226744085705591,
+        "count": 30,
+        "ci": 0.11546755417177258
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9222222222222223,
+        "std": 0.1680023109979103,
+        "count": 30,
+        "ci": 0.06011885489174844
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.8722222222222222,
+        "std": 0.2302893953689846,
+        "count": 30,
+        "ci": 0.08240800177724149
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.07222222222222222,
+        "std": 0.19418428134462434,
+        "count": 30,
+        "ci": 0.06948795265418184
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.2833333333333333,
+        "std": 0.37942788147601814,
+        "count": 30,
+        "ci": 0.13577652362546364
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3277777777777778,
+        "std": 0.3700557412018141,
+        "count": 30,
+        "ci": 0.13242274630047798
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.1268540658512312,
+        "count": 30,
+        "ci": 0.045394144473603876
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.11666666666666667,
+        "std": 0.24428329763190054,
+        "count": 30,
+        "ci": 0.08741565538936363
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.5222222222222223,
+        "std": 0.39082713480204195,
+        "count": 30,
+        "ci": 0.13985569403991127
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.5611111111111111,
+        "std": 0.37519684063294706,
+        "count": 30,
+        "ci": 0.13426246510463286
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.6888888888888889,
+        "std": 0.34109732022492234,
+        "count": 30,
+        "ci": 0.12206010843994534
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.638888888888889,
+        "std": 0.34486749449777804,
+        "count": 30,
+        "ci": 0.12340924797665824
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.8555555555555556,
+        "std": 0.2542110224470779,
+        "count": 30,
+        "ci": 0.09096824608900157
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9,
+        "std": 0.21708624272765242,
+        "count": 30,
+        "ci": 0.077683314283105
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.22777777777777777,
+        "std": 0.36484220420875507,
+        "count": 30,
+        "ci": 0.13055710604769372
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.29444444444444445,
+        "std": 0.38577019873551577,
+        "count": 30,
+        "ci": 0.13804609270898602
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3222222222222222,
+        "std": 0.4104322862033514,
+        "count": 30,
+        "ci": 0.14687130736823473
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.06111111111111111,
+        "std": 0.16071757988880025,
+        "count": 30,
+        "ci": 0.05751204734325323
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.2833333333333333,
+        "std": 0.3099561209830609,
+        "count": 30,
+        "ci": 0.11091637340882557
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.4722222222222222,
+        "std": 0.39168398918243347,
+        "count": 30,
+        "ci": 0.14016231544203447
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.6555555555555556,
+        "std": 0.3472203065081252,
+        "count": 30,
+        "ci": 0.1242511909415939
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.711111111111111,
+        "std": 0.3388433484883757,
+        "count": 30,
+        "ci": 0.1212535350127427
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.06666666666666667,
+        "std": 0.2537081317024624,
+        "count": 30,
+        "ci": 0.09078828894720775
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.36666666666666664,
+        "std": 0.38754557265078654,
+        "count": 30,
+        "ci": 0.1386814021053674
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.5444444444444444,
+        "std": 0.4104322862033515,
+        "count": 30,
+        "ci": 0.14687130736823475
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.8111111111111111,
+        "std": 0.2304972690945069,
+        "count": 30,
+        "ci": 0.08248238843458121
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.6777777777777777,
+        "std": 0.3633953688823781,
+        "count": 30,
+        "ci": 0.1300393626754624
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.05555555555555555,
+        "std": 0.14734777412283073,
+        "count": 30,
+        "ci": 0.052727723794363586
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.40555555555555556,
+        "std": 0.357415513509939,
+        "count": 30,
+        "ci": 0.12789949891243488
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.4666666666666667,
+        "std": 0.3997125403868745,
+        "count": 30,
+        "ci": 0.14303529559322276
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.5222222222222223,
+        "std": 0.35754948571937073,
+        "count": 30,
+        "ci": 0.12794744025187546
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.2833333333333333,
+        "std": 0.37942788147601814,
+        "count": 30,
+        "ci": 0.13577652362546364
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.55,
+        "std": 0.3190923430163242,
+        "count": 30,
+        "ci": 0.11418572847551499
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.6611111111111111,
+        "std": 0.29191970414035007,
+        "count": 30,
+        "ci": 0.10446212453276392
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.6222222222222222,
+        "std": 0.3123674687038809,
+        "count": 30,
+        "ci": 0.11177926310873765
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.6722222222222223,
+        "std": 0.30160278530240914,
+        "count": 30,
+        "ci": 0.1079271706254578
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.06111111111111111,
+        "std": 0.20753679142662323,
+        "count": 30,
+        "ci": 0.07426608702204945
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.49444444444444446,
+        "std": 0.4023002189358229,
+        "count": 30,
+        "ci": 0.1439612844696059
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.6333333333333333,
+        "std": 0.359331008885067,
+        "count": 30,
+        "ci": 0.1285849501292611
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.7277777777777777,
+        "std": 0.31708482171727137,
+        "count": 30,
+        "ci": 0.11346734620474162
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.6888888888888889,
+        "std": 0.32967339385455585,
+        "count": 30,
+        "ci": 0.11797210888997114
+      }
+    ],
+    "sensor_hit@5": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.05,
+        "std": 0.20128894996822436,
+        "count": 30,
+        "ci": 0.07203032566976184
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.027777777777777776,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.3944444444444445,
+        "std": 0.37519684063294706,
+        "count": 30,
+        "ci": 0.13426246510463286
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.5555555555555556,
+        "std": 0.37736059904468894,
+        "count": 30,
+        "ci": 0.1350367561081532
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.6055555555555556,
+        "std": 0.38775148392011055,
+        "count": 30,
+        "ci": 0.13875508650677557
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.2611111111111111,
+        "std": 0.36273580871220107,
+        "count": 30,
+        "ci": 0.12980334209974698
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.5444444444444444,
+        "std": 0.3444506240948561,
+        "count": 30,
+        "ci": 0.12326007281881032
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.7333333333333333,
+        "std": 0.3234156785770061,
+        "count": 30,
+        "ci": 0.11573281423687813
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.788888888888889,
+        "std": 0.3030285614718329,
+        "count": 30,
+        "ci": 0.10843737807515631
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.8722222222222222,
+        "std": 0.20845781721516188,
+        "count": 30,
+        "ci": 0.0745956718676615
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.07777777777777778,
+        "std": 0.25795145424255567,
+        "count": 30,
+        "ci": 0.09230674241687416
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.5833333333333334,
+        "std": 0.3933109286430245,
+        "count": 30,
+        "ci": 0.1407445082509783
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.8166666666666667,
+        "std": 0.2745599055988549,
+        "count": 30,
+        "ci": 0.09825000040621476
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9555555555555556,
+        "std": 0.14472416181843492,
+        "count": 30,
+        "ci": 0.051788876188736656
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9,
+        "std": 0.2170862427276524,
+        "count": 30,
+        "ci": 0.07768331428310499
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.08888888888888888,
+        "std": 0.20868743852643082,
+        "count": 30,
+        "ci": 0.07467784079861389
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.3722222222222222,
+        "std": 0.41909255493755415,
+        "count": 30,
+        "ci": 0.14997034473422402
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3888888888888889,
+        "std": 0.3849001794597505,
+        "count": 30,
+        "ci": 0.13773476030955606
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.1268540658512312,
+        "count": 30,
+        "ci": 0.045394144473603876
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.23333333333333334,
+        "std": 0.33789975615665657,
+        "count": 30,
+        "ci": 0.12091587483336401
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.5666666666666667,
+        "std": 0.39537556712632077,
+        "count": 30,
+        "ci": 0.14148332964363614
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.7388888888888889,
+        "std": 0.30851061487272086,
+        "count": 30,
+        "ci": 0.1103991056904443
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.7777777777777778,
+        "std": 0.3399722023044223,
+        "count": 30,
+        "ci": 0.12165749016287006
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.01111111111111111,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.1277777777777778,
+        "std": 0.2859525096992866,
+        "count": 30,
+        "ci": 0.10232679142584253
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.7555555555555556,
+        "std": 0.32083862014850933,
+        "count": 30,
+        "ci": 0.1148106257217911
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9388888888888889,
+        "std": 0.1417145512942524,
+        "count": 30,
+        "ci": 0.05071190089411551
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9111111111111111,
+        "std": 0.19443076032855827,
+        "count": 30,
+        "ci": 0.06957615402582353
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.25,
+        "std": 0.3602627819115532,
+        "count": 30,
+        "ci": 0.12891838082458093
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.3888888888888889,
+        "std": 0.40431895657541517,
+        "count": 30,
+        "ci": 0.14468368045629362
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3777777777777778,
+        "std": 0.45048576023976544,
+        "count": 30,
+        "ci": 0.1612042589758798
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.09444444444444446,
+        "std": 0.19418428134462434,
+        "count": 30,
+        "ci": 0.06948795265418184
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.3333333333333333,
+        "std": 0.32753578962701163,
+        "count": 30,
+        "ci": 0.11720717704106749
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.5111111111111112,
+        "std": 0.3913169956186742,
+        "count": 30,
+        "ci": 0.14003098848185877
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.7722222222222223,
+        "std": 0.30476211856861685,
+        "count": 30,
+        "ci": 0.10905772351522239
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.788888888888889,
+        "std": 0.3154189980275927,
+        "count": 30,
+        "ci": 0.11287123885312149
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.12222222222222222,
+        "std": 0.3092858333196163,
+        "count": 30,
+        "ci": 0.11067651404894534
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.4444444444444445,
+        "std": 0.377360599044689,
+        "count": 30,
+        "ci": 0.13503675610815322
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.5777777777777777,
+        "std": 0.4052654712298307,
+        "count": 30,
+        "ci": 0.14502238637541892
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.85,
+        "std": 0.22467515929239962,
+        "count": 30,
+        "ci": 0.08039897319893562
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.7833333333333333,
+        "std": 0.32208016421988495,
+        "count": 30,
+        "ci": 0.11525490656189019
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.027777777777777776,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.15,
+        "std": 0.2881769890388445,
+        "count": 30,
+        "ci": 0.10312281113432283
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.4388888888888889,
+        "std": 0.37519684063294706,
+        "count": 30,
+        "ci": 0.13426246510463286
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.5222222222222223,
+        "std": 0.3575494857193707,
+        "count": 30,
+        "ci": 0.12794744025187543
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.6166666666666667,
+        "std": 0.350560580080695,
+        "count": 30,
+        "ci": 0.12544649248843134
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.3222222222222222,
+        "std": 0.4009885613194816,
+        "count": 30,
+        "ci": 0.14349191381966606
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.6333333333333333,
+        "std": 0.3076296723751961,
+        "count": 30,
+        "ci": 0.11008386446630826
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.7944444444444444,
+        "std": 0.25402255508709404,
+        "count": 30,
+        "ci": 0.09090080391038273
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.788888888888889,
+        "std": 0.27658748809301564,
+        "count": 30,
+        "ci": 0.09897556148346098
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.8222222222222223,
+        "std": 0.23543118237552607,
+        "count": 30,
+        "ci": 0.08424796662709638
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.10555555555555556,
+        "std": 0.2715195403499098,
+        "count": 30,
+        "ci": 0.09716201967467877
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.6222222222222222,
+        "std": 0.37379008731399205,
+        "count": 30,
+        "ci": 0.13375906489455006
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.7277777777777777,
+        "std": 0.29191970414035007,
+        "count": 30,
+        "ci": 0.10446212453276392
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.85,
+        "std": 0.2638863682073603,
+        "count": 30,
+        "ci": 0.09443052410371974
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.8111111111111111,
+        "std": 0.2827523906736653,
+        "count": 30,
+        "ci": 0.10118164353951349
+      }
+    ],
+    "cluster_hit@1": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.027777777777777776,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.14444444444444443,
+        "std": 0.25041472624693667,
+        "count": 30,
+        "ci": 0.08960975894065976
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.4,
+        "std": 0.36514837167011077,
+        "count": 30,
+        "ci": 0.13066666666666668
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.5,
+        "std": 0.3790490217894517,
+        "count": 30,
+        "ci": 0.1356409504277753
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.07777777777777778,
+        "std": 0.17904243666002664,
+        "count": 30,
+        "ci": 0.06406951312213252
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.3944444444444445,
+        "std": 0.3403945573324552,
+        "count": 30,
+        "ci": 0.12180862796860789
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.46111111111111114,
+        "std": 0.32068931185523863,
+        "count": 30,
+        "ci": 0.11475719643522976
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.5111111111111112,
+        "std": 0.3092858333196163,
+        "count": 30,
+        "ci": 0.11067651404894534
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.5777777777777777,
+        "std": 0.2992113943234377,
+        "count": 30,
+        "ci": 0.10707142235389976
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.1904488212411219,
+        "count": 30,
+        "ci": 0.0681512354234339
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.40555555555555556,
+        "std": 0.3324221261998494,
+        "count": 30,
+        "ci": 0.11895573012721124
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.55,
+        "std": 0.3308817894969285,
+        "count": 30,
+        "ci": 0.11840452771709387
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.6,
+        "std": 0.3051285766293646,
+        "count": 30,
+        "ci": 0.10918885884810646
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.611111111111111,
+        "std": 0.2881215863681336,
+        "count": 30,
+        "ci": 0.1031029855432265
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.03888888888888888,
+        "std": 0.1213220069657677,
+        "count": 30,
+        "ci": 0.04341452262547391
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.1888888888888889,
+        "std": 0.3296733938545559,
+        "count": 30,
+        "ci": 0.11797210888997117
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.22777777777777777,
+        "std": 0.3289462257155658,
+        "count": 30,
+        "ci": 0.11771189511332622
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.1379469977991112,
+        "count": 30,
+        "ci": 0.049363699190663295
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.1388888888888889,
+        "std": 0.2771064685124531,
+        "count": 30,
+        "ci": 0.09916127624144551
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.4166666666666667,
+        "std": 0.32385962618280223,
+        "count": 30,
+        "ci": 0.11589167884733419
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.45555555555555555,
+        "std": 0.3302539755673401,
+        "count": 30,
+        "ci": 0.11817986738767487
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.5333333333333333,
+        "std": 0.31984191497474607,
+        "count": 30,
+        "ci": 0.11445395935598096
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505533,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.027777777777777776,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.4277777777777778,
+        "std": 0.37314890080387036,
+        "count": 30,
+        "ci": 0.13352961924864443
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5888888888888889,
+        "std": 0.32083862014850933,
+        "count": 30,
+        "ci": 0.1148106257217911
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.5777777777777777,
+        "std": 0.2992113943234377,
+        "count": 30,
+        "ci": 0.10707142235389976
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.11111111111111112,
+        "std": 0.27796928264559795,
+        "count": 30,
+        "ci": 0.09947003031370188
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.2,
+        "std": 0.3287034788551747,
+        "count": 30,
+        "ci": 0.11762502926494237
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.2555555555555556,
+        "std": 0.3834041247310621,
+        "count": 30,
+        "ci": 0.13719940400040834
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.22777777777777777,
+        "std": 0.3289462257155658,
+        "count": 30,
+        "ci": 0.11771189511332622
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.3555555555555555,
+        "std": 0.3521508442609011,
+        "count": 30,
+        "ci": 0.12601556121684035
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.3777777777777778,
+        "std": 0.3388433484883757,
+        "count": 30,
+        "ci": 0.1212535350127427
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.48333333333333334,
+        "std": 0.33433756772968587,
+        "count": 30,
+        "ci": 0.11964116207574735
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.2722222222222222,
+        "std": 0.2984100053448453,
+        "count": 30,
+        "ci": 0.10678464899090451
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.4,
+        "std": 0.35719211482975344,
+        "count": 30,
+        "ci": 0.12781955672141793
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5444444444444444,
+        "std": 0.3331417073713433,
+        "count": 30,
+        "ci": 0.1192132289424056
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.41111111111111115,
+        "std": 0.3575494857193708,
+        "count": 30,
+        "ci": 0.12794744025187546
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.07777777777777778,
+        "std": 0.22203056869607946,
+        "count": 30,
+        "ci": 0.07945261860795483
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.3,
+        "std": 0.3457459036417604,
+        "count": 30,
+        "ci": 0.1237235826518718
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.43333333333333335,
+        "std": 0.37293492699144576,
+        "count": 30,
+        "ci": 0.1334530497032413
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.5222222222222223,
+        "std": 0.3575494857193707,
+        "count": 30,
+        "ci": 0.12794744025187543
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.22222222222222224,
+        "std": 0.3591532542321492,
+        "count": 30,
+        "ci": 0.12852134144363278
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.48333333333333334,
+        "std": 0.3343375677296859,
+        "count": 30,
+        "ci": 0.11964116207574738
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.5611111111111111,
+        "std": 0.3170848217172714,
+        "count": 30,
+        "ci": 0.11346734620474164
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.5,
+        "std": 0.32163376045133846,
+        "count": 30,
+        "ci": 0.11509516302488187
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.5777777777777777,
+        "std": 0.2992113943234377,
+        "count": 30,
+        "ci": 0.10707142235389976
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.1904488212411219,
+        "count": 30,
+        "ci": 0.0681512354234339
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.3777777777777778,
+        "std": 0.37121869640676947,
+        "count": 30,
+        "ci": 0.1328389044759044
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.55,
+        "std": 0.35598333940092547,
+        "count": 30,
+        "ci": 0.12738700198945757
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.5777777777777777,
+        "std": 0.33543399386481704,
+        "count": 30,
+        "ci": 0.12003351312928906
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.5888888888888889,
+        "std": 0.32083862014850933,
+        "count": 30,
+        "ci": 0.1148106257217911
+      }
+    ],
+    "cluster_hit@3": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.07777777777777778,
+        "std": 0.22203056869607946,
+        "count": 30,
+        "ci": 0.07945261860795483
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.40555555555555556,
+        "std": 0.3679791903717051,
+        "count": 30,
+        "ci": 0.13167966212925952
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.5111111111111111,
+        "std": 0.37888051810395695,
+        "count": 30,
+        "ci": 0.13558065215832404
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.611111111111111,
+        "std": 0.3873807648301716,
+        "count": 30,
+        "ci": 0.13862242638417807
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.26666666666666666,
+        "std": 0.38056219755369364,
+        "count": 30,
+        "ci": 0.13618243342081163
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.5666666666666667,
+        "std": 0.32928577068246717,
+        "count": 30,
+        "ci": 0.11783339971926357
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.8333333333333334,
+        "std": 0.25143267648537193,
+        "count": 30,
+        "ci": 0.08997402775522548
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.7833333333333333,
+        "std": 0.3337640894897925,
+        "count": 30,
+        "ci": 0.11943594552317176
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.85,
+        "std": 0.2450662589267805,
+        "count": 30,
+        "ci": 0.08769583449043164
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.07777777777777778,
+        "std": 0.25795145424255567,
+        "count": 30,
+        "ci": 0.09230674241687416
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.5777777777777777,
+        "std": 0.39569845453589353,
+        "count": 30,
+        "ci": 0.14159887341923763
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.8277777777777777,
+        "std": 0.24558684636193878,
+        "count": 30,
+        "ci": 0.08788212431160641
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9666666666666667,
+        "std": 0.10170952554312157,
+        "count": 30,
+        "ci": 0.036396286282702174
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9555555555555556,
+        "std": 0.1152486345472535,
+        "count": 30,
+        "ci": 0.04124119421729062
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.05,
+        "std": 0.20128894996822438,
+        "count": 30,
+        "ci": 0.07203032566976185
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.08888888888888888,
+        "std": 0.20868743852643082,
+        "count": 30,
+        "ci": 0.07467784079861389
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.3055555555555555,
+        "std": 0.4013467112496461,
+        "count": 30,
+        "ci": 0.14362007612620314
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.4666666666666667,
+        "std": 0.40918571601605414,
+        "count": 30,
+        "ci": 0.1464252279556519
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.1379469977991112,
+        "count": 30,
+        "ci": 0.049363699190663295
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.1722222222222222,
+        "std": 0.29191970414035007,
+        "count": 30,
+        "ci": 0.10446212453276392
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.7166666666666667,
+        "std": 0.33662171089401044,
+        "count": 30,
+        "ci": 0.1204585322097196
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.7777777777777778,
+        "std": 0.3011260264081005,
+        "count": 30,
+        "ci": 0.1077565646462005
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.8277777777777777,
+        "std": 0.2919197041403501,
+        "count": 30,
+        "ci": 0.10446212453276395
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505533,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.04444444444444444,
+        "std": 0.1379469977991112,
+        "count": 30,
+        "ci": 0.049363699190663295
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.7,
+        "std": 0.3257764082913827,
+        "count": 30,
+        "ci": 0.11657759051581285
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9111111111111111,
+        "std": 0.23049726909450693,
+        "count": 30,
+        "ci": 0.08248238843458122
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9333333333333333,
+        "std": 0.16141139937050078,
+        "count": 30,
+        "ci": 0.05776032745614965
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 30,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.016666666666666666,
+        "std": 0.09128709291752768,
+        "count": 30,
+        "ci": 0.03266666666666666
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.2611111111111111,
+        "std": 0.3882452253984585,
+        "count": 30,
+        "ci": 0.1389317696256834
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.3277777777777778,
+        "std": 0.38277904286641223,
+        "count": 30,
+        "ci": 0.13697572132787167
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.3888888888888889,
+        "std": 0.43402538313515654,
+        "count": 30,
+        "ci": 0.1553139886769924
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.06111111111111111,
+        "std": 0.16071757988880025,
+        "count": 30,
+        "ci": 0.05751204734325323
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.3777777777777778,
+        "std": 0.33600462199582054,
+        "count": 30,
+        "ci": 0.12023770978349685
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.6055555555555556,
+        "std": 0.35418497811575916,
+        "count": 30,
+        "ci": 0.1267434666684036
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.6722222222222223,
+        "std": 0.35147018352998344,
+        "count": 30,
+        "ci": 0.12577198990243704
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.8277777777777777,
+        "std": 0.25702144957723694,
+        "count": 30,
+        "ci": 0.09197394452147115
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.06666666666666667,
+        "std": 0.2537081317024624,
+        "count": 30,
+        "ci": 0.09078828894720775
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.46111111111111114,
+        "std": 0.4190925549375541,
+        "count": 30,
+        "ci": 0.14997034473422402
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.7388888888888889,
+        "std": 0.3465299612566441,
+        "count": 30,
+        "ci": 0.12400415406601474
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9333333333333333,
+        "std": 0.15536386656646634,
+        "count": 30,
+        "ci": 0.05559624563525519
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.8055555555555556,
+        "std": 0.277106468512453,
+        "count": 30,
+        "ci": 0.0991612762414455
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.027777777777777776,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.16666666666666666,
+        "std": 0.2936101097573518,
+        "count": 30,
+        "ci": 0.10506702841410391
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.4444444444444445,
+        "std": 0.3644481823936893,
+        "count": 30,
+        "ci": 0.13041610715200344
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.5722222222222223,
+        "std": 0.362735808712201,
+        "count": 30,
+        "ci": 0.12980334209974695
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.6166666666666667,
+        "std": 0.350560580080695,
+        "count": 30,
+        "ci": 0.12544649248843134
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.3722222222222222,
+        "std": 0.4098484285135721,
+        "count": 30,
+        "ci": 0.14666237657721895
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.6611111111111111,
+        "std": 0.3078890347620262,
+        "count": 30,
+        "ci": 0.11017667610446727
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.861111111111111,
+        "std": 0.24402175227036288,
+        "count": 30,
+        "ci": 0.08732206258373795
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.8722222222222222,
+        "std": 0.20845781721516182,
+        "count": 30,
+        "ci": 0.07459567186766149
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.85,
+        "std": 0.21149893797909133,
+        "count": 30,
+        "ci": 0.07568392295676248
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.10555555555555556,
+        "std": 0.2715195403499098,
+        "count": 30,
+        "ci": 0.09716201967467877
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.6555555555555556,
+        "std": 0.36074989301855537,
+        "count": 30,
+        "ci": 0.1290926912955743
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.861111111111111,
+        "std": 0.231947168864629,
+        "count": 30,
+        "ci": 0.08300122840392325
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9111111111111111,
+        "std": 0.19443076032855824,
+        "count": 30,
+        "ci": 0.06957615402582351
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.8333333333333334,
+        "std": 0.23973165074269204,
+        "count": 30,
+        "ci": 0.08578686946835205
+      }
+    ],
+    "cluster_hit@5": [
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.05,
+        "std": 0.20128894996822436,
+        "count": 30,
+        "ci": 0.07203032566976184
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.1277777777777778,
+        "std": 0.28595250969928654,
+        "count": 30,
+        "ci": 0.10232679142584251
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.4888888888888889,
+        "std": 0.37888051810395706,
+        "count": 30,
+        "ci": 0.13558065215832407
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.5944444444444444,
+        "std": 0.39070457363199684,
+        "count": 30,
+        "ci": 0.13981183608847275
+      },
+      {
+        "method": "consensus",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.6722222222222223,
+        "std": 0.37263515723651797,
+        "count": 30,
+        "ci": 0.13334577847411122
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.3,
+        "std": 0.37752978111956137,
+        "count": 30,
+        "ci": 0.13509729713612553
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.65,
+        "std": 0.3256293640914785,
+        "count": 30,
+        "ci": 0.11652497142465747
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.888888888888889,
+        "std": 0.232977287192082,
+        "count": 30,
+        "ci": 0.08336985151322232
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.8777777777777778,
+        "std": 0.235431182375526,
+        "count": 30,
+        "ci": 0.08424796662709634
+      },
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.9388888888888889,
+        "std": 0.1417145512942524,
+        "count": 30,
+        "ci": 0.05071190089411551
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.11111111111111112,
+        "std": 0.307422024918276,
+        "count": 30,
+        "ci": 0.11000955877814796
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.6777777777777777,
+        "std": 0.38140025670020644,
+        "count": 30,
+        "ci": 0.13648232903486976
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.9277777777777777,
+        "std": 0.17333407014284896,
+        "count": 30,
+        "ci": 0.06202680039826178
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9888888888888889,
+        "std": 0.06085806194501846,
+        "count": 30,
+        "ci": 0.021777777777777778
+      },
+      {
+        "method": "consensus",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9777777777777777,
+        "std": 0.08456937723415416,
+        "count": 30,
+        "ci": 0.030262762982402592
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.06666666666666667,
+        "std": 0.21708624272765237,
+        "count": 30,
+        "ci": 0.07768331428310499
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.12222222222222222,
+        "std": 0.23132689602049658,
+        "count": 30,
+        "ci": 0.08277926661727764
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.4277777777777778,
+        "std": 0.4325885140380522,
+        "count": 30,
+        "ci": 0.15479981167410387
+      },
+      {
+        "method": "shap",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.4888888888888889,
+        "std": 0.41043228620335154,
+        "count": 30,
+        "ci": 0.14687130736823478
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.1379469977991112,
+        "count": 30,
+        "ci": 0.049363699190663295
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.35,
+        "std": 0.3748562943039776,
+        "count": 30,
+        "ci": 0.13414060216588145
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.7555555555555556,
+        "std": 0.33256616699213654,
+        "count": 30,
+        "ci": 0.1190072744627538
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.8111111111111111,
+        "std": 0.27934424214472814,
+        "count": 30,
+        "ci": 0.09996205325147724
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.85,
+        "std": 0.2780267083837678,
+        "count": 30,
+        "ci": 0.09949057985019086
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.04444444444444444,
+        "std": 0.19044882124112192,
+        "count": 30,
+        "ci": 0.06815123542343392
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.16666666666666666,
+        "std": 0.29361010975735174,
+        "count": 30,
+        "ci": 0.10506702841410388
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.8444444444444444,
+        "std": 0.2695722926138423,
+        "count": 30,
+        "ci": 0.09646520602141667
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9555555555555556,
+        "std": 0.11524863454725351,
+        "count": 30,
+        "ci": 0.041241194217290625
+      },
+      {
+        "method": "shap",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9777777777777777,
+        "std": 0.08456937723415416,
+        "count": 30,
+        "ci": 0.030262762982402592
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03333333333333333,
+        "std": 0.18257418583505536,
+        "count": 30,
+        "ci": 0.06533333333333333
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.05,
+        "std": 0.20128894996822438,
+        "count": 30,
+        "ci": 0.07203032566976185
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.29444444444444445,
+        "std": 0.378247960729014,
+        "count": 30,
+        "ci": 0.13535429440878466
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.4222222222222222,
+        "std": 0.4028950153065636,
+        "count": 30,
+        "ci": 0.14417412961733211
+      },
+      {
+        "method": "stability",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.4666666666666667,
+        "std": 0.44935031858479924,
+        "count": 30,
+        "ci": 0.16079794639787123
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.1277777777777778,
+        "std": 0.25402255508709404,
+        "count": 30,
+        "ci": 0.09090080391038273
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.45,
+        "std": 0.3190923430163242,
+        "count": 30,
+        "ci": 0.11418572847551499
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.6611111111111111,
+        "std": 0.3431969747445607,
+        "count": 30,
+        "ci": 0.12281146016028276
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.8222222222222223,
+        "std": 0.29663932888807465,
+        "count": 30,
+        "ci": 0.10615102055845901
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.9111111111111111,
+        "std": 0.22630351797478754,
+        "count": 30,
+        "ci": 0.08098167386987708
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.17222222222222222,
+        "std": 0.3514701835299835,
+        "count": 30,
+        "ci": 0.12577198990243707
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.5888888888888889,
+        "std": 0.4028950153065636,
+        "count": 30,
+        "ci": 0.14417412961733211
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.8555555555555556,
+        "std": 0.2386637984373554,
+        "count": 30,
+        "ci": 0.08540474342848377
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9722222222222222,
+        "std": 0.10795320872760072,
+        "count": 30,
+        "ci": 0.038630559615778055
+      },
+      {
+        "method": "stability",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9277777777777777,
+        "std": 0.17333407014284893,
+        "count": 30,
+        "ci": 0.06202680039826177
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.25,
+        "mean": 0.03888888888888888,
+        "std": 0.1213220069657677,
+        "count": 30,
+        "ci": 0.04341452262547391
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 0.5,
+        "mean": 0.16666666666666666,
+        "std": 0.2936101097573518,
+        "count": 30,
+        "ci": 0.10506702841410391
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.0,
+        "mean": 0.5166666666666667,
+        "std": 0.3923355745597564,
+        "count": 30,
+        "ci": 0.1403954822747773
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 1.5,
+        "mean": 0.65,
+        "std": 0.36185452507604166,
+        "count": 30,
+        "ci": 0.1294879788007183
+      },
+      {
+        "method": "univariate",
+        "mechanism": "drift_window",
+        "beta": 2.0,
+        "mean": 0.6888888888888889,
+        "std": 0.3296733938545558,
+        "count": 30,
+        "ci": 0.11797210888997113
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.25,
+        "mean": 0.43333333333333335,
+        "std": 0.41660919143821656,
+        "count": 30,
+        "ci": 0.14908168451893689
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 0.5,
+        "mean": 0.7166666666666667,
+        "std": 0.30995612098306086,
+        "count": 30,
+        "ci": 0.11091637340882556
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.0,
+        "mean": 0.8722222222222222,
+        "std": 0.24244655505119914,
+        "count": 30,
+        "ci": 0.08675838549809375
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 1.5,
+        "mean": 0.8944444444444444,
+        "std": 0.20286895026937263,
+        "count": 30,
+        "ci": 0.07259572151622036
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.9222222222222223,
+        "std": 0.16220070187387614,
+        "count": 30,
+        "ci": 0.05804277572953505
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.25,
+        "mean": 0.13333333333333333,
+        "std": 0.28162092398752303,
+        "count": 30,
+        "ci": 0.10077675338583053
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 0.5,
+        "mean": 0.7222222222222222,
+        "std": 0.32262493001340703,
+        "count": 30,
+        "ci": 0.11544984849748743
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.0,
+        "mean": 0.9444444444444444,
+        "std": 0.15371101245913804,
+        "count": 30,
+        "ci": 0.055004779389073985
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 1.5,
+        "mean": 0.9555555555555556,
+        "std": 0.1691387544683083,
+        "count": 30,
+        "ci": 0.060525525964805184
+      },
+      {
+        "method": "univariate",
+        "mechanism": "threshold",
+        "beta": 2.0,
+        "mean": 0.9333333333333333,
+        "std": 0.1614113993705008,
+        "count": 30,
+        "ci": 0.05776032745614966
+      }
+    ]
+  },
+  "by_n_causes": {
+    "consensus": {
+      "1": 0.6933,
+      "2": 0.6367,
+      "3": 0.5244
+    },
+    "shap": {
+      "1": 0.5133,
+      "2": 0.4633,
+      "3": 0.4111
+    },
+    "stability": {
+      "1": 0.5667,
+      "2": 0.5333,
+      "3": 0.4511
+    },
+    "univariate": {
+      "1": 0.7,
+      "2": 0.6667,
+      "3": 0.5511
+    }
+  },
+  "mde": {
+    "metric": "cluster_hit@5",
+    "target": 0.8,
+    "values": {
+      "consensus": {
+        "drift_window": null,
+        "linear": 1.0,
+        "threshold": 1.0
+      },
+      "shap": {
+        "drift_window": null,
+        "linear": 1.5,
+        "threshold": 1.0
+      },
+      "stability": {
+        "drift_window": null,
+        "linear": 1.5,
+        "threshold": 1.0
+      },
+      "univariate": {
+        "drift_window": null,
+        "linear": 1.0,
+        "threshold": 1.0
+      }
+    }
+  },
+  "null_false_alarms": {
+    "n": 30,
+    "any_q_below_alpha": 0.13333333333333333,
+    "any_strong": 0.03333333333333333,
+    "any_moderate_or_strong": 0.06666666666666667,
+    "mean_sensors_q_below_alpha": 0.5333333333333333,
+    "by_kind": {
+      "bernoulli": {
+        "n": 15,
+        "any_q_below_alpha": 0.13333333333333333,
+        "any_strong": 0.0,
+        "any_moderate_or_strong": 0.0
+      },
+      "permuted": {
+        "n": 15,
+        "any_q_below_alpha": 0.13333333333333333,
+        "any_strong": 0.06666666666666667,
+        "any_moderate_or_strong": 0.13333333333333333
+      }
+    }
+  },
+  "by_cause_missing_beta_ge_1": [
+    {
+      "mechanism": "drift_window",
+      "cause_missing": "0%",
+      "mean": 0.6666666666666666,
+      "count": 3
+    },
+    {
+      "mechanism": "drift_window",
+      "cause_missing": "0\u20135%",
+      "mean": 0.580168776371308,
+      "count": 79
+    },
+    {
+      "mechanism": "drift_window",
+      "cause_missing": ">5%",
+      "mean": 0.6041666666666666,
+      "count": 8
+    },
+    {
+      "mechanism": "linear",
+      "cause_missing": "0%",
+      "mean": 1.0,
+      "count": 5
+    },
+    {
+      "mechanism": "linear",
+      "cause_missing": "0\u20135%",
+      "mean": 0.8966244725738396,
+      "count": 79
+    },
+    {
+      "mechanism": "linear",
+      "cause_missing": ">5%",
+      "mean": 0.8888888888888888,
+      "count": 6
+    },
+    {
+      "mechanism": "threshold",
+      "cause_missing": "0%",
+      "mean": 1.0,
+      "count": 2
+    },
+    {
+      "mechanism": "threshold",
+      "cause_missing": "0\u20135%",
+      "mean": 0.9636752136752137,
+      "count": 78
+    },
+    {
+      "mechanism": "threshold",
+      "cause_missing": ">5%",
+      "mean": 0.9666666666666666,
+      "count": 10
+    }
+  ],
+  "runtime_seconds": {
+    "mean": 30.575455286875208,
+    "p95": 53.66248818499807,
+    "n": 480
+  },
+  "gates": {
+    "consensus_cluster_hit5_large_effect": 0.862962962962963,
+    "min_required": 0.8,
+    "null_any_strong_rate": 0.03333333333333333,
+    "max_allowed": 0.2,
+    "passed": true
+  },
+  "smoke": false
+}

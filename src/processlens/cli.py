@@ -80,9 +80,17 @@ def rootcause(
 
 
 @app.command()
-def benchmark() -> None:
-    """Run the planted-fault benchmark."""
-    _not_yet(4)
+def benchmark(
+    smoke: bool = typer.Option(False, help="Fast CI configuration; exits 1 if a gate fails"),
+) -> None:
+    """Run the planted-fault benchmark and write metrics, report and LIMITS.md."""
+    from processlens.benchmark.report import run_and_report
+
+    res = run_and_report(smoke=smoke)
+    g = res["gates"]
+    typer.echo(json.dumps(g, indent=2))
+    if smoke and not g["passed"]:
+        raise typer.Exit(code=1)
 
 
 @app.command("agent-eval")

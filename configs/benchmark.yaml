@@ -1,4 +1,4 @@
-# Planted-fault benchmark.
+# Planted-fault benchmark: real SECOM sensors, synthetic labels from known causes.
 seed: 42
 full:
   n_causes: [1, 2, 3]
@@ -6,19 +6,31 @@ full:
   effect_sizes: [0.25, 0.5, 1.0, 1.5, 2.0]
   n_seeds: 10
   n_null: 30
-smoke:
+smoke:                         # CI quality gate; must run in < 3 minutes
   n_causes: [1]
   mechanisms: [linear]
   effect_sizes: [2.0]
   n_seeds: 2
   n_null: 4
+  n_subsamples: 30             # fewer stability subsamples for speed
 target_base_rate: 0.066
-max_cause_missing: 0.20
-threshold_quantile: 0.95
-threshold_fail_prob: 0.5
+cause_pool:
+  max_missing: 0.20
+  min_distinct: 20
+threshold_quantile: 0.95       # threshold mechanism: standardised indicator 1[x > q95]
+drift_window_frac: 0.30        # drift mechanism: effect only inside this share of the timeline
+null_kinds: [bernoulli, permuted]
 k_values: [1, 3, 5]
-mde_hit_target: 0.80
+alpha: 0.05
+mde_hit_target: 0.80           # MDE = smallest beta with cluster-level hit@5 >= this
+mde_k: 5
 n_jobs: -1
+cache_dir: .cache/benchmark
+outputs:
+  metrics: reports/metrics/benchmark.json
+  report: reports/benchmark.md
+  limits: docs/LIMITS.md
 gates:
+  large_effect: 2.0
   min_hit5_large_effect: 0.80
-  max_null_false_alarm: 0.20
+  max_null_false_alarm: 0.20    # share of null scenarios with any 'strong' suspect

@@ -1,0 +1,361 @@
+{
+  "n_scenarios": 6,
+  "n_planted": 2,
+  "n_null": 4,
+  "overall_by_method": {
+    "consensus": {
+      "sensor_hit@1": 1.0,
+      "cluster_hit@1": 1.0,
+      "cluster_precision@1": 1.0,
+      "sensor_hit@3": 1.0,
+      "cluster_hit@3": 1.0,
+      "cluster_precision@3": 0.3333,
+      "sensor_hit@5": 1.0,
+      "cluster_hit@5": 1.0,
+      "cluster_precision@5": 0.2
+    },
+    "shap": {
+      "sensor_hit@1": 1.0,
+      "cluster_hit@1": 1.0,
+      "cluster_precision@1": 1.0,
+      "sensor_hit@3": 1.0,
+      "cluster_hit@3": 1.0,
+      "cluster_precision@3": 0.3333,
+      "sensor_hit@5": 1.0,
+      "cluster_hit@5": 1.0,
+      "cluster_precision@5": 0.2
+    },
+    "stability": {
+      "sensor_hit@1": 0.0,
+      "cluster_hit@1": 0.0,
+      "cluster_precision@1": 0.0,
+      "sensor_hit@3": 1.0,
+      "cluster_hit@3": 1.0,
+      "cluster_precision@3": 0.3333,
+      "sensor_hit@5": 1.0,
+      "cluster_hit@5": 1.0,
+      "cluster_precision@5": 0.2
+    },
+    "univariate": {
+      "sensor_hit@1": 1.0,
+      "cluster_hit@1": 1.0,
+      "cluster_precision@1": 1.0,
+      "sensor_hit@3": 1.0,
+      "cluster_hit@3": 1.0,
+      "cluster_precision@3": 0.3333,
+      "sensor_hit@5": 1.0,
+      "cluster_hit@5": 1.0,
+      "cluster_precision@5": 0.2
+    }
+  },
+  "by_beta": {
+    "sensor_hit@1": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ],
+    "sensor_hit@3": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ],
+    "sensor_hit@5": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ],
+    "cluster_hit@1": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ],
+    "cluster_hit@3": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ],
+    "cluster_hit@5": [
+      {
+        "method": "consensus",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "shap",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "stability",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      },
+      {
+        "method": "univariate",
+        "mechanism": "linear",
+        "beta": 2.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "count": 2,
+        "ci": 0.0
+      }
+    ]
+  },
+  "by_n_causes": {
+    "consensus": {
+      "1": 1.0
+    },
+    "shap": {
+      "1": 1.0
+    },
+    "stability": {
+      "1": 1.0
+    },
+    "univariate": {
+      "1": 1.0
+    }
+  },
+  "mde": {
+    "metric": "cluster_hit@5",
+    "target": 0.8,
+    "values": {
+      "consensus": {
+        "linear": 2.0
+      },
+      "shap": {
+        "linear": 2.0
+      },
+      "stability": {
+        "linear": 2.0
+      },
+      "univariate": {
+        "linear": 2.0
+      }
+    }
+  },
+  "null_false_alarms": {
+    "n": 4,
+    "any_q_below_alpha": 0.0,
+    "any_strong": 0.0,
+    "any_moderate_or_strong": 0.0,
+    "mean_sensors_q_below_alpha": 0.0,
+    "by_kind": {
+      "bernoulli": {
+        "n": 2,
+        "any_q_below_alpha": 0.0,
+        "any_strong": 0.0,
+        "any_moderate_or_strong": 0.0
+      },
+      "permuted": {
+        "n": 2,
+        "any_q_below_alpha": 0.0,
+        "any_strong": 0.0,
+        "any_moderate_or_strong": 0.0
+      }
+    }
+  },
+  "by_cause_missing_beta_ge_1": [
+    {
+      "mechanism": "linear",
+      "cause_missing": "0%",
+      "mean": 1.0,
+      "count": 1
+    },
+    {
+      "mechanism": "linear",
+      "cause_missing": "0\u20135%",
+      "mean": 1.0,
+      "count": 1
+    }
+  ],
+  "runtime_seconds": {
+    "mean": 8.742073250000052,
+    "p95": 9.228362325000035,
+    "n": 6
+  },
+  "gates": {
+    "consensus_cluster_hit5_large_effect": 1.0,
+    "min_required": 0.8,
+    "null_any_strong_rate": 0.0,
+    "max_allowed": 0.2,
+    "passed": true
+  },
+  "smoke": true
+}
