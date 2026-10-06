@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+import json
+import logging
+
 import typer
 
 app = typer.Typer(help="ProcessLens: manufacturing root-cause analysis on UCI SECOM.")
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
 
 def _not_yet(phase: int) -> None:
@@ -15,13 +19,18 @@ def _not_yet(phase: int) -> None:
 @app.command()
 def ingest() -> None:
     """Download SECOM and build the processed parquet."""
-    _not_yet(1)
+    from processlens.data.ingest import run_ingest
+
+    typer.echo(json.dumps(run_ingest(), indent=2))
 
 
 @app.command()
 def audit() -> None:
     """Generate the data audit report."""
-    _not_yet(1)
+    from processlens.data.audit import run_audit
+
+    summary = run_audit()
+    typer.echo(f"Wrote {summary['report']}")
 
 
 @app.command()

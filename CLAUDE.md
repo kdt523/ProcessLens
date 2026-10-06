@@ -59,7 +59,7 @@ app/ (Streamlit)   evals/   reports/{figures,metrics}   scripts/   tests/
 ## Current status
 
 - [x] Phase 0: scaffold + PROBLEM_SPEC
-- [ ] Phase 1: ingest, contract, audit
+- [x] Phase 1: ingest, contract, audit
 - [ ] Phase 2: predictive model + inspection policy
 - [ ] Phase 3: root-cause ranking
 - [ ] Phase 4: planted-fault benchmark

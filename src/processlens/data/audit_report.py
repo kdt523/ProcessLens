@@ -1,0 +1,156 @@
+"""Render the data audit result as markdown. Every number comes from the audit dict."""
+
+from __future__ import annotations
+
+from typing import Any
+
+
+def _pct(v: float, digits: int = 1) -> str:
+    return f"{v * 100:.{digits}f}%"
+
+
+def _list(items: list[str], limit: int = 30) -> str:
+    if not items:
+        return "_none_"
+    shown = ", ".join(f"`{s}`" for s in items[:limit])
+    return shown + (f" … (+{len(items) - limit} more)" if len(items) > limit else "")
+
+
+def _missingness_table(rows: list[dict[str, Any]]) -> str:
+    if not rows:
+        return "_No sensor passes the FDR threshold._"
+    lines = [
+        "| sensor | % missing | fail rate if missing | fail rate if observed | odds ratio | q |",
+        "|---|---|---|---|---|---|",
+    ]
+    for r in rows:
+        lines.append(
+            f"| `{r['sensor']}` | {_pct(r['missing_frac'])} | {_pct(r['fail_rate_missing'])} | "
+            f"{_pct(r['fail_rate_observed'])} | {r['odds_ratio']:.2f} | {r['q']:.3g} |"
+        )
+    return "\n".join(lines)
+
+
+def conclusions(a: dict[str, Any]) -> list[str]:
+    """Return the cleaning decisions (with reasons) implied by the audit numbers."""
+    m, im, c = a["missing"], a["informative_missingness"], a["correlation"]
+    n_sig = len(im["significant"])
+    out = [
+        f"**Drop sensors with more than {_pct(m['threshold'], 0)} missing** "
+        f"({len(m['sensors_above_threshold'])} sensors on the full table). Too little data to "
+        "impute reliably. In Phase 2 the list is recomputed on the training window only.",
+        f"**Drop constant sensors** ({len(a['constant_sensors'])}). They carry no information. "
+        "Phase 2 re-detects zero variance on train only.",
+        f"**Keep near-constant sensors** ({len(a['near_constant_sensors'])}). A rare value can be "
+        "exactly what marks a failure; regularisation and trees handle them.",
+        f"**Keep exact duplicates in the model, collapse them in root-cause** "
+        f"({len(a['duplicate_groups'])} duplicate groups). They are harmless for regularised "
+        "and tree models; the root-cause engine reports clusters, so duplicates merge there.",
+    ]
+    if n_sig:
+        out.append(
+            f"**Add missing-value indicators** (`SimpleImputer(add_indicator=True)`). "
+            f"{n_sig} sensors have missingness significantly associated with failure "
+            f"(BH q < {im['alpha']}), so *being missing* is itself a signal."
+        )
+    else:
+        out.append(
+            "**Add missing-value indicators anyway** (`add_indicator=True`). No sensor passes "
+            f"BH q < {im['alpha']}, but indicators are cheap and let the model use any weaker "
+            "missingness signal."
+        )
+    out += [
+        f"**Median imputation, fit on train only.** {m['rows_with_any']} of {a['shape']['rows']} "
+        "runs have at least one missing sensor, so complete-case analysis is not an option; "
+        "the median is robust to the heavy tails seen in the outlier counts.",
+        f"**Report suspects per correlated cluster, not per sensor.** "
+        f"{_pct(c['share_pairs_above'], 2)} of sensor pairs have |Spearman| > "
+        f"{c['high_threshold']:.2f}, and at |ρ| ≥ {c['cluster_rho']} the {c['n_sensors']} usable "
+        f"sensors form {c['n_clusters']} clusters (largest: {c['largest_cluster']}).",
+        f"**No outlier clipping.** {a['outliers']['sensors_with_any']} of "
+        f"{a['outliers']['n_sensors_checked']} usable sensors have points beyond robust "
+        f"|z| > {a['outliers']['z']:g}. Extreme values may be the defect signal; use "
+        "`RobustScaler` for the linear models; tree models are insensitive to scale.",
+        f"**Time-ordered split.** Weekly failure rate ranges from "
+        f"{_pct(a['time']['fail_rate_week_min'])} to {_pct(a['time']['fail_rate_week_max'])} "
+        f"and runs per week from {a['time']['runs_per_week_min']} to "
+        f"{a['time']['runs_per_week_max']}. The process is not stationary, so a random split "
+        "would leak future conditions into training.",
+        "**Expect base-rate shift across the split.** Failure rate in the time-ordered "
+        "train / validation / test segments is "
+        + " / ".join(_pct(s["fail_rate"]) for s in a["time"]["fail_rate_by_split_segment"])
+        + ". Probabilities calibrated on train will be off on later data, so Phase 2 "
+        "calibrates on validation and reports PR-AUC against each segment's own base rate.",
+    ]
+    return out
+
+
+def render_markdown(a: dict[str, Any], figs: dict[str, str]) -> str:
+    """Return the full audit report as markdown."""
+    s, lab, t, m = a["shape"], a["label"], a["time"], a["missing"]
+    im, c, o = a["informative_missingness"], a["correlation"], a["outliers"]
+    fig = lambda k, alt: f"![{alt}]({figs[k]})" if k in figs else ""  # noqa: E731
+    sections = [
+        "# SECOM data audit",
+        "_Generated by `processlens audit`. Every number below is computed from "
+        "`data/processed/secom.parquet`; do not edit by hand._",
+        "The audit describes the full table. Cleaning decisions it motivates are recomputed "
+        "on the training window only in Phase 2, so the audit itself causes no leakage.",
+        "## 1. Shape and label",
+        f"- Rows (production runs): **{s['rows']}**; sensors: **{s['sensors']}**\n"
+        f"- Failures: **{lab['failures']}**, passes: **{lab['passes']}**, "
+        f"base rate **{_pct(lab['base_rate'], 2)}**",
+        "## 2. Time coverage",
+        f"- From **{t['start'][:10]}** to **{t['end'][:10]}** ({t['days']:.0f} days, "
+        f"{t['weeks']} weekly buckets)\n"
+        f"- Runs per week: {t['runs_per_week_min']}–{t['runs_per_week_max']}; weekly failure "
+        f"rate: {_pct(t['fail_rate_week_min'])}–{_pct(t['fail_rate_week_max'])}\n"
+        "- Failure rate in time-ordered segments matching the 60/20/20 split: "
+        + ", ".join(
+            f"{_pct(s['fail_rate'])} ({s['rows']} runs)" for s in t["fail_rate_by_split_segment"]
+        ),
+        fig("runs", "runs per week"),
+        fig("fail_rate", "weekly failure rate"),
+        "## 3. Missing data",
+        f"- {_pct(m['total_cell_frac'], 2)} of all sensor cells are missing\n"
+        f"- {m['sensors_with_any']} sensors have at least one missing value; "
+        f"{m['sensors_complete']} are complete\n"
+        f"- {m['rows_with_any']} of {s['rows']} runs have at least one missing sensor\n"
+        f"- {len(m['sensors_above_threshold'])} sensors are more than "
+        f"{_pct(m['threshold'], 0)} missing: {_list(m['sensors_above_threshold'])}",
+        fig("missing_hist", "missing per sensor"),
+        fig("missing_heatmap", "missingness over time"),
+        "## 4. Informative missingness",
+        f"For each of the {im['n_tested']} sensors with some (but not all) values missing, "
+        "Fisher's exact test checks whether *being missing* is associated with failure. "
+        f"Benjamini–Hochberg FDR at {im['alpha']}. **{len(im['significant'])} sensors** pass.",
+        _missingness_table(im["significant"] or []),
+        "Top 10 by p-value (for context, regardless of significance):",
+        _missingness_table(im["top"]),
+        fig("missingness_signal", "missingness signal"),
+        "## 5. Constant, near-constant and duplicate sensors",
+        f"- Constant (≤ 1 distinct observed value): **{len(a['constant_sensors'])}**: "
+        f"{_list(a['constant_sensors'])}\n"
+        f"- Near-constant (one value ≥ 99% of observations, or very few distinct values): "
+        f"**{len(a['near_constant_sensors'])}**: {_list(a['near_constant_sensors'])}\n"
+        f"- Exact-duplicate groups (excluding constants): **{len(a['duplicate_groups'])}**: "
+        + (", ".join("(" + ", ".join(g) + ")" for g in a["duplicate_groups"][:15]) or "_none_"),
+        "## 6. Correlation structure",
+        f"Computed on the {c['n_sensors']} usable sensors (non-constant, ≤ "
+        f"{_pct(m['threshold'], 0)} missing), using rank correlation with pairwise-complete "
+        "observations.\n\n"
+        f"- {_pct(c['share_pairs_above'], 2)} of {c['n_pairs']:,} sensor pairs have "
+        f"|Spearman| > {c['high_threshold']:.2f}\n"
+        f"- Average-linkage clustering on 1 − |ρ|, cut at |ρ| ≥ {c['cluster_rho']}: "
+        f"**{c['n_clusters']} clusters**, {c['n_singletons']} singletons, largest has "
+        f"{c['largest_cluster']} sensors",
+        fig("clusters", "cluster sizes"),
+        "## 7. Outliers",
+        f"Robust z-score (median / 1.4826·MAD) beyond |z| > {o['z']:g}: "
+        f"{o['sensors_with_any']} of {o['n_sensors_checked']} usable sensors have at least one "
+        f"flag, {o['total_flags']:,} flags in total. Most flagged:\n\n"
+        + "\n".join(f"- `{k}`: {v}" for k, v in o["top"].items()),
+        "## 8. Audit conclusions (drive Phase 2)",
+        "\n".join(f"{i}. {line}" for i, line in enumerate(conclusions(a), start=1)),
+    ]
+    return "\n\n".join(x for x in sections if x) + "\n"
