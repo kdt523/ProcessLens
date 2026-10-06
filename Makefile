@@ -1,4 +1,4 @@
-.PHONY: setup ingest audit train rootcause benchmark benchmark-smoke agent-eval app api drift test lint format all
+.PHONY: setup ingest audit train rootcause benchmark benchmark-smoke agent-eval app api drift mlflow-ui test lint format all
 
 PL = uv run processlens
 
@@ -29,6 +29,9 @@ agent-eval:
 
 drift:
 	$(PL) drift
+
+mlflow-ui:
+	uv run mlflow ui --backend-store-uri sqlite:///mlflow.db
 
 api:
 	uv run uvicorn processlens.api.main:app --reload

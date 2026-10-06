@@ -23,14 +23,20 @@ models:
     subsample_freq: 1
     colsample_bytree: 0.5
     early_stopping_rounds: 100
+    early_stopping_frac: 0.20   # last 20% (by time) of each fit window; val is kept for selection
+selection:
+  reference_model: logreg_l2   # paired-bootstrap comparison baseline
+  metric: pr_auc
 evaluation:
   bootstrap_iters: 2000
   ci_level: 0.95
   min_precision: 0.20         # report recall at precision >= this
   ece_bins: 10
 calibration:
-  method: isotonic            # isotonic | sigmoid
+  # sigmoid (Platt): validation holds only ~11 failures; isotonic would overfit that
+  method: sigmoid             # sigmoid | isotonic
 mlflow:
-  tracking_uri: mlruns
+  tracking_uri: sqlite:///mlflow.db
+  artifact_root: mlruns
   experiment: processlens-defects
   registered_model: processlens-defect-model

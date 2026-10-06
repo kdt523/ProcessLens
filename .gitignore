@@ -15,3 +15,5 @@ mlruns/
 mlartifacts/
 mlflow.db
 .cache/
+artifacts/
+artifacts/

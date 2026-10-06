@@ -36,7 +36,16 @@ def audit() -> None:
 @app.command()
 def train() -> None:
     """Train models, evaluate and log to MLflow."""
-    _not_yet(2)
+    from processlens.models.train import run_train
+
+    res = run_train()
+    best = res["selected_model"]
+    m = res["test"]["metrics"][f"{best}_calibrated"]
+    typer.echo(
+        f"Selected {best}; test PR-AUC {m['pr_auc']['value']:.3f} "
+        f"[{m['pr_auc']['ci_low']:.3f}, {m['pr_auc']['ci_high']:.3f}] "
+        f"vs base rate {m['base_rate']['value']:.3f}. Wrote reports/metrics/model.json"
+    )
 
 
 @app.command()
