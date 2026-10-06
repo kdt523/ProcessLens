@@ -1,4 +1,5 @@
-.PHONY: setup ingest audit train rootcause benchmark benchmark-smoke agent-eval app api drift mlflow-ui test lint format all
+
+.PHONY: docs setup ingest audit train rootcause benchmark benchmark-smoke agent-eval app api drift mlflow-ui test lint format all
 
 PL = uv run processlens
 
@@ -51,5 +52,8 @@ format:
 	uv run ruff format .
 	uv run ruff check --fix .
 
-all: setup ingest audit train rootcause benchmark
+all: setup ingest audit train rootcause benchmark drift docs
+
+docs:
 	uv run python scripts/render_readme.py
+	uv run python scripts/render_resume.py
