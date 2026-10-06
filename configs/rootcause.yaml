@@ -1,7 +1,9 @@
 # Root-cause ranking engine.
 seed: 42
-window: {start: null, end: null}    # null = train window
+window: {start: null, end: null}    # null = the Phase 2 training window
+max_missing_frac: 0.50              # sensors above this (in the window) are not analysed
 fdr_alpha: 0.05
+methods: [univariate, stability, shap]
 stability:
   n_subsamples: 100
   subsample_frac: 0.50
@@ -10,12 +12,25 @@ clusters:
   min_abs_spearman: 0.80
 shap:
   cv_folds: 4
+  lightgbm:
+    n_estimators: 200
+    learning_rate: 0.05
+    num_leaves: 7
+    max_depth: 3
+    min_child_samples: 10
+    subsample: 0.8
+    subsample_freq: 1
+    colsample_bytree: 0.5
 aggregate:
   method: mrr                       # mrr | borda
   top_k: 20
-evidence_rules:
+evidence_rules:                     # documented in docs/METHODS.md
   strong: {max_q: 0.01, min_abs_effect: 0.20, min_stability: 0.60}
   moderate: {max_q: 0.05, min_abs_effect: 0.10, min_stability: 0.30}
 temporal:
-  freq: W
+  top_n: 5
+  bin_freq: MS                      # failure rate by sensor bin, per month
   n_bins: 4
+  onset_freq: D                     # change point on the daily mean
+  onset_min_size: 3
+output: reports/metrics/rootcause.json

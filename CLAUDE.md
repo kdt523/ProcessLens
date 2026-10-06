@@ -61,7 +61,7 @@ app/ (Streamlit)   evals/   reports/{figures,metrics}   scripts/   tests/
 - [x] Phase 0: scaffold + PROBLEM_SPEC
 - [x] Phase 1: ingest, contract, audit
 - [x] Phase 2: predictive model + inspection policy
-- [ ] Phase 3: root-cause ranking
+- [x] Phase 3: root-cause ranking
 - [ ] Phase 4: planted-fault benchmark
 - [ ] Phase 5: LangGraph copilot + evals
 - [ ] Phase 6: API, dashboard, drift

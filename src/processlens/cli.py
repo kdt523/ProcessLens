@@ -49,9 +49,34 @@ def train() -> None:
 
 
 @app.command()
-def rootcause() -> None:
-    """Rank suspect sensor clusters."""
-    _not_yet(3)
+def rootcause(
+    start: str | None = typer.Option(None, help="Window start (default: train window)"),
+    end: str | None = typer.Option(None, help="Window end (default: train window)"),
+    top_k: int | None = typer.Option(None, help="Number of suspect clusters to print"),
+) -> None:
+    """Rank suspect sensor clusters for a time window; print JSON."""
+    from processlens.rootcause.engine import run_rootcause
+
+    res = run_rootcause(start, end, top_k)
+    keys = [
+        "consensus_rank",
+        "representative",
+        "n_members",
+        "q_value",
+        "effect_size",
+        "stability_freq",
+        "shap_share",
+        "evidence",
+    ]
+    typer.echo(
+        json.dumps(
+            {
+                "window": res["window"],
+                "suspects": [{k: s[k] for k in keys} for s in res["suspects"]],
+            },
+            indent=2,
+        )
+    )
 
 
 @app.command()

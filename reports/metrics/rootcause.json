@@ -1,0 +1,5266 @@
+{
+  "note": "Suspects are sensor clusters associated with failure in observational data; they are not proven causes.",
+  "window": {
+    "start": "2008-07-19T11:55:00",
+    "end": "2008-09-20T05:34:00",
+    "runs": 940,
+    "failures": 76,
+    "base_rate": 0.08085106382978724
+  },
+  "sensors_analysed": 444,
+  "n_clusters": 237,
+  "consensus_method": "mrr",
+  "runtime_seconds": 8.668132999999216,
+  "evidence_counts": {
+    "weak": 232,
+    "moderate": 4,
+    "strong": 1
+  },
+  "n_sensors_q_below_alpha": 13,
+  "suspects": [
+    {
+      "consensus_rank": 1,
+      "cluster": 49,
+      "representative": "sensor_060",
+      "members": [
+        "sensor_060"
+      ],
+      "n_members": 1,
+      "score": 1.0,
+      "q_value": 5e-09,
+      "effect_size": 0.4692625459,
+      "stability_freq": 0.95,
+      "shap_share": 0.0265621688,
+      "evidence": "strong"
+    },
+    {
+      "consensus_rank": 2,
+      "cluster": 178,
+      "representative": "sensor_248",
+      "members": [
+        "sensor_248",
+        "sensor_520",
+        "sensor_386"
+      ],
+      "n_members": 3,
+      "score": 0.2521164021,
+      "q_value": 0.0027857468,
+      "effect_size": 0.3190501613,
+      "stability_freq": 0.42,
+      "shap_share": 0.0376096498,
+      "evidence": "moderate"
+    },
+    {
+      "consensus_rank": 3,
+      "cluster": 0,
+      "representative": "sensor_001",
+      "members": [
+        "sensor_001"
+      ],
+      "n_members": 1,
+      "score": 0.2192622951,
+      "q_value": 0.015831305,
+      "effect_size": -0.2508587903,
+      "stability_freq": 0.36,
+      "shap_share": 0.0265465097,
+      "evidence": "moderate"
+    },
+    {
+      "consensus_rank": 4,
+      "cluster": 139,
+      "representative": "sensor_313",
+      "members": [
+        "sensor_313",
+        "sensor_178",
+        "sensor_449"
+      ],
+      "n_members": 3,
+      "score": 0.1694929179,
+      "q_value": 0.9972497687,
+      "effect_size": 0.0063883637,
+      "stability_freq": 0.84,
+      "shap_share": 0.0073946631,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 5,
+      "cluster": 18,
+      "representative": "sensor_022",
+      "members": [
+        "sensor_022"
+      ],
+      "n_members": 1,
+      "score": 0.1533816425,
+      "q_value": 0.0127411761,
+      "effect_size": 0.2661259173,
+      "stability_freq": 0.61,
+      "shap_share": 0.0082629298,
+      "evidence": "moderate"
+    },
+    {
+      "consensus_rank": 6,
+      "cluster": 197,
+      "representative": "sensor_461",
+      "members": [
+        "sensor_461"
+      ],
+      "n_members": 1,
+      "score": 0.1523809524,
+      "q_value": 0.0665329261,
+      "effect_size": 0.2111971702,
+      "stability_freq": 0.45,
+      "shap_share": 0.0175178266,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 7,
+      "cluster": 114,
+      "representative": "sensor_281",
+      "members": [
+        "sensor_281",
+        "sensor_146"
+      ],
+      "n_members": 2,
+      "score": 0.1317460317,
+      "q_value": 0.2110929249,
+      "effect_size": -0.1655092593,
+      "stability_freq": 0.76,
+      "shap_share": 0.0101752494,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 8,
+      "cluster": 150,
+      "representative": "sensor_334",
+      "members": [
+        "sensor_334",
+        "sensor_198",
+        "sensor_470"
+      ],
+      "n_members": 3,
+      "score": 0.1160714286,
+      "q_value": 0.068433548,
+      "effect_size": 0.2090592334,
+      "stability_freq": 0.74,
+      "shap_share": 0.0142458416,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 9,
+      "cluster": 81,
+      "representative": "sensor_103",
+      "members": [
+        "sensor_103"
+      ],
+      "n_members": 1,
+      "score": 0.0765669516,
+      "q_value": 0.2224995128,
+      "effect_size": -0.161627907,
+      "stability_freq": 0.49,
+      "shap_share": 0.0121697536,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 10,
+      "cluster": 29,
+      "representative": "sensor_034",
+      "members": [
+        "sensor_034"
+      ],
+      "n_members": 1,
+      "score": 0.0744625745,
+      "q_value": 0.0282735978,
+      "effect_size": 0.2310941026,
+      "stability_freq": 0.53,
+      "shap_share": 0.0096305414,
+      "evidence": "moderate"
+    },
+    {
+      "consensus_rank": 11,
+      "cluster": 82,
+      "representative": "sensor_104",
+      "members": [
+        "sensor_104"
+      ],
+      "n_members": 1,
+      "score": 0.0729426619,
+      "q_value": 0.0127411761,
+      "effect_size": 0.2575688353,
+      "stability_freq": 0.01,
+      "shap_share": 0.0039492591,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 12,
+      "cluster": 101,
+      "representative": "sensor_132",
+      "members": [
+        "sensor_132"
+      ],
+      "n_members": 1,
+      "score": 0.0712105013,
+      "q_value": 0.6934808218,
+      "effect_size": 0.0732425469,
+      "stability_freq": 0.09,
+      "shap_share": 0.0154224015,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 13,
+      "cluster": 124,
+      "representative": "sensor_162",
+      "members": [
+        "sensor_162",
+        "sensor_297"
+      ],
+      "n_members": 2,
+      "score": 0.0698245026,
+      "q_value": 0.8817970223,
+      "effect_size": -0.0400926999,
+      "stability_freq": 0.71,
+      "shap_share": 0.0046278205,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 14,
+      "cluster": 157,
+      "representative": "sensor_206",
+      "members": [
+        "sensor_206",
+        "sensor_478",
+        "sensor_342"
+      ],
+      "n_members": 3,
+      "score": 0.0615191463,
+      "q_value": 0.0127411761,
+      "effect_size": 0.257381258,
+      "stability_freq": 0.25,
+      "shap_share": 0.0152985125,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 15,
+      "cluster": 180,
+      "representative": "sensor_252",
+      "members": [
+        "sensor_252",
+        "sensor_524",
+        "sensor_390"
+      ],
+      "n_members": 3,
+      "score": 0.0510227743,
+      "q_value": 0.6127687089,
+      "effect_size": -0.0840643275,
+      "stability_freq": 0.59,
+      "shap_share": 0.0035818265,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 16,
+      "cluster": 94,
+      "representative": "sensor_122",
+      "members": [
+        "sensor_122",
+        "sensor_125",
+        "sensor_124"
+      ],
+      "n_members": 3,
+      "score": 0.049767035,
+      "q_value": 0.8360983981,
+      "effect_size": 0.0465126978,
+      "stability_freq": 0.0,
+      "shap_share": 0.0130304633,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 17,
+      "cluster": 120,
+      "representative": "sensor_291",
+      "members": [
+        "sensor_291",
+        "sensor_429",
+        "sensor_156"
+      ],
+      "n_members": 3,
+      "score": 0.0493797031,
+      "q_value": 0.0194203729,
+      "effect_size": 0.2446315789,
+      "stability_freq": 0.05,
+      "shap_share": 0.0104303247,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 18,
+      "cluster": 126,
+      "representative": "sensor_164",
+      "members": [
+        "sensor_164",
+        "sensor_299",
+        "sensor_435"
+      ],
+      "n_members": 3,
+      "score": 0.0489082866,
+      "q_value": 0.085026197,
+      "effect_size": 0.199212051,
+      "stability_freq": 0.36,
+      "shap_share": 0.0139046547,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 19,
+      "cluster": 204,
+      "representative": "sensor_486",
+      "members": [
+        "sensor_486"
+      ],
+      "n_members": 1,
+      "score": 0.0472256804,
+      "q_value": 0.6131665758,
+      "effect_size": -0.0840947856,
+      "stability_freq": 0.58,
+      "shap_share": 0.0044531362,
+      "evidence": "weak"
+    },
+    {
+      "consensus_rank": 20,
+      "cluster": 231,
+      "representative": "sensor_578",
+      "members": [
+        "sensor_578",
+        "sensor_576",
+        "sensor_574"
+      ],
+      "n_members": 3,
+      "score": 0.0433791698,
+      "q_value": 0.6934808218,
+      "effect_size": -0.07270346,
+      "stability_freq": 0.58,
+      "shap_share": 0.0065255867,
+      "evidence": "weak"
+    }
+  ],
+  "per_method_top": {
+    "univariate": [
+      "sensor_060",
+      "sensor_248",
+      "sensor_022",
+      "sensor_104",
+      "sensor_206",
+      "sensor_001",
+      "sensor_291",
+      "sensor_123",
+      "sensor_034",
+      "sensor_029",
+      "sensor_461",
+      "sensor_334",
+      "sensor_511",
+      "sensor_164",
+      "sensor_080",
+      "sensor_378",
+      "sensor_176",
+      "sensor_153",
+      "sensor_113",
+      "sensor_041"
+    ],
+    "stability": [
+      "sensor_060",
+      "sensor_313",
+      "sensor_281",
+      "sensor_334",
+      "sensor_162",
+      "sensor_022",
+      "sensor_252",
+      "sensor_486",
+      "sensor_578",
+      "sensor_065",
+      "sensor_034",
+      "sensor_347",
+      "sensor_103",
+      "sensor_215",
+      "sensor_511",
+      "sensor_113",
+      "sensor_368",
+      "sensor_461",
+      "sensor_563",
+      "sensor_346"
+    ],
+    "shap": [
+      "sensor_060",
+      "sensor_001",
+      "sensor_461",
+      "sensor_248",
+      "sensor_132",
+      "sensor_122",
+      "sensor_103",
+      "sensor_032",
+      "sensor_487",
+      "sensor_164",
+      "sensor_446",
+      "sensor_391",
+      "sensor_116",
+      "sensor_087",
+      "sensor_011",
+      "sensor_490",
+      "sensor_034",
+      "sensor_550",
+      "sensor_126",
+      "sensor_092"
+    ]
+  },
+  "temporal": {
+    "sensor_060": {
+      "fail_rate_by_bin": [
+        {
+          "period": "2008-07",
+          "bin": 1,
+          "fail_rate": 0.0,
+          "runs": 12
+        },
+        {
+          "period": "2008-07",
+          "bin": 2,
+          "fail_rate": 0.0,
+          "runs": 6
+        },
+        {
+          "period": "2008-07",
+          "bin": 3,
+          "fail_rate": 0.2857142857142857,
+          "runs": 7
+        },
+        {
+          "period": "2008-07",
+          "bin": 4,
+          "fail_rate": 0.3157894736842105,
+          "runs": 38
+        },
+        {
+          "period": "2008-08",
+          "bin": 1,
+          "fail_rate": 0.03389830508474576,
+          "runs": 118
+        },
+        {
+          "period": "2008-08",
+          "bin": 2,
+          "fail_rate": 0.061946902654867256,
+          "runs": 113
+        },
+        {
+          "period": "2008-08",
+          "bin": 3,
+          "fail_rate": 0.09230769230769231,
+          "runs": 130
+        },
+        {
+          "period": "2008-08",
+          "bin": 4,
+          "fail_rate": 0.14583333333333334,
+          "runs": 192
+        },
+        {
+          "period": "2008-09",
+          "bin": 1,
+          "fail_rate": 0.0,
+          "runs": 104
+        },
+        {
+          "period": "2008-09",
+          "bin": 2,
+          "fail_rate": 0.017391304347826087,
+          "runs": 115
+        },
+        {
+          "period": "2008-09",
+          "bin": 3,
+          "fail_rate": 0.061855670103092786,
+          "runs": 97
+        },
+        {
+          "period": "2008-09",
+          "bin": 4,
+          "fail_rate": 0.75,
+          "runs": 4
+        }
+      ],
+      "onset": {
+        "onset": "2008-08-21",
+        "mean_before": 11.103907600331413,
+        "mean_after": 2.3281565149315835,
+        "shift_sd": -0.7747832525979199,
+        "n_periods": 59
+      }
+    },
+    "sensor_248": {
+      "fail_rate_by_bin": [
+        {
+          "period": "2008-07",
+          "bin": 1,
+          "fail_rate": 0.0,
+          "runs": 1
+        },
+        {
+          "period": "2008-07",
+          "bin": 2,
+          "fail_rate": 0.36363636363636365,
+          "runs": 11
+        },
+        {
+          "period": "2008-07",
+          "bin": 3,
+          "fail_rate": 0.16666666666666666,
+          "runs": 12
+        },
+        {
+          "period": "2008-07",
+          "bin": 4,
+          "fail_rate": 0.42105263157894735,
+          "runs": 19
+        },
+        {
+          "period": "2008-08",
+          "bin": 1,
+          "fail_rate": 0.024096385542168676,
+          "runs": 83
+        },
+        {
+          "period": "2008-08",
+          "bin": 2,
+          "fail_rate": 0.10091743119266056,
+          "runs": 109
+        },
+        {
+          "period": "2008-08",
+          "bin": 3,
+          "fail_rate": 0.11023622047244094,
+          "runs": 127
+        },
+        {
+          "period": "2008-08",
+          "bin": 4,
+          "fail_rate": 0.1366906474820144,
+          "runs": 139
+        },
+        {
+          "period": "2008-09",
+          "bin": 1,
+          "fail_rate": 0.0,
+          "runs": 94
+        },
+        {
+          "period": "2008-09",
+          "bin": 2,
+          "fail_rate": 0.05263157894736842,
+          "runs": 57
+        },
+        {
+          "period": "2008-09",
+          "bin": 3,
+          "fail_rate": 0.07894736842105263,
+          "runs": 38
+        },
+        {
+          "period": "2008-09",
+          "bin": 4,
+          "fail_rate": 0.05,
+          "runs": 20
+        }
+      ],
+      "onset": {
+        "onset": "2008-08-22",
+        "mean_before": 0.08987652341459709,
+        "mean_after": 0.04484213835130688,
+        "shift_sd": -0.6344038772756622,
+        "n_periods": 58
+      }
+    },
+    "sensor_001": {
+      "fail_rate_by_bin": [
+        {
+          "period": "2008-07",
+          "bin": 1,
+          "fail_rate": 0.6666666666666666,
+          "runs": 15
+        },
+        {
+          "period": "2008-07",
+          "bin": 2,
+          "fail_rate": 0.18181818181818182,
+          "runs": 22
+        },
+        {
+          "period": "2008-07",
+          "bin": 3,
+          "fail_rate": 0.0,
+          "runs": 17
+        },
+        {
+          "period": "2008-07",
+          "bin": 4,
+          "fail_rate": 0.0,
+          "runs": 8
+        },
+        {
+          "period": "2008-08",
+          "bin": 1,
+          "fail_rate": 0.12418300653594772,
+          "runs": 153
+        },
+        {
+          "period": "2008-08",
+          "bin": 2,
+          "fail_rate": 0.12195121951219512,
+          "runs": 123
+        },
+        {
+          "period": "2008-08",
+          "bin": 3,
+          "fail_rate": 0.061224489795918366,
+          "runs": 147
+        },
+        {
+          "period": "2008-08",
+          "bin": 4,
+          "fail_rate": 0.06201550387596899,
+          "runs": 129
+        },
+        {
+          "period": "2008-09",
+          "bin": 1,
+          "fail_rate": 0.045454545454545456,
+          "runs": 66
+        },
+        {
+          "period": "2008-09",
+          "bin": 2,
+          "fail_rate": 0.03409090909090909,
+          "runs": 88
+        },
+        {
+          "period": "2008-09",
+          "bin": 3,
+          "fail_rate": 0.028985507246376812,
+          "runs": 69
+        },
+        {
+          "period": "2008-09",
+          "bin": 4,
+          "fail_rate": 0.030927835051546393,
+          "runs": 97
+        }
+      ],
+      "onset": {
+        "onset": "2008-08-27",
+        "mean_before": 2992.3643283505558,
+        "mean_after": 3019.81844729697,
+        "shift_sd": 0.4216801933489163,
+        "n_periods": 59
+      }
+    },
+    "sensor_313": {
+      "fail_rate_by_bin": [
+        {
+          "period": "2008-07",
+          "bin": 1,
+          "fail_rate": 0.2,
+          "runs": 10
+        },
+        {
+          "period": "2008-07",
+          "bin": 2,
+          "fail_rate": 0.2,
+          "runs": 10
+        },
+        {
+          "period": "2008-07",
+          "bin": 3,
+          "fail_rate": 0.2631578947368421,
+          "runs": 19
+        },
+        {
+          "period": "2008-07",
+          "bin": 4,
+          "fail_rate": 0.20833333333333334,
+          "runs": 24
+        },
+        {
+          "period": "2008-08",
+          "bin": 1,
+          "fail_rate": 0.08695652173913043,
+          "runs": 138
+        },
+        {
+          "period": "2008-08",
+          "bin": 2,
+          "fail_rate": 0.13043478260869565,
+          "runs": 138
+        },
+        {
+          "period": "2008-08",
+          "bin": 3,
+          "fail_rate": 0.08450704225352113,
+          "runs": 142
+        },
+        {
+          "period": "2008-08",
+          "bin": 4,
+          "fail_rate": 0.0661764705882353,
+          "runs": 136
+        },
+        {
+          "period": "2008-09",
+          "bin": 1,
+          "fail_rate": 0.0,
+          "runs": 87
+        },
+        {
+          "period": "2008-09",
+          "bin": 2,
+          "fail_rate": 0.04597701149425287,
+          "runs": 87
+        },
+        {
+          "period": "2008-09",
+          "bin": 3,
+          "fail_rate": 0.0547945205479452,
+          "runs": 73
+        },
+        {
+          "period": "2008-09",
+          "bin": 4,
+          "fail_rate": 0.04,
+          "runs": 75
+        }
+      ],
+      "onset": {
+        "onset": "2008-08-10",
+        "mean_before": 0.2346201294903926,
+        "mean_after": 0.14986065213407032,
+        "shift_sd": -0.6400756837292157,
+        "n_periods": 59
+      }
+    },
+    "sensor_022": {
+      "fail_rate_by_bin": [
+        {
+          "period": "2008-07",
+          "bin": 2,
+          "fail_rate": 0.09090909090909091,
+          "runs": 11
+        },
+        {
+          "period": "2008-07",
+          "bin": 3,
+          "fail_rate": 0.19230769230769232,
+          "runs": 26
+        },
+        {
+          "period": "2008-07",
+          "bin": 4,
+          "fail_rate": 0.3076923076923077,
+          "runs": 26
+        },
+        {
+          "period": "2008-08",
+          "bin": 1,
+          "fail_rate": 0.07100591715976332,
+          "runs": 169
+        },
+        {
+          "period": "2008-08",
+          "bin": 2,
+          "fail_rate": 0.055944055944055944,
+          "runs": 143
+        },
+        {
+          "period": "2008-08",
+          "bin": 3,
+          "fail_rate": 0.07563025210084033,
+          "runs": 119
+        },
+        {
+          "period": "2008-08",
+          "bin": 4,
+          "fail_rate": 0.17073170731707318,
+          "runs": 123
+        },
+        {
+          "period": "2008-09",
+          "bin": 1,
+          "fail_rate": 0.015151515151515152,
+          "runs": 66
+        },
+        {
+          "period": "2008-09",
+          "bin": 2,
+          "fail_rate": 0.025,
+          "runs": 80
+        },
+        {
+          "period": "2008-09",
+          "bin": 3,
+          "fail_rate": 0.0449438202247191,
+          "runs": 89
+        },
+        {
+          "period": "2008-09",
+          "bin": 4,
+          "fail_rate": 0.046511627906976744,
+          "runs": 86
+        }
+      ],
+      "onset": {
+        "onset": "2008-07-31",
+        "mean_before": -4653.557708333334,
+        "mean_after": -5662.055756534854,
+        "shift_sd": -1.342692787297216,
+        "n_periods": 59
+      }
+    }
+  },
+  "missingness_signal": [],
+  "sensor_stats": [
+    {
+      "sensor": "sensor_060",
+      "p": 0.0,
+      "q": 5e-09,
+      "effect": 0.4692625459,
+      "stability": 0.95,
+      "shap_share": 0.0265621688,
+      "score": 1.0
+    },
+    {
+      "sensor": "sensor_248",
+      "p": 1.69805e-05,
+      "q": 0.0027857468,
+      "effect": 0.3190501613,
+      "stability": 0.06,
+      "shap_share": 0.0171539865,
+      "score": 0.2521164021
+    },
+    {
+      "sensor": "sensor_001",
+      "p": 0.0002852487,
+      "q": 0.015831305,
+      "effect": -0.2508587903,
+      "stability": 0.36,
+      "shap_share": 0.0265465097,
+      "score": 0.2192622951
+    },
+    {
+      "sensor": "sensor_520",
+      "p": 1.88226e-05,
+      "q": 0.0027857468,
+      "effect": 0.3173556788,
+      "stability": 0.42,
+      "shap_share": 0.0142073269,
+      "score": 0.1821705426
+    },
+    {
+      "sensor": "sensor_313",
+      "p": 0.9906717522,
+      "q": 0.9972497687,
+      "effect": -0.0008233213,
+      "stability": 0.84,
+      "shap_share": 0.0017524056,
+      "score": 0.1694929179
+    },
+    {
+      "sensor": "sensor_022",
+      "p": 0.0001298653,
+      "q": 0.0127411761,
+      "effect": 0.2661259173,
+      "stability": 0.61,
+      "shap_share": 0.0082629298,
+      "score": 0.1533816425
+    },
+    {
+      "sensor": "sensor_461",
+      "p": 0.002247734,
+      "q": 0.0665329261,
+      "effect": 0.2111971702,
+      "stability": 0.45,
+      "shap_share": 0.0175178266,
+      "score": 0.1523809524
+    },
+    {
+      "sensor": "sensor_281",
+      "p": 0.016640208,
+      "q": 0.2110929249,
+      "effect": -0.1655092593,
+      "stability": 0.76,
+      "shap_share": 0.0069031899,
+      "score": 0.1317460317
+    },
+    {
+      "sensor": "sensor_334",
+      "p": 0.0024932203,
+      "q": 0.068433548,
+      "effect": 0.2090592334,
+      "stability": 0.74,
+      "shap_share": 0.0072731293,
+      "score": 0.1160714286
+    },
+    {
+      "sensor": "sensor_103",
+      "p": 0.0193823916,
+      "q": 0.2224995128,
+      "effect": -0.161627907,
+      "stability": 0.49,
+      "shap_share": 0.0121697536,
+      "score": 0.0765669516
+    },
+    {
+      "sensor": "sensor_034",
+      "p": 0.0008278306,
+      "q": 0.0282735978,
+      "effect": 0.2310941026,
+      "stability": 0.53,
+      "shap_share": 0.0096305414,
+      "score": 0.0744625745
+    },
+    {
+      "sensor": "sensor_104",
+      "p": 0.0001939873,
+      "q": 0.0127411761,
+      "effect": 0.2575688353,
+      "stability": 0.01,
+      "shap_share": 0.0039492591,
+      "score": 0.0729426619
+    },
+    {
+      "sensor": "sensor_132",
+      "p": 0.2893608352,
+      "q": 0.6934808218,
+      "effect": 0.0732425469,
+      "stability": 0.09,
+      "shap_share": 0.0154224015,
+      "score": 0.0712105013
+    },
+    {
+      "sensor": "sensor_162",
+      "p": 0.5644005304,
+      "q": 0.8817970223,
+      "effect": -0.0400926999,
+      "stability": 0.71,
+      "shap_share": 0.001695144,
+      "score": 0.0698245026
+    },
+    {
+      "sensor": "sensor_206",
+      "p": 0.0001966921,
+      "q": 0.0127411761,
+      "effect": 0.257381258,
+      "stability": 0.07,
+      "shap_share": 0.0030233438,
+      "score": 0.0615191463
+    },
+    {
+      "sensor": "sensor_478",
+      "p": 0.0002008744,
+      "q": 0.0127411761,
+      "effect": 0.2570144874,
+      "stability": 0.12,
+      "shap_share": 0.0065344788,
+      "score": 0.0609133706
+    },
+    {
+      "sensor": "sensor_342",
+      "p": 0.0003962071,
+      "q": 0.0194203729,
+      "effect": 0.244895776,
+      "stability": 0.25,
+      "shap_share": 0.0057406898,
+      "score": 0.0517002535
+    },
+    {
+      "sensor": "sensor_252",
+      "p": 0.2221976625,
+      "q": 0.6127687089,
+      "effect": -0.0840643275,
+      "stability": 0.59,
+      "shap_share": 0.001042244,
+      "score": 0.0510227743
+    },
+    {
+      "sensor": "sensor_122",
+      "p": 0.500905797,
+      "q": 0.8360983981,
+      "effect": 0.0465126978,
+      "stability": 0.0,
+      "shap_share": 0.0125667761,
+      "score": 0.049767035
+    },
+    {
+      "sensor": "sensor_291",
+      "p": 0.0004373958,
+      "q": 0.0194203729,
+      "effect": 0.2446315789,
+      "stability": 0.0,
+      "shap_share": 0.008394694,
+      "score": 0.0493797031
+    },
+    {
+      "sensor": "sensor_164",
+      "p": 0.0041755788,
+      "q": 0.085026197,
+      "effect": 0.199212051,
+      "stability": 0.09,
+      "shap_share": 0.0120470906,
+      "score": 0.0489082866
+    },
+    {
+      "sensor": "sensor_486",
+      "p": 0.2237229398,
+      "q": 0.6131665758,
+      "effect": -0.0840947856,
+      "stability": 0.58,
+      "shap_share": 0.0044531362,
+      "score": 0.0472256804
+    },
+    {
+      "sensor": "sensor_386",
+      "p": 0.0007563502,
+      "q": 0.0281715828,
+      "effect": 0.2498317124,
+      "stability": 0.24,
+      "shap_share": 0.0062483364,
+      "score": 0.0452117443
+    },
+    {
+      "sensor": "sensor_578",
+      "p": 0.2929321286,
+      "q": 0.6934808218,
+      "effect": -0.07270346,
+      "stability": 0.58,
+      "shap_share": 0.0020367315,
+      "score": 0.0433791698
+    },
+    {
+      "sensor": "sensor_032",
+      "p": 0.1084980732,
+      "q": 0.4301173617,
+      "effect": -0.1116261105,
+      "stability": 0.01,
+      "shap_share": 0.012084818,
+      "score": 0.0412387177
+    },
+    {
+      "sensor": "sensor_511",
+      "p": 0.0030863301,
+      "q": 0.0721226607,
+      "effect": 0.2045260721,
+      "stability": 0.46,
+      "shap_share": 0.0003694403,
+      "score": 0.0406479161
+    },
+    {
+      "sensor": "sensor_065",
+      "p": 0.1121311106,
+      "q": 0.4329235923,
+      "effect": 0.1098378213,
+      "stability": 0.56,
+      "shap_share": 0.0010840135,
+      "score": 0.0376036262
+    },
+    {
+      "sensor": "sensor_487",
+      "p": 0.1149579645,
+      "q": 0.4362507369,
+      "effect": 0.1077607212,
+      "stability": 0.01,
+      "shap_share": 0.0120657339,
+      "score": 0.0374078264
+    },
+    {
+      "sensor": "sensor_563",
+      "p": 0.0536649253,
+      "q": 0.3047242697,
+      "effect": -0.1590729843,
+      "stability": 0.45,
+      "shap_share": 0.0076292124,
+      "score": 0.0356668023
+    },
+    {
+      "sensor": "sensor_123",
+      "p": 0.0007613941,
+      "q": 0.0281715828,
+      "effect": -0.2327475156,
+      "stability": 0.06,
+      "shap_share": 0.0041141029,
+      "score": 0.0351851852
+    },
+    {
+      "sensor": "sensor_347",
+      "p": 0.0429462555,
+      "q": 0.2889111735,
+      "effect": 0.1623970403,
+      "stability": 0.51,
+      "shap_share": 0.0015669257,
+      "score": 0.0346203975
+    },
+    {
+      "sensor": "sensor_446",
+      "p": 0.0851581025,
+      "q": 0.3983513929,
+      "effect": 0.1190004269,
+      "stability": 0.08,
+      "shap_share": 0.0116030299,
+      "score": 0.0338114393
+    },
+    {
+      "sensor": "sensor_029",
+      "p": 0.0019881812,
+      "q": 0.0630537475,
+      "effect": -0.2150328312,
+      "stability": 0.28,
+      "shap_share": 0.0020813613,
+      "score": 0.0333348124
+    },
+    {
+      "sensor": "sensor_113",
+      "p": 0.0129690544,
+      "q": 0.1884682956,
+      "effect": 0.1843039855,
+      "stability": 0.45,
+      "shap_share": 0.001361111,
+      "score": 0.0317536265
+    },
+    {
+      "sensor": "sensor_116",
+      "p": 0.0511440808,
+      "q": 0.3001693219,
+      "effect": -0.1348075049,
+      "stability": 0.07,
+      "shap_share": 0.0109638221,
+      "score": 0.0305138553
+    },
+    {
+      "sensor": "sensor_391",
+      "p": 0.848840559,
+      "q": 0.9688178127,
+      "effect": 0.0131883528,
+      "stability": 0.04,
+      "shap_share": 0.0110780228,
+      "score": 0.0283490742
+    },
+    {
+      "sensor": "sensor_011",
+      "p": 0.075010023,
+      "q": 0.364811189,
+      "effect": 0.1230659113,
+      "stability": 0.05,
+      "shap_share": 0.010001781,
+      "score": 0.026498339
+    },
+    {
+      "sensor": "sensor_299",
+      "p": 0.0046799343,
+      "q": 0.085026197,
+      "effect": 0.1966937041,
+      "stability": 0.36,
+      "shap_share": 0.0012891986,
+      "score": 0.0263682382
+    },
+    {
+      "sensor": "sensor_215",
+      "p": 0.6143111663,
+      "q": 0.914682521,
+      "effect": -0.0348440546,
+      "stability": 0.47,
+      "shap_share": 0.0008333983,
+      "score": 0.0261138914
+    },
+    {
+      "sensor": "sensor_087",
+      "p": 0.4077574059,
+      "q": 0.7940538958,
+      "effect": 0.0572307505,
+      "stability": 0.05,
+      "shap_share": 0.0100257952,
+      "score": 0.0256862125
+    },
+    {
+      "sensor": "sensor_346",
+      "p": 0.1972955749,
+      "q": 0.598344646,
+      "effect": 0.1034482759,
+      "stability": 0.44,
+      "shap_share": 0.004836698,
+      "score": 0.0254857194
+    },
+    {
+      "sensor": "sensor_485",
+      "p": 0.0702734617,
+      "q": 0.3584690963,
+      "effect": -0.1247715643,
+      "stability": 0.41,
+      "shap_share": 0.0049919892,
+      "score": 0.0248185359
+    },
+    {
+      "sensor": "sensor_588",
+      "p": 0.0164669257,
+      "q": 0.2110929249,
+      "effect": 0.1657772763,
+      "stability": 0.02,
+      "shap_share": 0.008147259,
+      "score": 0.0246154515
+    },
+    {
+      "sensor": "sensor_198",
+      "p": 0.0029929911,
+      "q": 0.0721226607,
+      "effect": 0.2052081423,
+      "stability": 0.01,
+      "shap_share": 0.003625563,
+      "score": 0.0245059135
+    },
+    {
+      "sensor": "sensor_128",
+      "p": 0.0026202034,
+      "q": 0.068433548,
+      "effect": -0.208041958,
+      "stability": 0.11,
+      "shap_share": 0.0014488513,
+      "score": 0.0244726777
+    },
+    {
+      "sensor": "sensor_126",
+      "p": 0.0423586095,
+      "q": 0.2889111735,
+      "effect": -0.1403355417,
+      "stability": 0.07,
+      "shap_share": 0.0085708611,
+      "score": 0.024134887
+    },
+    {
+      "sensor": "sensor_020",
+      "p": 0.5817723527,
+      "q": 0.8937955868,
+      "effect": 0.038331384,
+      "stability": 0.35,
+      "shap_share": 0.0077286466,
+      "score": 0.0240749255
+    },
+    {
+      "sensor": "sensor_550",
+      "p": 0.7469845547,
+      "q": 0.9501945131,
+      "effect": 0.0256024919,
+      "stability": 0.21,
+      "shap_share": 0.0094966233,
+      "score": 0.0238863873
+    },
+    {
+      "sensor": "sensor_025",
+      "p": 0.0297912397,
+      "q": 0.2460671197,
+      "effect": -0.1511162611,
+      "stability": 0.42,
+      "shap_share": 0.0016067963,
+      "score": 0.0236146778
+    },
+    {
+      "sensor": "sensor_378",
+      "p": 0.0056802263,
+      "q": 0.0970007871,
+      "effect": -0.1906219542,
+      "stability": 0.02,
+      "shap_share": 0.0058622208,
+      "score": 0.0230706392
+    },
+    {
+      "sensor": "sensor_176",
+      "p": 0.0071564516,
+      "q": 0.1176838704,
+      "effect": 0.1859029091,
+      "stability": 0.08,
+      "shap_share": 0.0055733665,
+      "score": 0.0229633225
+    },
+    {
+      "sensor": "sensor_470",
+      "p": 0.0033039921,
+      "q": 0.0733486251,
+      "effect": 0.2030992114,
+      "stability": 0.05,
+      "shap_share": 0.0033471493,
+      "score": 0.022888078
+    },
+    {
+      "sensor": "sensor_564",
+      "p": 0.2502688809,
+      "q": 0.6423085729,
+      "effect": -0.0947946369,
+      "stability": 0.38,
+      "shap_share": 0.0054004917,
+      "score": 0.021912806
+    },
+    {
+      "sensor": "sensor_091",
+      "p": 0.0194520271,
+      "q": 0.2224995128,
+      "effect": -0.1615192495,
+      "stability": 0.2,
+      "shap_share": 0.0054091296,
+      "score": 0.0218757719
+    },
+    {
+      "sensor": "sensor_490",
+      "p": 0.9512951192,
+      "q": 0.9972497687,
+      "effect": 0.0042336745,
+      "stability": 0.01,
+      "shap_share": 0.0098625537,
+      "score": 0.021625099
+    },
+    {
+      "sensor": "sensor_368",
+      "p": 0.7594248856,
+      "q": 0.9501945131,
+      "effect": -0.0211750306,
+      "stability": 0.45,
+      "shap_share": 0.0013166698,
+      "score": 0.0215690175
+    },
+    {
+      "sensor": "sensor_127",
+      "p": 0.043639662,
+      "q": 0.2891941782,
+      "effect": 0.1394920869,
+      "stability": 0.34,
+      "shap_share": 0.0051058765,
+      "score": 0.0213092402
+    },
+    {
+      "sensor": "sensor_080",
+      "p": 0.0043969802,
+      "q": 0.085026197,
+      "effect": 0.1968658626,
+      "stability": 0.02,
+      "shap_share": 0.0029695413,
+      "score": 0.0202139411
+    },
+    {
+      "sensor": "sensor_522",
+      "p": 0.0309624296,
+      "q": 0.2465284778,
+      "effect": 0.0290113304,
+      "stability": 0.39,
+      "shap_share": 5.6503e-06,
+      "score": 0.0201619885
+    },
+    {
+      "sensor": "sensor_041",
+      "p": 0.0136013805,
+      "q": 0.1884682956,
+      "effect": -0.1706660894,
+      "stability": 0.31,
+      "shap_share": 0.0007862032,
+      "score": 0.0198346715
+    },
+    {
+      "sensor": "sensor_349",
+      "p": 0.0232065703,
+      "q": 0.2426467667,
+      "effect": 0.1569048489,
+      "stability": 0.32,
+      "shap_share": 0.0023322244,
+      "score": 0.0192157569
+    },
+    {
+      "sensor": "sensor_589",
+      "p": 0.0136110518,
+      "q": 0.1884682956,
+      "effect": 0.1705189974,
+      "stability": 0.1,
+      "shap_share": 0.0044370058,
+      "score": 0.0192144724
+    },
+    {
+      "sensor": "sensor_153",
+      "p": 0.010990647,
+      "q": 0.1682705952,
+      "effect": 0.1757736355,
+      "stability": 0.13,
+      "shap_share": 0.0030019593,
+      "score": 0.0189451353
+    },
+    {
+      "sensor": "sensor_092",
+      "p": 0.3443569736,
+      "q": 0.7280359889,
+      "effect": 0.065376377,
+      "stability": 0.0,
+      "shap_share": 0.008429644,
+      "score": 0.018355172
+    },
+    {
+      "sensor": "sensor_418",
+      "p": 0.1524539952,
+      "q": 0.5167143043,
+      "effect": -0.0989126462,
+      "stability": 0.02,
+      "shap_share": 0.0082133149,
+      "score": 0.0179116148
+    },
+    {
+      "sensor": "sensor_300",
+      "p": 0.0499150896,
+      "q": 0.2994905375,
+      "effect": 0.1363615295,
+      "stability": 0.1,
+      "shap_share": 0.0066483813,
+      "score": 0.0178710237
+    },
+    {
+      "sensor": "sensor_429",
+      "p": 0.0047875111,
+      "q": 0.085026197,
+      "effect": 0.1962573099,
+      "stability": 0.05,
+      "shap_share": 0.0018188135,
+      "score": 0.0175575576
+    },
+    {
+      "sensor": "sensor_432",
+      "p": 0.0863125988,
+      "q": 0.3983513929,
+      "effect": 0.1192893009,
+      "stability": 0.37,
+      "shap_share": 0.0016565155,
+      "score": 0.0171314606
+    },
+    {
+      "sensor": "sensor_145",
+      "p": 0.2044531662,
+      "q": 0.598344646,
+      "effect": -0.0877192982,
+      "stability": 0.3,
+      "shap_share": 0.0053969061,
+      "score": 0.0170443566
+    },
+    {
+      "sensor": "sensor_073",
+      "p": 0.4296657275,
+      "q": 0.7969220414,
+      "effect": 0.0633812648,
+      "stability": 0.41,
+      "shap_share": 0.0005142362,
+      "score": 0.0165546809
+    },
+    {
+      "sensor": "sensor_447",
+      "p": 0.0080863716,
+      "q": 0.1282267496,
+      "effect": 0.1830670245,
+      "stability": 0.0,
+      "shap_share": 0.0029349175,
+      "score": 0.0162718387
+    },
+    {
+      "sensor": "sensor_156",
+      "p": 0.0046171174,
+      "q": 0.085026197,
+      "effect": 0.1969902534,
+      "stability": 0.0,
+      "shap_share": 0.0002168171,
+      "score": 0.016206609
+    },
+    {
+      "sensor": "sensor_146",
+      "p": 0.0583596989,
+      "q": 0.3159964185,
+      "effect": -0.1308479532,
+      "stability": 0.31,
+      "shap_share": 0.0032720594,
+      "score": 0.0160176128
+    },
+    {
+      "sensor": "sensor_203",
+      "p": 0.0969236423,
+      "q": 0.4098485447,
+      "effect": 0.1147643819,
+      "stability": 0.01,
+      "shap_share": 0.0069692103,
+      "score": 0.0158943462
+    },
+    {
+      "sensor": "sensor_031",
+      "p": 0.0239764162,
+      "q": 0.2426467667,
+      "effect": 0.1570027037,
+      "stability": 0.15,
+      "shap_share": 0.0030806423,
+      "score": 0.015663923
+    },
+    {
+      "sensor": "sensor_298",
+      "p": 0.5545332219,
+      "q": 0.8762019592,
+      "effect": 0.0411123986,
+      "stability": 0.38,
+      "shap_share": 0.0011649379,
+      "score": 0.0152268443
+    },
+    {
+      "sensor": "sensor_129",
+      "p": 0.0202026005,
+      "q": 0.2224995128,
+      "effect": 0.1605784566,
+      "stability": 0.1,
+      "shap_share": 0.0028536086,
+      "score": 0.0148638644
+    },
+    {
+      "sensor": "sensor_292",
+      "p": 0.3299772015,
+      "q": 0.7077771858,
+      "effect": -0.0673428363,
+      "stability": 0.07,
+      "shap_share": 0.0067660544,
+      "score": 0.0146228811
+    },
+    {
+      "sensor": "sensor_426",
+      "p": 0.019821901,
+      "q": 0.2224995128,
+      "effect": 0.1610319201,
+      "stability": 0.12,
+      "shap_share": 0.0018099943,
+      "score": 0.0144698367
+    },
+    {
+      "sensor": "sensor_469",
+      "p": 0.0343764318,
+      "q": 0.2631575122,
+      "effect": -0.1461138311,
+      "stability": 0.27,
+      "shap_share": 0.0011719478,
+      "score": 0.0140379428
+    },
+    {
+      "sensor": "sensor_214",
+      "p": 0.039334925,
+      "q": 0.2889111735,
+      "effect": 0.1424372563,
+      "stability": 0.26,
+      "shap_share": 0.0016103982,
+      "score": 0.0138595493
+    },
+    {
+      "sensor": "sensor_225",
+      "p": 0.2061863307,
+      "q": 0.598344646,
+      "effect": -0.0873842593,
+      "stability": 0.22,
+      "shap_share": 0.0045048569,
+      "score": 0.0137488972
+    },
+    {
+      "sensor": "sensor_302",
+      "p": 0.3003080781,
+      "q": 0.6934808218,
+      "effect": 0.0720432599,
+      "stability": 0.35,
+      "shap_share": 0.0015963186,
+      "score": 0.0136669903
+    },
+    {
+      "sensor": "sensor_489",
+      "p": 0.0458998508,
+      "q": 0.2903509853,
+      "effect": -0.1378533138,
+      "stability": 0.17,
+      "shap_share": 0.0032818069,
+      "score": 0.0136578633
+    },
+    {
+      "sensor": "sensor_205",
+      "p": 0.8152315371,
+      "q": 0.9643265127,
+      "effect": 0.01616847,
+      "stability": 0.37,
+      "shap_share": 0.0005280184,
+      "score": 0.0135581474
+    },
+    {
+      "sensor": "sensor_431",
+      "p": 0.0284464941,
+      "q": 0.2460671197,
+      "effect": 0.1523831595,
+      "stability": 0.22,
+      "shap_share": 4.27823e-05,
+      "score": 0.0135312125
+    },
+    {
+      "sensor": "sensor_163",
+      "p": 0.5636496619,
+      "q": 0.8817970223,
+      "effect": 0.0401699498,
+      "stability": 0.35,
+      "shap_share": 0.0017148579,
+      "score": 0.0133238562
+    },
+    {
+      "sensor": "sensor_528",
+      "p": 0.0273623584,
+      "q": 0.2460671197,
+      "effect": -0.152503655,
+      "stability": 0.02,
+      "shap_share": 0.0033559835,
+      "score": 0.0131591083
+    },
+    {
+      "sensor": "sensor_409",
+      "p": 0.0467403536,
+      "q": 0.2903509853,
+      "effect": -0.1374915753,
+      "stability": 0.23,
+      "shap_share": 0.0022589694,
+      "score": 0.0129569439
+    },
+    {
+      "sensor": "sensor_585",
+      "p": 0.3083508602,
+      "q": 0.6934808218,
+      "effect": 0.0703634811,
+      "stability": 0.32,
+      "shap_share": 0.002321677,
+      "score": 0.0129358609
+    },
+    {
+      "sensor": "sensor_288",
+      "p": 0.0140077787,
+      "q": 0.1884682956,
+      "effect": 0.169834308,
+      "stability": 0.01,
+      "shap_share": 0.0010987699,
+      "score": 0.0127039108
+    },
+    {
+      "sensor": "sensor_009",
+      "p": 0.6770797677,
+      "q": 0.9501945131,
+      "effect": -0.0287981238,
+      "stability": 0.02,
+      "shap_share": 0.0065775394,
+      "score": 0.0126374078
+    },
+    {
+      "sensor": "sensor_117",
+      "p": 0.0526016823,
+      "q": 0.3033135964,
+      "effect": -0.1336196394,
+      "stability": 0.29,
+      "shap_share": 0.0003032356,
+      "score": 0.0125845882
+    },
+    {
+      "sensor": "sensor_279",
+      "p": 0.0493217008,
+      "q": 0.2994905375,
+      "effect": -0.1352356181,
+      "stability": 0.07,
+      "shap_share": 0.0042266649,
+      "score": 0.0124758146
+    },
+    {
+      "sensor": "sensor_201",
+      "p": 0.1059698482,
+      "q": 0.4301173617,
+      "effect": 0.1117656059,
+      "stability": 0.1,
+      "shap_share": 0.004751537,
+      "score": 0.0124182129
+    },
+    {
+      "sensor": "sensor_138",
+      "p": 0.2111143146,
+      "q": 0.6047403593,
+      "effect": 0.086984127,
+      "stability": 0.0,
+      "shap_share": 0.0062820127,
+      "score": 0.0123046515
+    },
+    {
+      "sensor": "sensor_036",
+      "p": 0.4762816976,
+      "q": 0.8275376302,
+      "effect": -0.0492468134,
+      "stability": 0.33,
+      "shap_share": 0.0011847743,
+      "score": 0.011843415
+    },
+    {
+      "sensor": "sensor_577",
+      "p": 0.7351890869,
+      "q": 0.9501945131,
+      "effect": 0.0233918129,
+      "stability": 0.34,
+      "shap_share": 0.0011349241,
+      "score": 0.0117885032
+    },
+    {
+      "sensor": "sensor_240",
+      "p": 0.0205461262,
+      "q": 0.2224995128,
+      "effect": -0.1600420322,
+      "stability": 0.08,
+      "shap_share": 0.0007599465,
+      "score": 0.0117437696
+    },
+    {
+      "sensor": "sensor_559",
+      "p": 0.3612102615,
+      "q": 0.7494268977,
+      "effect": 0.0631213027,
+      "stability": 0.32,
+      "shap_share": 0.0013644656,
+      "score": 0.0117149469
+    },
+    {
+      "sensor": "sensor_013",
+      "p": 0.9444890714,
+      "q": 0.9972497687,
+      "effect": -0.0048276072,
+      "stability": 0.01,
+      "shap_share": 0.006501167,
+      "score": 0.0115467479
+    },
+    {
+      "sensor": "sensor_131",
+      "p": 0.0871687089,
+      "q": 0.3983513929,
+      "effect": 0.1182676972,
+      "stability": 0.0,
+      "shap_share": 0.005227847,
+      "score": 0.0114592754
+    },
+    {
+      "sensor": "sensor_211",
+      "p": 0.0203283658,
+      "q": 0.2224995128,
+      "effect": 0.1603770712,
+      "stability": 0.01,
+      "shap_share": 0.0012361349,
+      "score": 0.0110878755
+    },
+    {
+      "sensor": "sensor_077",
+      "p": 0.227413277,
+      "q": 0.6156798474,
+      "effect": -0.0834399366,
+      "stability": 0.0,
+      "shap_share": 0.0054583811,
+      "score": 0.0108638828
+    },
+    {
+      "sensor": "sensor_455",
+      "p": 0.8240382795,
+      "q": 0.9653641058,
+      "effect": -0.0153839117,
+      "stability": 0.17,
+      "shap_share": 0.0040899476,
+      "score": 0.0108497456
+    },
+    {
+      "sensor": "sensor_280",
+      "p": 0.106806602,
+      "q": 0.4301173617,
+      "effect": -0.1114766082,
+      "stability": 0.25,
+      "shap_share": 0.0011845698,
+      "score": 0.0106616625
+    },
+    {
+      "sensor": "sensor_015",
+      "p": 0.0360895911,
+      "q": 0.271589465,
+      "effect": -0.1448739035,
+      "stability": 0.13,
+      "shap_share": 0.0009193256,
+      "score": 0.0106585975
+    },
+    {
+      "sensor": "sensor_136",
+      "p": 0.0470839436,
+      "q": 0.2903509853,
+      "effect": -0.1372618099,
+      "stability": 0.16,
+      "shap_share": 0.0010314476,
+      "score": 0.0103812636
+    },
+    {
+      "sensor": "sensor_417",
+      "p": 0.0898752878,
+      "q": 0.3983513929,
+      "effect": -0.1172582619,
+      "stability": 0.02,
+      "shap_share": 0.004215354,
+      "score": 0.0102760108
+    },
+    {
+      "sensor": "sensor_308",
+      "p": 0.1336599393,
+      "q": 0.4747601043,
+      "effect": 0.103677502,
+      "stability": 0.01,
+      "shap_share": 0.0046236428,
+      "score": 0.010181465
+    },
+    {
+      "sensor": "sensor_311",
+      "p": 0.0310936819,
+      "q": 0.2465284778,
+      "effect": 0.1490211624,
+      "stability": 0.04,
+      "shap_share": 0.0020323858,
+      "score": 0.0101631692
+    },
+    {
+      "sensor": "sensor_460",
+      "p": 0.7640077504,
+      "q": 0.9501945131,
+      "effect": 0.0207659938,
+      "stability": 0.0,
+      "shap_share": 0.0057233974,
+      "score": 0.0101618947
+    },
+    {
+      "sensor": "sensor_049",
+      "p": 0.1312855586,
+      "q": 0.4739088458,
+      "effect": -0.104317863,
+      "stability": 0.01,
+      "shap_share": 0.0045676606,
+      "score": 0.0101083568
+    },
+    {
+      "sensor": "sensor_008",
+      "p": 0.0551580139,
+      "q": 0.306126977,
+      "effect": -0.1325428397,
+      "stability": 0.11,
+      "shap_share": 0.0022381147,
+      "score": 0.0098817119
+    },
+    {
+      "sensor": "sensor_139",
+      "p": 0.260289266,
+      "q": 0.6566388302,
+      "effect": 0.0778304774,
+      "stability": 0.28,
+      "shap_share": 0.0003574585,
+      "score": 0.009863331
+    },
+    {
+      "sensor": "sensor_332",
+      "p": 0.6387810108,
+      "q": 0.9289876725,
+      "effect": 0.032659698,
+      "stability": 0.31,
+      "shap_share": 0.000232367,
+      "score": 0.0098524494
+    },
+    {
+      "sensor": "sensor_096",
+      "p": 0.0419631884,
+      "q": 0.2889111735,
+      "effect": 0.1326958384,
+      "stability": 0.12,
+      "shap_share": 0.0004541462,
+      "score": 0.0098057126
+    },
+    {
+      "sensor": "sensor_435",
+      "p": 0.024046076,
+      "q": 0.2426467667,
+      "effect": 0.1569254538,
+      "stability": 0.01,
+      "shap_share": 0.0005683655,
+      "score": 0.0097933113
+    },
+    {
+      "sensor": "sensor_438",
+      "p": 0.2851256929,
+      "q": 0.6917803695,
+      "effect": 0.0743453071,
+      "stability": 0.26,
+      "shap_share": 0.0011321151,
+      "score": 0.0097064149
+    },
+    {
+      "sensor": "sensor_350",
+      "p": 0.6809485448,
+      "q": 0.9501945131,
+      "effect": 0.0284326267,
+      "stability": 0.26,
+      "shap_share": 0.0017576337,
+      "score": 0.0096204527
+    },
+    {
+      "sensor": "sensor_363",
+      "p": 0.2157426279,
+      "q": 0.6127687089,
+      "effect": -0.0855720029,
+      "stability": 0.16,
+      "shap_share": 0.0025671157,
+      "score": 0.0096114996
+    },
+    {
+      "sensor": "sensor_576",
+      "p": 0.494977117,
+      "q": 0.8356267679,
+      "effect": -0.0471795809,
+      "stability": 0.26,
+      "shap_share": 0.0016129771,
+      "score": 0.0095815397
+    },
+    {
+      "sensor": "sensor_183",
+      "p": 0.9006392906,
+      "q": 0.9898114976,
+      "effect": -0.0086448741,
+      "stability": 0.0,
+      "shap_share": 0.0054218656,
+      "score": 0.0094718751
+    },
+    {
+      "sensor": "sensor_271",
+      "p": 0.0423483559,
+      "q": 0.2889111735,
+      "effect": -0.1403559831,
+      "stability": 0.0,
+      "shap_share": 0.0027842186,
+      "score": 0.0094221058
+    },
+    {
+      "sensor": "sensor_039",
+      "p": 0.1434134555,
+      "q": 0.4974654237,
+      "effect": 0.1011465512,
+      "stability": 0.23,
+      "shap_share": 0.0007120924,
+      "score": 0.0093950685
+    },
+    {
+      "sensor": "sensor_023",
+      "p": 0.0416837625,
+      "q": 0.2889111735,
+      "effect": -0.1416454229,
+      "stability": 0.09,
+      "shap_share": 0.0007651364,
+      "score": 0.0093266648
+    },
+    {
+      "sensor": "sensor_097",
+      "p": 0.433942583,
+      "q": 0.7969220414,
+      "effect": 0.0541003672,
+      "stability": 0.01,
+      "shap_share": 0.0049716067,
+      "score": 0.0092810458
+    },
+    {
+      "sensor": "sensor_134",
+      "p": 0.1275577561,
+      "q": 0.4642265877,
+      "effect": 0.105355064,
+      "stability": 0.18,
+      "shap_share": 0.0011427206,
+      "score": 0.0092519141
+    },
+    {
+      "sensor": "sensor_130",
+      "p": 0.2340325759,
+      "q": 0.6237758953,
+      "effect": 0.0821524966,
+      "stability": 0.18,
+      "shap_share": 0.0017747264,
+      "score": 0.0092338428
+    },
+    {
+      "sensor": "sensor_283",
+      "p": 0.0286695752,
+      "q": 0.2460671197,
+      "effect": 0.1512244152,
+      "stability": 0.0,
+      "shap_share": 0.0006641315,
+      "score": 0.0090254748
+    },
+    {
+      "sensor": "sensor_256",
+      "p": 0.0297774575,
+      "q": 0.2460671197,
+      "effect": -0.1502040692,
+      "stability": 0.0,
+      "shap_share": 0.0014728054,
+      "score": 0.0090145127
+    },
+    {
+      "sensor": "sensor_074",
+      "p": 0.9788242155,
+      "q": 0.9972497687,
+      "effect": 0.0021638978,
+      "stability": 0.28,
+      "shap_share": 0.0007665068,
+      "score": 0.008992269
+    },
+    {
+      "sensor": "sensor_317",
+      "p": 0.0448285098,
+      "q": 0.2903509853,
+      "effect": -0.1386839056,
+      "stability": 0.07,
+      "shap_share": 0.0015128989,
+      "score": 0.0089348974
+    },
+    {
+      "sensor": "sensor_286",
+      "p": 0.1494452877,
+      "q": 0.5104131364,
+      "effect": -0.0996436404,
+      "stability": 0.16,
+      "shap_share": 0.0016323345,
+      "score": 0.0089024864
+    },
+    {
+      "sensor": "sensor_226",
+      "p": 0.8941237336,
+      "q": 0.9898114976,
+      "effect": -0.0092135721,
+      "stability": 0.12,
+      "shap_share": 0.0035014746,
+      "score": 0.0087723668
+    },
+    {
+      "sensor": "sensor_135",
+      "p": 0.3984234154,
+      "q": 0.7898005343,
+      "effect": -0.05839103,
+      "stability": 0.07,
+      "shap_share": 0.0037420075,
+      "score": 0.0086566161
+    },
+    {
+      "sensor": "sensor_590",
+      "p": 0.0898546281,
+      "q": 0.3983513929,
+      "effect": 0.1172470574,
+      "stability": 0.12,
+      "shap_share": 0.0014661636,
+      "score": 0.0085409064
+    },
+    {
+      "sensor": "sensor_250",
+      "p": 0.0289079445,
+      "q": 0.2460671197,
+      "effect": 0.0293768275,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0085261444
+    },
+    {
+      "sensor": "sensor_388",
+      "p": 0.0289079445,
+      "q": 0.2460671197,
+      "effect": 0.0293768275,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0085261444
+    },
+    {
+      "sensor": "sensor_059",
+      "p": 0.124428028,
+      "q": 0.4609923329,
+      "effect": 0.106867983,
+      "stability": 0.0,
+      "shap_share": 0.0035465893,
+      "score": 0.0083908107
+    },
+    {
+      "sensor": "sensor_148",
+      "p": 0.0291342975,
+      "q": 0.2460671197,
+      "effect": 0.1507980019,
+      "stability": 0.0,
+      "shap_share": 0.0004213832,
+      "score": 0.0083465532
+    },
+    {
+      "sensor": "sensor_115",
+      "p": 0.0290746213,
+      "q": 0.2460671197,
+      "effect": 0.0293463694,
+      "stability": 0.0,
+      "shap_share": 1.20911e-05,
+      "score": 0.0083331262
+    },
+    {
+      "sensor": "sensor_352",
+      "p": 0.0324262811,
+      "q": 0.2525836631,
+      "effect": 0.1478587963,
+      "stability": 0.0,
+      "shap_share": 0.0012862516,
+      "score": 0.0082860177
+    },
+    {
+      "sensor": "sensor_421",
+      "p": 0.0299270821,
+      "q": 0.2460671197,
+      "effect": 0.1500670078,
+      "stability": 0.0,
+      "shap_share": 0.0009113643,
+      "score": 0.0082842391
+    },
+    {
+      "sensor": "sensor_224",
+      "p": 0.4298221154,
+      "q": 0.7969220414,
+      "effect": 0.0545808967,
+      "stability": 0.08,
+      "shap_share": 0.0034881036,
+      "score": 0.0082799969
+    },
+    {
+      "sensor": "sensor_035",
+      "p": 0.3737702626,
+      "q": 0.7647649613,
+      "effect": -0.0614899067,
+      "stability": 0.17,
+      "shap_share": 0.0016285174,
+      "score": 0.0081812422
+    },
+    {
+      "sensor": "sensor_394",
+      "p": 0.0513803344,
+      "q": 0.3001693219,
+      "effect": -0.1346704435,
+      "stability": 0.0,
+      "shap_share": 0.0023829292,
+      "score": 0.0081056783
+    },
+    {
+      "sensor": "sensor_251",
+      "p": 0.7503503668,
+      "q": 0.9501945131,
+      "effect": 0.0220059698,
+      "stability": 0.02,
+      "shap_share": 0.0042238187,
+      "score": 0.0079943669
+    },
+    {
+      "sensor": "sensor_199",
+      "p": 0.09061597,
+      "q": 0.3983513929,
+      "effect": 0.1169845345,
+      "stability": 0.0,
+      "shap_share": 0.0030817251,
+      "score": 0.0079830634
+    },
+    {
+      "sensor": "sensor_484",
+      "p": 0.8493350646,
+      "q": 0.9688178127,
+      "effect": 0.0131426657,
+      "stability": 0.16,
+      "shap_share": 0.002295615,
+      "score": 0.0079702176
+    },
+    {
+      "sensor": "sensor_160",
+      "p": 0.0424242583,
+      "q": 0.2889111735,
+      "effect": 0.1411355736,
+      "stability": 0.03,
+      "shap_share": 0.0008052799,
+      "score": 0.0079648737
+    },
+    {
+      "sensor": "sensor_118",
+      "p": 0.3459810668,
+      "q": 0.7280359889,
+      "effect": -0.0651498538,
+      "stability": 0.11,
+      "shap_share": 0.0027007971,
+      "score": 0.0079441747
+    },
+    {
+      "sensor": "sensor_090",
+      "p": 0.0620572952,
+      "q": 0.3280171317,
+      "effect": -0.1289747807,
+      "stability": 0.07,
+      "shap_share": 0.0014689916,
+      "score": 0.0079201884
+    },
+    {
+      "sensor": "sensor_228",
+      "p": 0.266284053,
+      "q": 0.6642141547,
+      "effect": 0.0768457602,
+      "stability": 0.09,
+      "shap_share": 0.0028453792,
+      "score": 0.0079052296
+    },
+    {
+      "sensor": "sensor_488",
+      "p": 0.4519230152,
+      "q": 0.8016765564,
+      "effect": 0.0519005848,
+      "stability": 0.09,
+      "shap_share": 0.003181659,
+      "score": 0.0078969914
+    },
+    {
+      "sensor": "sensor_066",
+      "p": 0.0930680948,
+      "q": 0.4051199419,
+      "effect": 0.1161107711,
+      "stability": 0.03,
+      "shap_share": 0.0024085721,
+      "score": 0.0078457857
+    },
+    {
+      "sensor": "sensor_307",
+      "p": 0.0895178152,
+      "q": 0.3983513929,
+      "effect": 0.1173690309,
+      "stability": 0.12,
+      "shap_share": 0.0004551061,
+      "score": 0.0078333815
+    },
+    {
+      "sensor": "sensor_492",
+      "p": 0.1653557433,
+      "q": 0.5398378678,
+      "effect": 0.0959416985,
+      "stability": 0.06,
+      "shap_share": 0.0027758809,
+      "score": 0.0077725107
+    },
+    {
+      "sensor": "sensor_336",
+      "p": 0.846609984,
+      "q": 0.9688178127,
+      "effect": -0.0133871264,
+      "stability": 0.24,
+      "shap_share": 0.000570822,
+      "score": 0.0077582877
+    },
+    {
+      "sensor": "sensor_282",
+      "p": 0.2980976497,
+      "q": 0.6934808218,
+      "effect": -0.0719267788,
+      "stability": 0.18,
+      "shap_share": 0.0003151959,
+      "score": 0.0077146231
+    },
+    {
+      "sensor": "sensor_219",
+      "p": 0.2548115243,
+      "q": 0.6502087173,
+      "effect": -0.0787189327,
+      "stability": 0.03,
+      "shap_share": 0.0032927202,
+      "score": 0.0077101963
+    },
+    {
+      "sensor": "sensor_046",
+      "p": 0.2035590047,
+      "q": 0.598344646,
+      "effect": 0.0878971763,
+      "stability": 0.0,
+      "shap_share": 0.0035298938,
+      "score": 0.0076516113
+    },
+    {
+      "sensor": "sensor_107",
+      "p": 0.336853681,
+      "q": 0.7156126046,
+      "effect": -0.0663861689,
+      "stability": 0.12,
+      "shap_share": 0.0022477327,
+      "score": 0.007629827
+    },
+    {
+      "sensor": "sensor_320",
+      "p": 0.7449016119,
+      "q": 0.9501945131,
+      "effect": 0.0225041166,
+      "stability": 0.0,
+      "shap_share": 0.0044013363,
+      "score": 0.0076109733
+    },
+    {
+      "sensor": "sensor_310",
+      "p": 0.1326341417,
+      "q": 0.4747601043,
+      "effect": 0.1039519424,
+      "stability": 0.01,
+      "shap_share": 0.0029875594,
+      "score": 0.0075368506
+    },
+    {
+      "sensor": "sensor_430",
+      "p": 0.4845941078,
+      "q": 0.8275376302,
+      "effect": -0.0483217593,
+      "stability": 0.03,
+      "shap_share": 0.0035348312,
+      "score": 0.0075275225
+    },
+    {
+      "sensor": "sensor_296",
+      "p": 0.1008955527,
+      "q": 0.4226191074,
+      "effect": 0.1140981074,
+      "stability": 0.1,
+      "shap_share": 0.0010370071,
+      "score": 0.0074120297
+    },
+    {
+      "sensor": "sensor_497",
+      "p": 0.4357686302,
+      "q": 0.7969220414,
+      "effect": -0.0538803606,
+      "stability": 0.17,
+      "shap_share": 0.0006912059,
+      "score": 0.0072111266
+    },
+    {
+      "sensor": "sensor_474",
+      "p": 0.7693245309,
+      "q": 0.9541343345,
+      "effect": -0.0202876377,
+      "stability": 0.0,
+      "shap_share": 0.0041337207,
+      "score": 0.0072022974
+    },
+    {
+      "sensor": "sensor_184",
+      "p": 0.6063456985,
+      "q": 0.9126016614,
+      "effect": 0.035631518,
+      "stability": 0.0,
+      "shap_share": 0.0040550795,
+      "score": 0.0071530032
+    },
+    {
+      "sensor": "sensor_344",
+      "p": 0.3349792565,
+      "q": 0.7150518745,
+      "effect": 0.0666605538,
+      "stability": 0.09,
+      "shap_share": 0.0023788641,
+      "score": 0.007135925
+    },
+    {
+      "sensor": "sensor_064",
+      "p": 0.3125354912,
+      "q": 0.6973153674,
+      "effect": 0.0698286414,
+      "stability": 0.12,
+      "shap_share": 0.0016564984,
+      "score": 0.0070811521
+    },
+    {
+      "sensor": "sensor_574",
+      "p": 0.4303348372,
+      "q": 0.7969220414,
+      "effect": -0.0545199805,
+      "stability": 0.07,
+      "shap_share": 0.0028758781,
+      "score": 0.0070618078
+    },
+    {
+      "sensor": "sensor_212",
+      "p": 0.7053467915,
+      "q": 0.9501945131,
+      "effect": 0.02614827,
+      "stability": 0.17,
+      "shap_share": 0.00098657,
+      "score": 0.007045592
+    },
+    {
+      "sensor": "sensor_218",
+      "p": 0.7520216858,
+      "q": 0.9501945131,
+      "effect": 0.0218536793,
+      "stability": 0.01,
+      "shap_share": 0.0036967127,
+      "score": 0.0070115179
+    },
+    {
+      "sensor": "sensor_093",
+      "p": 0.2266076514,
+      "q": 0.6156798474,
+      "effect": -0.0835769981,
+      "stability": 0.11,
+      "shap_share": 0.0015093188,
+      "score": 0.0069984509
+    },
+    {
+      "sensor": "sensor_057",
+      "p": 0.1666289281,
+      "q": 0.5400236793,
+      "effect": 0.0961982191,
+      "stability": 0.04,
+      "shap_share": 0.0023222634,
+      "score": 0.0069898392
+    },
+    {
+      "sensor": "sensor_144",
+      "p": 0.0723978846,
+      "q": 0.3611759638,
+      "effect": -0.124127907,
+      "stability": 0.0,
+      "shap_share": 0.0019540865,
+      "score": 0.0069711753
+    },
+    {
+      "sensor": "sensor_367",
+      "p": 0.6593391098,
+      "q": 0.9382902716,
+      "effect": 0.0304733187,
+      "stability": 0.05,
+      "shap_share": 0.0031956426,
+      "score": 0.0069463471
+    },
+    {
+      "sensor": "sensor_024",
+      "p": 0.7589793812,
+      "q": 0.9501945131,
+      "effect": 0.0213518733,
+      "stability": 0.15,
+      "shap_share": 0.0015516551,
+      "score": 0.0068934849
+    },
+    {
+      "sensor": "sensor_440",
+      "p": 0.7250630452,
+      "q": 0.9501945131,
+      "effect": -0.0244727694,
+      "stability": 0.01,
+      "shap_share": 0.0035433971,
+      "score": 0.0068531238
+    },
+    {
+      "sensor": "sensor_045",
+      "p": 0.0614314237,
+      "q": 0.3280171317,
+      "effect": -0.1292919436,
+      "stability": 0.0,
+      "shap_share": 0.0016717677,
+      "score": 0.0068489033
+    },
+    {
+      "sensor": "sensor_335",
+      "p": 0.1055952855,
+      "q": 0.4301173617,
+      "effect": 0.1118803105,
+      "stability": 0.0,
+      "shap_share": 0.0023957878,
+      "score": 0.0068302772
+    },
+    {
+      "sensor": "sensor_477",
+      "p": 0.81282946,
+      "q": 0.9643265127,
+      "effect": 0.0163824195,
+      "stability": 0.18,
+      "shap_share": 0.0002624011,
+      "score": 0.0068232928
+    },
+    {
+      "sensor": "sensor_157",
+      "p": 0.4986088895,
+      "q": 0.8360017849,
+      "effect": -0.0467836257,
+      "stability": 0.01,
+      "shap_share": 0.0034710593,
+      "score": 0.0068171208
+    },
+    {
+      "sensor": "sensor_444",
+      "p": 0.1032957734,
+      "q": 0.4286291904,
+      "effect": 0.1126120632,
+      "stability": 0.08,
+      "shap_share": 0.0008215807,
+      "score": 0.0067724176
+    },
+    {
+      "sensor": "sensor_556",
+      "p": 0.3240733455,
+      "q": 0.706362027,
+      "effect": 0.0782009946,
+      "stability": 0.08,
+      "shap_share": 0.0022635518,
+      "score": 0.0067542702
+    },
+    {
+      "sensor": "sensor_436",
+      "p": 0.1430998778,
+      "q": 0.4974654237,
+      "effect": 0.1018462727,
+      "stability": 0.02,
+      "shap_share": 0.0022828573,
+      "score": 0.0067483712
+    },
+    {
+      "sensor": "sensor_037",
+      "p": 0.3725866261,
+      "q": 0.7647649613,
+      "effect": 0.0616423736,
+      "stability": 0.15,
+      "shap_share": 0.0005302847,
+      "score": 0.0066816938
+    },
+    {
+      "sensor": "sensor_366",
+      "p": 0.2416244417,
+      "q": 0.6348003084,
+      "effect": 0.0809271442,
+      "stability": 0.11,
+      "shap_share": 0.0011812322,
+      "score": 0.0066636808
+    },
+    {
+      "sensor": "sensor_038",
+      "p": 0.0560604721,
+      "q": 0.3072944396,
+      "effect": 0.1320668415,
+      "stability": 0.0,
+      "shap_share": 0.0014068948,
+      "score": 0.0066602459
+    },
+    {
+      "sensor": "sensor_287",
+      "p": 0.2716378523,
+      "q": 0.6663381569,
+      "effect": 0.0759929337,
+      "stability": 0.0,
+      "shap_share": 0.0032377494,
+      "score": 0.0066580438
+    },
+    {
+      "sensor": "sensor_498",
+      "p": 0.9548411087,
+      "q": 0.9972497687,
+      "effect": 0.0039290936,
+      "stability": 0.0,
+      "shap_share": 0.003825524,
+      "score": 0.006658001
+    },
+    {
+      "sensor": "sensor_173",
+      "p": 0.0955085578,
+      "q": 0.4092486603,
+      "effect": 0.1152344941,
+      "stability": 0.0,
+      "shap_share": 0.0022243691,
+      "score": 0.0066186627
+    },
+    {
+      "sensor": "sensor_345",
+      "p": 0.2061799696,
+      "q": 0.598344646,
+      "effect": -0.087398374,
+      "stability": 0.11,
+      "shap_share": 0.0007438217,
+      "score": 0.0064938862
+    },
+    {
+      "sensor": "sensor_583",
+      "p": 0.1546456464,
+      "q": 0.5201717197,
+      "effect": 0.0983869,
+      "stability": 0.1,
+      "shap_share": 0.000636637,
+      "score": 0.0064913652
+    },
+    {
+      "sensor": "sensor_295",
+      "p": 0.0463704521,
+      "q": 0.2903509853,
+      "effect": 0.1385399768,
+      "stability": 0.0,
+      "shap_share": 0.0002531174,
+      "score": 0.0064838892
+    },
+    {
+      "sensor": "sensor_561",
+      "p": 0.5252160816,
+      "q": 0.8479852371,
+      "effect": 0.0439257181,
+      "stability": 0.14,
+      "shap_share": 0.0010234672,
+      "score": 0.006477392
+    },
+    {
+      "sensor": "sensor_297",
+      "p": 0.6938091651,
+      "q": 0.9501945131,
+      "effect": -0.0273928158,
+      "stability": 0.05,
+      "shap_share": 0.0029326765,
+      "score": 0.0064736248
+    },
+    {
+      "sensor": "sensor_189",
+      "p": 0.0542189579,
+      "q": 0.3047242697,
+      "effect": 0.1330731231,
+      "stability": 0.01,
+      "shap_share": 0.0004923169,
+      "score": 0.0063972804
+    },
+    {
+      "sensor": "sensor_453",
+      "p": 0.2196876402,
+      "q": 0.6127687089,
+      "effect": -0.084847838,
+      "stability": 0.02,
+      "shap_share": 0.0023521545,
+      "score": 0.006365679
+    },
+    {
+      "sensor": "sensor_358",
+      "p": 0.0764131544,
+      "q": 0.364811189,
+      "effect": 0.12171823,
+      "stability": 0.02,
+      "shap_share": 0.0009712502,
+      "score": 0.0063108654
+    },
+    {
+      "sensor": "sensor_197",
+      "p": 0.5214014419,
+      "q": 0.8448986868,
+      "effect": 0.0443390453,
+      "stability": 0.0,
+      "shap_share": 0.0033016045,
+      "score": 0.0062780663
+    },
+    {
+      "sensor": "sensor_220",
+      "p": 0.1703125444,
+      "q": 0.5479620995,
+      "effect": 0.0947707383,
+      "stability": 0.03,
+      "shap_share": 0.0018068933,
+      "score": 0.0062733693
+    },
+    {
+      "sensor": "sensor_276",
+      "p": 0.6578493116,
+      "q": 0.9382902716,
+      "effect": 0.030630355,
+      "stability": 0.04,
+      "shap_share": 0.0028471134,
+      "score": 0.0062518668
+    },
+    {
+      "sensor": "sensor_172",
+      "p": 0.1135258733,
+      "q": 0.4345300668,
+      "effect": 0.1093950113,
+      "stability": 0.0,
+      "shap_share": 0.0021203702,
+      "score": 0.0062193982
+    },
+    {
+      "sensor": "sensor_555",
+      "p": 0.8742937302,
+      "q": 0.9852447112,
+      "effect": 0.0125689928,
+      "stability": 0.16,
+      "shap_share": 0.0001968494,
+      "score": 0.0061014981
+    },
+    {
+      "sensor": "sensor_303",
+      "p": 0.6157426129,
+      "q": 0.914682521,
+      "effect": 0.0349169564,
+      "stability": 0.14,
+      "shap_share": 0.0005401759,
+      "score": 0.0060672144
+    },
+    {
+      "sensor": "sensor_471",
+      "p": 0.1079495901,
+      "q": 0.4301173617,
+      "effect": 0.1111314873,
+      "stability": 0.0,
+      "shap_share": 0.0017776122,
+      "score": 0.0060483952
+    },
+    {
+      "sensor": "sensor_495",
+      "p": 0.688237167,
+      "q": 0.9501945131,
+      "effect": 0.0277473197,
+      "stability": 0.15,
+      "shap_share": 0.0002567826,
+      "score": 0.0060395885
+    },
+    {
+      "sensor": "sensor_433",
+      "p": 0.7429551227,
+      "q": 0.9501945131,
+      "effect": 0.0228196215,
+      "stability": 0.14,
+      "shap_share": 0.0007175013,
+      "score": 0.0060394041
+    },
+    {
+      "sensor": "sensor_337",
+      "p": 0.076183368,
+      "q": 0.364811189,
+      "effect": 0.1225979192,
+      "stability": 0.02,
+      "shap_share": 0.0004251876,
+      "score": 0.0060196587
+    },
+    {
+      "sensor": "sensor_002",
+      "p": 0.6946412014,
+      "q": 0.9501945131,
+      "effect": -0.0273170732,
+      "stability": 0.02,
+      "shap_share": 0.0029475728,
+      "score": 0.0060189603
+    },
+    {
+      "sensor": "sensor_586",
+      "p": 0.4421704092,
+      "q": 0.7971492404,
+      "effect": 0.0531347198,
+      "stability": 0.13,
+      "shap_share": 0.0003198182,
+      "score": 0.006005321
+    },
+    {
+      "sensor": "sensor_154",
+      "p": 0.0695872288,
+      "q": 0.3584690963,
+      "effect": 0.1254264133,
+      "stability": 0.0,
+      "shap_share": 0.0008948207,
+      "score": 0.005978553
+    },
+    {
+      "sensor": "sensor_324",
+      "p": 0.6880722054,
+      "q": 0.9501945131,
+      "effect": -0.0277642252,
+      "stability": 0.0,
+      "shap_share": 0.0032459734,
+      "score": 0.0059080406
+    },
+    {
+      "sensor": "sensor_094",
+      "p": 0.2898550692,
+      "q": 0.6934808218,
+      "effect": 0.0731603314,
+      "stability": 0.01,
+      "shap_share": 0.0023977145,
+      "score": 0.0059008552
+    },
+    {
+      "sensor": "sensor_392",
+      "p": 0.7087679408,
+      "q": 0.9501945131,
+      "effect": -0.02582846,
+      "stability": 0.12,
+      "shap_share": 0.001100101,
+      "score": 0.0058866985
+    },
+    {
+      "sensor": "sensor_541",
+      "p": 0.1253579526,
+      "q": 0.4609923329,
+      "effect": -0.1059677716,
+      "stability": 0.06,
+      "shap_share": 0.000528722,
+      "score": 0.0058631721
+    },
+    {
+      "sensor": "sensor_524",
+      "p": 0.2446589476,
+      "q": 0.6375945951,
+      "effect": -0.0804245858,
+      "stability": 0.0,
+      "shap_share": 0.0025395826,
+      "score": 0.0058586419
+    },
+    {
+      "sensor": "sensor_114",
+      "p": 0.4434591495,
+      "q": 0.7971492404,
+      "effect": 0.052981847,
+      "stability": 0.01,
+      "shap_share": 0.0028189652,
+      "score": 0.0058429917
+    },
+    {
+      "sensor": "sensor_481",
+      "p": 0.3279348141,
+      "q": 0.7077771858,
+      "effect": -0.0676386087,
+      "stability": 0.06,
+      "shap_share": 0.0016981162,
+      "score": 0.0057626204
+    },
+    {
+      "sensor": "sensor_054",
+      "p": 0.1952422244,
+      "q": 0.5978451561,
+      "effect": -0.0900813008,
+      "stability": 0.02,
+      "shap_share": 0.0016818698,
+      "score": 0.0057378315
+    },
+    {
+      "sensor": "sensor_558",
+      "p": 0.983500412,
+      "q": 0.9972497687,
+      "effect": -0.0016667577,
+      "stability": 0.15,
+      "shap_share": 0.0001389842,
+      "score": 0.0057286408
+    },
+    {
+      "sensor": "sensor_491",
+      "p": 0.3008944059,
+      "q": 0.6934808218,
+      "effect": -0.0715155945,
+      "stability": 0.08,
+      "shap_share": 0.0011678853,
+      "score": 0.0057142444
+    },
+    {
+      "sensor": "sensor_434",
+      "p": 0.1581791417,
+      "q": 0.5280566835,
+      "effect": 0.0981228273,
+      "stability": 0.0,
+      "shap_share": 0.0019117108,
+      "score": 0.0056842253
+    },
+    {
+      "sensor": "sensor_289",
+      "p": 0.071047929,
+      "q": 0.3584690963,
+      "effect": 0.1247563353,
+      "stability": 0.0,
+      "shap_share": 0.0004366898,
+      "score": 0.0056112385
+    },
+    {
+      "sensor": "sensor_551",
+      "p": 0.4253116669,
+      "q": 0.7969220414,
+      "effect": 0.0632274988,
+      "stability": 0.1,
+      "shap_share": 0.0009401927,
+      "score": 0.0056074496
+    },
+    {
+      "sensor": "sensor_413",
+      "p": 0.9421272735,
+      "q": 0.9972497687,
+      "effect": 0.0050336597,
+      "stability": 0.13,
+      "shap_share": 0.0006185068,
+      "score": 0.0055992618
+    },
+    {
+      "sensor": "sensor_545",
+      "p": 0.0673733244,
+      "q": 0.3519265417,
+      "effect": 0.0864248294,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0055748608
+    },
+    {
+      "sensor": "sensor_411",
+      "p": 0.2093319309,
+      "q": 0.6035284241,
+      "effect": 0.0873248161,
+      "stability": 0.0,
+      "shap_share": 0.0022380292,
+      "score": 0.0055656224
+    },
+    {
+      "sensor": "sensor_319",
+      "p": 0.7907252305,
+      "q": 0.9618684996,
+      "effect": -0.0183570165,
+      "stability": 0.11,
+      "shap_share": 0.0011473957,
+      "score": 0.0055398163
+    },
+    {
+      "sensor": "sensor_151",
+      "p": 0.1805597529,
+      "q": 0.5767520164,
+      "effect": -0.0925621345,
+      "stability": 0.01,
+      "shap_share": 0.001655577,
+      "score": 0.0055283336
+    },
+    {
+      "sensor": "sensor_200",
+      "p": 0.7333399005,
+      "q": 0.9501945131,
+      "effect": -0.0235650101,
+      "stability": 0.1,
+      "shap_share": 0.0013007331,
+      "score": 0.0054980819
+    },
+    {
+      "sensor": "sensor_161",
+      "p": 0.1479539296,
+      "q": 0.509236781,
+      "effect": 0.1006257242,
+      "stability": 0.04,
+      "shap_share": 0.0006777433,
+      "score": 0.0054822261
+    },
+    {
+      "sensor": "sensor_040",
+      "p": 0.89889135,
+      "q": 0.9898114976,
+      "effect": -0.008797341,
+      "stability": 0.13,
+      "shap_share": 0.0002939136,
+      "score": 0.0054588905
+    },
+    {
+      "sensor": "sensor_012",
+      "p": 0.0889287622,
+      "q": 0.3983513929,
+      "effect": -0.1175834552,
+      "stability": 0.0,
+      "shap_share": 0.000756217,
+      "score": 0.0054536152
+    },
+    {
+      "sensor": "sensor_165",
+      "p": 0.1116917401,
+      "q": 0.4329235923,
+      "effect": 0.1106218617,
+      "stability": 0.0,
+      "shap_share": 0.001370676,
+      "score": 0.0054369542
+    },
+    {
+      "sensor": "sensor_427",
+      "p": 0.07386729,
+      "q": 0.364411964,
+      "effect": 0.1235532407,
+      "stability": 0.0,
+      "shap_share": 0.0002449655,
+      "score": 0.0054236408
+    },
+    {
+      "sensor": "sensor_185",
+      "p": 0.6139181993,
+      "q": 0.914682521,
+      "effect": 0.0348844301,
+      "stability": 0.01,
+      "shap_share": 0.0025852267,
+      "score": 0.0054097203
+    },
+    {
+      "sensor": "sensor_249",
+      "p": 0.9070314587,
+      "q": 0.9943752288,
+      "effect": 0.0080866228,
+      "stability": 0.08,
+      "shap_share": 0.0016955271,
+      "score": 0.0053186396
+    },
+    {
+      "sensor": "sensor_269",
+      "p": 0.1256307934,
+      "q": 0.4609923329,
+      "effect": -0.1058911831,
+      "stability": 0.0,
+      "shap_share": 0.0014441597,
+      "score": 0.0053163422
+    },
+    {
+      "sensor": "sensor_030",
+      "p": 0.4532000352,
+      "q": 0.8016765564,
+      "effect": 0.0521745848,
+      "stability": 0.0,
+      "shap_share": 0.002644586,
+      "score": 0.0053092956
+    },
+    {
+      "sensor": "sensor_178",
+      "p": 0.9265317051,
+      "q": 0.9972497687,
+      "effect": 0.0063883637,
+      "stability": 0.0,
+      "shap_share": 0.0029674015,
+      "score": 0.005253962
+    },
+    {
+      "sensor": "sensor_028",
+      "p": 0.9948592416,
+      "q": 0.9972497687,
+      "effect": -0.0004634994,
+      "stability": 0.12,
+      "shap_share": 0.000561669,
+      "score": 0.0052307425
+    },
+    {
+      "sensor": "sensor_476",
+      "p": 0.4816196844,
+      "q": 0.8275376302,
+      "effect": 0.0486582309,
+      "stability": 0.04,
+      "shap_share": 0.0017416742,
+      "score": 0.0052013521
+    },
+    {
+      "sensor": "sensor_407",
+      "p": 0.1378303185,
+      "q": 0.4856877891,
+      "effect": -0.10259788,
+      "stability": 0.03,
+      "shap_share": 0.0002096587,
+      "score": 0.0051417572
+    },
+    {
+      "sensor": "sensor_355",
+      "p": 0.1231846172,
+      "q": 0.4609923329,
+      "effect": -0.1065576267,
+      "stability": 0.02,
+      "shap_share": 0.0002535881,
+      "score": 0.0051322428
+    },
+    {
+      "sensor": "sensor_120",
+      "p": 0.6178698257,
+      "q": 0.914682521,
+      "effect": -0.0344937865,
+      "stability": 0.0,
+      "shap_share": 0.0026521508,
+      "score": 0.0051249466
+    },
+    {
+      "sensor": "sensor_223",
+      "p": 0.6974459594,
+      "q": 0.9501945131,
+      "effect": 0.0268792641,
+      "stability": 0.11,
+      "shap_share": 0.0003962624,
+      "score": 0.0051139063
+    },
+    {
+      "sensor": "sensor_048",
+      "p": 0.5031836756,
+      "q": 0.8361832978,
+      "effect": 0.0462889553,
+      "stability": 0.0,
+      "shap_share": 0.0025109499,
+      "score": 0.0050931465
+    },
+    {
+      "sensor": "sensor_082",
+      "p": 0.9574738968,
+      "q": 0.9972497687,
+      "effect": 0.0037006579,
+      "stability": 0.09,
+      "shap_share": 0.001310182,
+      "score": 0.0050888812
+    },
+    {
+      "sensor": "sensor_268",
+      "p": 0.2053859033,
+      "q": 0.598344646,
+      "effect": 0.0875559096,
+      "stability": 0.02,
+      "shap_share": 0.0011292084,
+      "score": 0.0050862623
+    },
+    {
+      "sensor": "sensor_273",
+      "p": 0.1856555014,
+      "q": 0.5846173236,
+      "effect": 0.0920634921,
+      "stability": 0.0,
+      "shap_share": 0.001591752,
+      "score": 0.0050607226
+    },
+    {
+      "sensor": "sensor_523",
+      "p": 0.5815777983,
+      "q": 0.8937955868,
+      "effect": 0.0381030702,
+      "stability": 0.0,
+      "shap_share": 0.0025152659,
+      "score": 0.0050284525
+    },
+    {
+      "sensor": "sensor_325",
+      "p": 0.1111881052,
+      "q": 0.4329235923,
+      "effect": 0.1101116058,
+      "stability": 0.0,
+      "shap_share": 0.0008119389,
+      "score": 0.0050061473
+    },
+    {
+      "sensor": "sensor_007",
+      "p": 0.1940995982,
+      "q": 0.5978451561,
+      "effect": -0.0897796818,
+      "stability": 0.01,
+      "shap_share": 0.0011530054,
+      "score": 0.0050057679
+    },
+    {
+      "sensor": "sensor_079",
+      "p": 0.3245447151,
+      "q": 0.706362027,
+      "effect": -0.0681042885,
+      "stability": 0.0,
+      "shap_share": 0.0021846739,
+      "score": 0.0049979773
+    },
+    {
+      "sensor": "sensor_044",
+      "p": 0.4488801969,
+      "q": 0.8009021544,
+      "effect": 0.0523571385,
+      "stability": 0.0,
+      "shap_share": 0.002339195,
+      "score": 0.0049937615
+    },
+    {
+      "sensor": "sensor_175",
+      "p": 0.0958600466,
+      "q": 0.4092486603,
+      "effect": 0.1151125206,
+      "stability": 0.0,
+      "shap_share": 0.000372351,
+      "score": 0.0049841561
+    },
+    {
+      "sensor": "sensor_166",
+      "p": 0.2289438471,
+      "q": 0.6160670796,
+      "effect": 0.0836770954,
+      "stability": 0.03,
+      "shap_share": 0.0010065668,
+      "score": 0.0049766024
+    },
+    {
+      "sensor": "sensor_351",
+      "p": 0.6180287304,
+      "q": 0.914682521,
+      "effect": 0.0344785575,
+      "stability": 0.0,
+      "shap_share": 0.0024635756,
+      "score": 0.0049299423
+    },
+    {
+      "sensor": "sensor_216",
+      "p": 0.5698518134,
+      "q": 0.8817970223,
+      "effect": -0.0392909357,
+      "stability": 0.03,
+      "shap_share": 0.001753383,
+      "score": 0.0049280956
+    },
+    {
+      "sensor": "sensor_553",
+      "p": 0.7112451555,
+      "q": 0.9501945131,
+      "effect": 0.0293731898,
+      "stability": 0.02,
+      "shap_share": 0.002044405,
+      "score": 0.0048833275
+    },
+    {
+      "sensor": "sensor_571",
+      "p": 0.8163479827,
+      "q": 0.9643265127,
+      "effect": -0.0160666423,
+      "stability": 0.08,
+      "shap_share": 0.0011559555,
+      "score": 0.0048344319
+    },
+    {
+      "sensor": "sensor_170",
+      "p": 0.2617765492,
+      "q": 0.6566598184,
+      "effect": 0.0780533024,
+      "stability": 0.02,
+      "shap_share": 0.0011664217,
+      "score": 0.0048298646
+    },
+    {
+      "sensor": "sensor_449",
+      "p": 0.9677992477,
+      "q": 0.9972497687,
+      "effect": 0.0028053912,
+      "stability": 0.0,
+      "shap_share": 0.002674856,
+      "score": 0.0048183249
+    },
+    {
+      "sensor": "sensor_063",
+      "p": 0.6254462733,
+      "q": 0.9163027273,
+      "effect": -0.0337581759,
+      "stability": 0.08,
+      "shap_share": 0.0009249708,
+      "score": 0.0048168051
+    },
+    {
+      "sensor": "sensor_480",
+      "p": 0.2757448897,
+      "q": 0.6726963243,
+      "effect": 0.0753560731,
+      "stability": 0.01,
+      "shap_share": 0.0014921014,
+      "score": 0.004811378
+    },
+    {
+      "sensor": "sensor_062",
+      "p": 0.6720256011,
+      "q": 0.9501945131,
+      "effect": 0.0292805184,
+      "stability": 0.02,
+      "shap_share": 0.0018965504,
+      "score": 0.004810733
+    },
+    {
+      "sensor": "sensor_121",
+      "p": 0.9145447893,
+      "q": 0.9972497687,
+      "effect": -0.0074317739,
+      "stability": 0.04,
+      "shap_share": 0.0017711485,
+      "score": 0.0047888651
+    },
+    {
+      "sensor": "sensor_369",
+      "p": 0.1607512599,
+      "q": 0.5326385028,
+      "effect": 0.0969247246,
+      "stability": 0.02,
+      "shap_share": 0.0001172109,
+      "score": 0.0047556482
+    },
+    {
+      "sensor": "sensor_568",
+      "p": 0.8568932157,
+      "q": 0.9705627239,
+      "effect": -0.0148941333,
+      "stability": 0.1,
+      "shap_share": 0.0004296693,
+      "score": 0.0047261186
+    },
+    {
+      "sensor": "sensor_540",
+      "p": 0.2191986231,
+      "q": 0.6127687089,
+      "effect": 0.0849519025,
+      "stability": 0.01,
+      "shap_share": 0.0010652215,
+      "score": 0.0047091767
+    },
+    {
+      "sensor": "sensor_181",
+      "p": 0.2044220615,
+      "q": 0.598344646,
+      "effect": -0.0877294627,
+      "stability": 0.01,
+      "shap_share": 0.000944044,
+      "score": 0.0047064078
+    },
+    {
+      "sensor": "sensor_526",
+      "p": 0.6476750433,
+      "q": 0.930639868,
+      "effect": 0.031600268,
+      "stability": 0.09,
+      "shap_share": 0.0003555307,
+      "score": 0.0046858797
+    },
+    {
+      "sensor": "sensor_341",
+      "p": 0.7008011843,
+      "q": 0.9501945131,
+      "effect": 0.0265755853,
+      "stability": 0.05,
+      "shap_share": 0.0014301209,
+      "score": 0.0046828717
+    },
+    {
+      "sensor": "sensor_425",
+      "p": 0.3484676187,
+      "q": 0.7298095411,
+      "effect": 0.0648148148,
+      "stability": 0.0,
+      "shap_share": 0.0018082476,
+      "score": 0.0046601641
+    },
+    {
+      "sensor": "sensor_274",
+      "p": 0.7272267316,
+      "q": 0.9501945131,
+      "effect": 0.024127907,
+      "stability": 0.02,
+      "shap_share": 0.0017976046,
+      "score": 0.0046377236
+    },
+    {
+      "sensor": "sensor_133",
+      "p": 0.2204461089,
+      "q": 0.6127687089,
+      "effect": 0.0847221371,
+      "stability": 0.0,
+      "shap_share": 0.0013856164,
+      "score": 0.0046252776
+    },
+    {
+      "sensor": "sensor_567",
+      "p": 0.6030545699,
+      "q": 0.910735473,
+      "effect": -0.0428926773,
+      "stability": 0.09,
+      "shap_share": 0.0,
+      "score": 0.0046244649
+    },
+    {
+      "sensor": "sensor_254",
+      "p": 0.692945407,
+      "q": 0.9501945131,
+      "effect": 0.0273056774,
+      "stability": 0.07,
+      "shap_share": 0.0010342146,
+      "score": 0.0046106446
+    },
+    {
+      "sensor": "sensor_442",
+      "p": 0.2469961044,
+      "q": 0.6375945951,
+      "effect": 0.0800298835,
+      "stability": 0.04,
+      "shap_share": 0.0001376278,
+      "score": 0.0045802515
+    },
+    {
+      "sensor": "sensor_360",
+      "p": 0.3053206575,
+      "q": 0.6934808218,
+      "effect": 0.0708607456,
+      "stability": 0.0,
+      "shap_share": 0.0016720862,
+      "score": 0.0045623854
+    },
+    {
+      "sensor": "sensor_361",
+      "p": 0.5699904176,
+      "q": 0.8817970223,
+      "effect": 0.0391995614,
+      "stability": 0.08,
+      "shap_share": 0.0003793192,
+      "score": 0.0045378913
+    },
+    {
+      "sensor": "sensor_301",
+      "p": 0.2708562818,
+      "q": 0.6663381569,
+      "effect": 0.0765855543,
+      "stability": 0.02,
+      "shap_share": 0.000843022,
+      "score": 0.0045205246
+    },
+    {
+      "sensor": "sensor_584",
+      "p": 0.4112293351,
+      "q": 0.7963294507,
+      "effect": 0.0568091724,
+      "stability": 0.04,
+      "shap_share": 0.0008578375,
+      "score": 0.0045013669
+    },
+    {
+      "sensor": "sensor_068",
+      "p": 0.7232104072,
+      "q": 0.9501945131,
+      "effect": 0.0244972187,
+      "stability": 0.08,
+      "shap_share": 0.0006172107,
+      "score": 0.0044956125
+    },
+    {
+      "sensor": "sensor_100",
+      "p": 0.8740692393,
+      "q": 0.9852447112,
+      "effect": 0.0109700122,
+      "stability": 0.01,
+      "shap_share": 0.0020751213,
+      "score": 0.0044891256
+    },
+    {
+      "sensor": "sensor_554",
+      "p": 0.3920897157,
+      "q": 0.7896136418,
+      "effect": 0.0678725613,
+      "stability": 0.06,
+      "shap_share": 0.0003158365,
+      "score": 0.0044862545
+    },
+    {
+      "sensor": "sensor_500",
+      "p": 0.5175112415,
+      "q": 0.8416666345,
+      "effect": -0.0412859405,
+      "stability": 0.08,
+      "shap_share": 4.63599e-05,
+      "score": 0.0044855642
+    },
+    {
+      "sensor": "sensor_424",
+      "p": 0.7123988406,
+      "q": 0.9501945131,
+      "effect": 0.0254934211,
+      "stability": 0.01,
+      "shap_share": 0.0018785915,
+      "score": 0.0044817585
+    },
+    {
+      "sensor": "sensor_027",
+      "p": 0.6535815409,
+      "q": 0.9360974328,
+      "effect": 0.031224411,
+      "stability": 0.06,
+      "shap_share": 0.0009844215,
+      "score": 0.0044542972
+    },
+    {
+      "sensor": "sensor_143",
+      "p": 0.6269337109,
+      "q": 0.9163027273,
+      "effect": -0.0336138311,
+      "stability": 0.08,
+      "shap_share": 0.0003253248,
+      "score": 0.0044534731
+    },
+    {
+      "sensor": "sensor_005",
+      "p": 0.4196828946,
+      "q": 0.7969220414,
+      "effect": 0.0557986536,
+      "stability": 0.04,
+      "shap_share": 0.0008130189,
+      "score": 0.0044490048
+    },
+    {
+      "sensor": "sensor_042",
+      "p": 0.8124913479,
+      "q": 0.9643265127,
+      "effect": 0.0164203105,
+      "stability": 0.08,
+      "shap_share": 0.000660279,
+      "score": 0.0044261012
+    },
+    {
+      "sensor": "sensor_339",
+      "p": 0.1879473621,
+      "q": 0.5876663997,
+      "effect": 0.0910342717,
+      "stability": 0.0,
+      "shap_share": 0.0008257178,
+      "score": 0.0044201287
+    },
+    {
+      "sensor": "sensor_021",
+      "p": 0.4201017371,
+      "q": 0.7969220414,
+      "effect": 0.0557383041,
+      "stability": 0.04,
+      "shap_share": 0.0007534218,
+      "score": 0.0043921644
+    },
+    {
+      "sensor": "sensor_213",
+      "p": 0.5629896972,
+      "q": 0.8817970223,
+      "effect": 0.0399914717,
+      "stability": 0.0,
+      "shap_share": 0.0019400309,
+      "score": 0.0043757383
+    },
+    {
+      "sensor": "sensor_275",
+      "p": 0.6773357711,
+      "q": 0.9501945131,
+      "effect": 0.0287790698,
+      "stability": 0.07,
+      "shap_share": 0.0006794035,
+      "score": 0.0043729404
+    },
+    {
+      "sensor": "sensor_033",
+      "p": 0.9736036299,
+      "q": 0.9972497687,
+      "effect": -0.0023022504,
+      "stability": 0.06,
+      "shap_share": 0.0011671197,
+      "score": 0.0043647236
+    },
+    {
+      "sensor": "sensor_018",
+      "p": 0.182929746,
+      "q": 0.580148623,
+      "effect": -0.092059576,
+      "stability": 0.0,
+      "shap_share": 0.0006907042,
+      "score": 0.004344183
+    },
+    {
+      "sensor": "sensor_570",
+      "p": 0.5882607984,
+      "q": 0.8944787482,
+      "effect": 0.0446520658,
+      "stability": 0.07,
+      "shap_share": 0.000450262,
+      "score": 0.0043351463
+    },
+    {
+      "sensor": "sensor_572",
+      "p": 0.308993034,
+      "q": 0.6934808218,
+      "effect": 0.070327729,
+      "stability": 0.03,
+      "shap_share": 0.0005157776,
+      "score": 0.0043319233
+    },
+    {
+      "sensor": "sensor_078",
+      "p": 0.8509124582,
+      "q": 0.9688178127,
+      "effect": 0.0130056043,
+      "stability": 0.01,
+      "shap_share": 0.0018760192,
+      "score": 0.0043195247
+    },
+    {
+      "sensor": "sensor_016",
+      "p": 0.9295920375,
+      "q": 0.9972497687,
+      "effect": 0.006122076,
+      "stability": 0.0,
+      "shap_share": 0.0022629586,
+      "score": 0.0043100513
+    },
+    {
+      "sensor": "sensor_171",
+      "p": 0.1948281109,
+      "q": 0.5978451561,
+      "effect": 0.0896200524,
+      "stability": 0.0,
+      "shap_share": 0.0007231184,
+      "score": 0.0043097794
+    },
+    {
+      "sensor": "sensor_496",
+      "p": 0.4365464958,
+      "q": 0.7969220414,
+      "effect": 0.0537889864,
+      "stability": 0.01,
+      "shap_share": 0.0014715353,
+      "score": 0.0042979126
+    },
+    {
+      "sensor": "sensor_047",
+      "p": 0.2990212407,
+      "q": 0.6934808218,
+      "effect": 0.0717966701,
+      "stability": 0.0,
+      "shap_share": 0.0013725576,
+      "score": 0.0042845393
+    },
+    {
+      "sensor": "sensor_575",
+      "p": 0.4829402242,
+      "q": 0.8275376302,
+      "effect": 0.0485045078,
+      "stability": 0.02,
+      "shap_share": 0.0011819346,
+      "score": 0.0042784819
+    },
+    {
+      "sensor": "sensor_272",
+      "p": 0.1627370539,
+      "q": 0.5352240884,
+      "effect": 0.0965218992,
+      "stability": 0.0,
+      "shap_share": 0.0003838716,
+      "score": 0.0042600477
+    },
+    {
+      "sensor": "sensor_542",
+      "p": 0.9786103636,
+      "q": 0.9972497687,
+      "effect": 0.001868758,
+      "stability": 0.0,
+      "shap_share": 0.0022617514,
+      "score": 0.0042468831
+    },
+    {
+      "sensor": "sensor_406",
+      "p": 0.2021416667,
+      "q": 0.598344646,
+      "effect": 0.0881839348,
+      "stability": 0.0,
+      "shap_share": 0.0007069852,
+      "score": 0.0042411769
+    },
+    {
+      "sensor": "sensor_109",
+      "p": 0.7099957719,
+      "q": 0.9501945131,
+      "effect": 0.0257190942,
+      "stability": 0.02,
+      "shap_share": 0.0014843915,
+      "score": 0.0042244087
+    },
+    {
+      "sensor": "sensor_437",
+      "p": 0.5497795049,
+      "q": 0.8749179217,
+      "effect": 0.041606798,
+      "stability": 0.0,
+      "shap_share": 0.0017662347,
+      "score": 0.0041993024
+    },
+    {
+      "sensor": "sensor_196",
+      "p": 0.322362287,
+      "q": 0.706362027,
+      "effect": 0.0688346883,
+      "stability": 0.02,
+      "shap_share": 0.0006823758,
+      "score": 0.0041899327
+    },
+    {
+      "sensor": "sensor_019",
+      "p": 0.772005223,
+      "q": 0.954791975,
+      "effect": -0.020041423,
+      "stability": 0.01,
+      "shap_share": 0.0016954441,
+      "score": 0.0041500033
+    },
+    {
+      "sensor": "sensor_312",
+      "p": 0.307188873,
+      "q": 0.6934808218,
+      "effect": -0.0705921815,
+      "stability": 0.02,
+      "shap_share": 0.0004638388,
+      "score": 0.0041318854
+    },
+    {
+      "sensor": "sensor_229",
+      "p": 0.4125130037,
+      "q": 0.7963294507,
+      "effect": 0.0566520468,
+      "stability": 0.03,
+      "shap_share": 0.0005668816,
+      "score": 0.0041176562
+    },
+    {
+      "sensor": "sensor_548",
+      "p": 0.7535201866,
+      "q": 0.9501945131,
+      "effect": 0.0249193945,
+      "stability": 0.05,
+      "shap_share": 0.0008029202,
+      "score": 0.0041050722
+    },
+    {
+      "sensor": "sensor_208",
+      "p": 0.3141358506,
+      "q": 0.6973815884,
+      "effect": 0.0695947185,
+      "stability": 0.0,
+      "shap_share": 0.0012791674,
+      "score": 0.0040976196
+    },
+    {
+      "sensor": "sensor_119",
+      "p": 0.2572013538,
+      "q": 0.6525565776,
+      "effect": -0.0783229776,
+      "stability": 0.01,
+      "shap_share": 0.0005083874,
+      "score": 0.0040853619
+    },
+    {
+      "sensor": "sensor_055",
+      "p": 0.3092549611,
+      "q": 0.6934808218,
+      "effect": -0.0707239644,
+      "stability": 0.0,
+      "shap_share": 0.0011801822,
+      "score": 0.0040731246
+    },
+    {
+      "sensor": "sensor_017",
+      "p": 0.7277318222,
+      "q": 0.9501945131,
+      "effect": 0.0240771199,
+      "stability": 0.02,
+      "shap_share": 0.0013617294,
+      "score": 0.0040728242
+    },
+    {
+      "sensor": "sensor_106",
+      "p": 0.4344936152,
+      "q": 0.7969220414,
+      "effect": 0.0540238678,
+      "stability": 0.02,
+      "shap_share": 0.000855407,
+      "score": 0.0040560656
+    },
+    {
+      "sensor": "sensor_412",
+      "p": 0.2346184111,
+      "q": 0.6237758953,
+      "effect": 0.0821756426,
+      "stability": 0.01,
+      "shap_share": 0.0002212403,
+      "score": 0.0040425162
+    },
+    {
+      "sensor": "sensor_069",
+      "p": 0.898144431,
+      "q": 0.9898114976,
+      "effect": -0.0088636225,
+      "stability": 0.0,
+      "shap_share": 0.0019425457,
+      "score": 0.0040388568
+    },
+    {
+      "sensor": "sensor_318",
+      "p": 0.9758909942,
+      "q": 0.9972497687,
+      "effect": 0.0021040434,
+      "stability": 0.0,
+      "shap_share": 0.0020112013,
+      "score": 0.0040138774
+    },
+    {
+      "sensor": "sensor_174",
+      "p": 0.5047232518,
+      "q": 0.8361832978,
+      "effect": -0.0461212417,
+      "stability": 0.0,
+      "shap_share": 0.0016261053,
+      "score": 0.0040112949
+    },
+    {
+      "sensor": "sensor_209",
+      "p": 0.2689847733,
+      "q": 0.6663381569,
+      "effect": -0.0764258206,
+      "stability": 0.01,
+      "shap_share": 0.0004282845,
+      "score": 0.0040110486
+    },
+    {
+      "sensor": "sensor_072",
+      "p": 0.5518914856,
+      "q": 0.8751422129,
+      "effect": -0.041139434,
+      "stability": 0.02,
+      "shap_share": 0.0010449277,
+      "score": 0.0040073609
+    },
+    {
+      "sensor": "sensor_155",
+      "p": 0.6830546825,
+      "q": 0.9501945131,
+      "effect": 0.0282346491,
+      "stability": 0.05,
+      "shap_share": 0.0004780035,
+      "score": 0.0039998876
+    },
+    {
+      "sensor": "sensor_362",
+      "p": 0.6273784439,
+      "q": 0.9163027273,
+      "effect": 0.0335648148,
+      "stability": 0.01,
+      "shap_share": 0.0013905046,
+      "score": 0.0039640175
+    },
+    {
+      "sensor": "sensor_152",
+      "p": 0.3292203882,
+      "q": 0.7077771858,
+      "effect": 0.0674494396,
+      "stability": 0.0,
+      "shap_share": 0.0011482017,
+      "score": 0.003955979
+    },
+    {
+      "sensor": "sensor_305",
+      "p": 0.2384569182,
+      "q": 0.6302075696,
+      "effect": 0.0819930475,
+      "stability": 0.0,
+      "shap_share": 0.0006656938,
+      "score": 0.0039206482
+    },
+    {
+      "sensor": "sensor_393",
+      "p": 0.3021238955,
+      "q": 0.6934808218,
+      "effect": -0.071317617,
+      "stability": 0.0,
+      "shap_share": 0.0010088701,
+      "score": 0.003917967
+    },
+    {
+      "sensor": "sensor_472",
+      "p": 0.7991371972,
+      "q": 0.9643265127,
+      "effect": -0.0176049881,
+      "stability": 0.05,
+      "shap_share": 0.0005883677,
+      "score": 0.0039142833
+    },
+    {
+      "sensor": "sensor_410",
+      "p": 0.4925132897,
+      "q": 0.8346408421,
+      "effect": 0.0474635014,
+      "stability": 0.0,
+      "shap_share": 0.0014790016,
+      "score": 0.0038942349
+    },
+    {
+      "sensor": "sensor_108",
+      "p": 0.8943453963,
+      "q": 0.9898114976,
+      "effect": 0.0091952264,
+      "stability": 0.04,
+      "shap_share": 0.0008403424,
+      "score": 0.0038683836
+    },
+    {
+      "sensor": "sensor_389",
+      "p": 0.4803353326,
+      "q": 0.8275376302,
+      "effect": 0.0487938596,
+      "stability": 0.01,
+      "shap_share": 0.0010413296,
+      "score": 0.0038555948
+    },
+    {
+      "sensor": "sensor_149",
+      "p": 0.9660790006,
+      "q": 0.9972497687,
+      "effect": 0.0029544347,
+      "stability": 0.03,
+      "shap_share": 0.001121728,
+      "score": 0.0038546014
+    },
+    {
+      "sensor": "sensor_140",
+      "p": 0.7050775746,
+      "q": 0.9501945131,
+      "effect": 0.0261780906,
+      "stability": 0.03,
+      "shap_share": 0.0007988363,
+      "score": 0.0038480544
+    },
+    {
+      "sensor": "sensor_557",
+      "p": 0.4323509839,
+      "q": 0.7969220414,
+      "effect": 0.0622711624,
+      "stability": 0.0,
+      "shap_share": 0.0012998385,
+      "score": 0.0038471871
+    },
+    {
+      "sensor": "sensor_167",
+      "p": 0.5113993798,
+      "q": 0.8378646665,
+      "effect": 0.045639243,
+      "stability": 0.01,
+      "shap_share": 0.0010562544,
+      "score": 0.003810516
+    },
+    {
+      "sensor": "sensor_202",
+      "p": 0.4836135545,
+      "q": 0.8275376302,
+      "effect": 0.0484394125,
+      "stability": 0.03,
+      "shap_share": 0.000263187,
+      "score": 0.0038016843
+    },
+    {
+      "sensor": "sensor_052",
+      "p": 0.8531706414,
+      "q": 0.9688178127,
+      "effect": 0.0128072208,
+      "stability": 0.0,
+      "shap_share": 0.0017003951,
+      "score": 0.0037798898
+    },
+    {
+      "sensor": "sensor_441",
+      "p": 0.221893496,
+      "q": 0.6127687089,
+      "effect": 0.0849594438,
+      "stability": 0.0,
+      "shap_share": 0.0001186047,
+      "score": 0.0037699536
+    },
+    {
+      "sensor": "sensor_076",
+      "p": 0.2914195373,
+      "q": 0.6934808218,
+      "effect": -0.0729318957,
+      "stability": 0.0,
+      "shap_share": 0.000709903,
+      "score": 0.0037692204
+    },
+    {
+      "sensor": "sensor_084",
+      "p": 0.7575477467,
+      "q": 0.9501945131,
+      "effect": -0.0213511209,
+      "stability": 0.01,
+      "shap_share": 0.0013559779,
+      "score": 0.0037597615
+    },
+    {
+      "sensor": "sensor_056",
+      "p": 0.3976559348,
+      "q": 0.7898005343,
+      "effect": 0.0588308169,
+      "stability": 0.01,
+      "shap_share": 0.0006580698,
+      "score": 0.0037589834
+    },
+    {
+      "sensor": "sensor_521",
+      "p": 0.9238148338,
+      "q": 0.9972497687,
+      "effect": 0.0066246345,
+      "stability": 0.01,
+      "shap_share": 0.0014740827,
+      "score": 0.0037586992
+    },
+    {
+      "sensor": "sensor_390",
+      "p": 0.4047693137,
+      "q": 0.7917073801,
+      "effect": -0.0554489522,
+      "stability": 0.02,
+      "shap_share": 0.0,
+      "score": 0.003705063
+    },
+    {
+      "sensor": "sensor_085",
+      "p": 0.6721793884,
+      "q": 0.9501945131,
+      "effect": -0.0292740047,
+      "stability": 0.0,
+      "shap_share": 0.0014855785,
+      "score": 0.0037016264
+    },
+    {
+      "sensor": "sensor_058",
+      "p": 0.7836412372,
+      "q": 0.9572379774,
+      "effect": -0.0191095625,
+      "stability": 0.0,
+      "shap_share": 0.0016168527,
+      "score": 0.0036778623
+    },
+    {
+      "sensor": "sensor_010",
+      "p": 0.9313431129,
+      "q": 0.9972497687,
+      "effect": -0.0059697856,
+      "stability": 0.0,
+      "shap_share": 0.00168242,
+      "score": 0.0036763027
+    },
+    {
+      "sensor": "sensor_458",
+      "p": 0.7824114711,
+      "q": 0.9572379774,
+      "effect": 0.0191041044,
+      "stability": 0.0,
+      "shap_share": 0.0016164045,
+      "score": 0.0036700675
+    },
+    {
+      "sensor": "sensor_573",
+      "p": 0.7386770349,
+      "q": 0.9501945131,
+      "effect": 0.0230720029,
+      "stability": 0.04,
+      "shap_share": 0.0002780978,
+      "score": 0.0036617601
+    },
+    {
+      "sensor": "sensor_414",
+      "p": 0.9848136409,
+      "q": 0.9972497687,
+      "effect": -0.0013310894,
+      "stability": 0.04,
+      "shap_share": 0.0006657319,
+      "score": 0.0036544307
+    },
+    {
+      "sensor": "sensor_501",
+      "p": 0.8837902138,
+      "q": 0.9898114976,
+      "effect": -0.0090917398,
+      "stability": 0.04,
+      "shap_share": 0.0005267285,
+      "score": 0.0036539951
+    },
+    {
+      "sensor": "sensor_457",
+      "p": 0.8226648895,
+      "q": 0.9653641058,
+      "effect": 0.0155058852,
+      "stability": 0.02,
+      "shap_share": 0.0010117072,
+      "score": 0.0036520205
+    },
+    {
+      "sensor": "sensor_566",
+      "p": 0.8341330346,
+      "q": 0.9669845101,
+      "effect": -0.0172905418,
+      "stability": 0.04,
+      "shap_share": 0.0004125988,
+      "score": 0.0036253093
+    },
+    {
+      "sensor": "sensor_102",
+      "p": 0.4379481489,
+      "q": 0.7969220414,
+      "effect": -0.0524479804,
+      "stability": 0.01,
+      "shap_share": 0.0006527391,
+      "score": 0.0036172514
+    },
+    {
+      "sensor": "sensor_095",
+      "p": 0.2462992642,
+      "q": 0.6375945951,
+      "effect": -0.0780446756,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0036026099
+    },
+    {
+      "sensor": "sensor_081",
+      "p": 0.3191632185,
+      "q": 0.7050172587,
+      "effect": -0.0688657407,
+      "stability": 0.0,
+      "shap_share": 0.0006748712,
+      "score": 0.0036014474
+    },
+    {
+      "sensor": "sensor_357",
+      "p": 0.3826604317,
+      "q": 0.7793634481,
+      "effect": -0.0603527047,
+      "stability": 0.01,
+      "shap_share": 0.0002800538,
+      "score": 0.0035941727
+    },
+    {
+      "sensor": "sensor_304",
+      "p": 0.4787637628,
+      "q": 0.8275376302,
+      "effect": 0.0492699884,
+      "stability": 0.0,
+      "shap_share": 0.0011161476,
+      "score": 0.003590933
+    },
+    {
+      "sensor": "sensor_354",
+      "p": 0.4899784606,
+      "q": 0.8335265767,
+      "effect": -0.0477278265,
+      "stability": 0.0,
+      "shap_share": 0.0011297514,
+      "score": 0.0035784636
+    },
+    {
+      "sensor": "sensor_004",
+      "p": 0.3567265934,
+      "q": 0.743599096,
+      "effect": 0.0637239902,
+      "stability": 0.0,
+      "shap_share": 0.0007344834,
+      "score": 0.0035672195
+    },
+    {
+      "sensor": "sensor_340",
+      "p": 0.8135156097,
+      "q": 0.9643265127,
+      "effect": 0.016321291,
+      "stability": 0.02,
+      "shap_share": 0.0008248887,
+      "score": 0.0035503781
+    },
+    {
+      "sensor": "sensor_422",
+      "p": 0.9959563998,
+      "q": 0.9972497687,
+      "effect": -0.0003654971,
+      "stability": 0.02,
+      "shap_share": 0.0010257673,
+      "score": 0.0035327254
+    },
+    {
+      "sensor": "sensor_177",
+      "p": 0.3868248052,
+      "q": 0.7842475502,
+      "effect": -0.0598280173,
+      "stability": 0.01,
+      "shap_share": 5.61498e-05,
+      "score": 0.0035300328
+    },
+    {
+      "sensor": "sensor_105",
+      "p": 0.8005823882,
+      "q": 0.9643265127,
+      "effect": 0.0174524854,
+      "stability": 0.04,
+      "shap_share": 1.44624e-05,
+      "score": 0.0035259144
+    },
+    {
+      "sensor": "sensor_217",
+      "p": 0.5278515239,
+      "q": 0.8491524515,
+      "effect": -0.0436464425,
+      "stability": 0.01,
+      "shap_share": 0.0007109234,
+      "score": 0.003518996
+    },
+    {
+      "sensor": "sensor_468",
+      "p": 0.4143176283,
+      "q": 0.7963507661,
+      "effect": 0.0567866822,
+      "stability": 0.01,
+      "shap_share": 0.0002828554,
+      "score": 0.0035102425
+    },
+    {
+      "sensor": "sensor_483",
+      "p": 0.3032721487,
+      "q": 0.6934808218,
+      "effect": -0.0701449805,
+      "stability": 0.0,
+      "shap_share": 0.0003608966,
+      "score": 0.0035014778
+    },
+    {
+      "sensor": "sensor_569",
+      "p": 0.9357628663,
+      "q": 0.9972497687,
+      "effect": 0.0066735424,
+      "stability": 0.03,
+      "shap_share": 0.0005788709,
+      "score": 0.0034873646
+    },
+    {
+      "sensor": "sensor_321",
+      "p": 0.517065913,
+      "q": 0.8416666345,
+      "effect": 0.0447947795,
+      "stability": 0.02,
+      "shap_share": 5.51866e-05,
+      "score": 0.0034843269
+    },
+    {
+      "sensor": "sensor_255",
+      "p": 0.400303171,
+      "q": 0.7898005343,
+      "effect": -0.0581444932,
+      "stability": 0.0,
+      "shap_share": 0.0007112793,
+      "score": 0.0034722744
+    },
+    {
+      "sensor": "sensor_101",
+      "p": 0.7842369741,
+      "q": 0.9572379774,
+      "effect": 0.0188035496,
+      "stability": 0.03,
+      "shap_share": 0.0003493601,
+      "score": 0.0034701351
+    },
+    {
+      "sensor": "sensor_552",
+      "p": 0.9972497687,
+      "q": 0.9972497687,
+      "effect": -0.0003005629,
+      "stability": 0.04,
+      "shap_share": 0.0003350989,
+      "score": 0.0034677948
+    },
+    {
+      "sensor": "sensor_512",
+      "p": 0.3709916079,
+      "q": 0.7647649613,
+      "effect": 0.0571241472,
+      "stability": 0.0,
+      "shap_share": 0.0006240582,
+      "score": 0.0034584134
+    },
+    {
+      "sensor": "sensor_338",
+      "p": 0.7529687022,
+      "q": 0.9501945131,
+      "effect": 0.0217717258,
+      "stability": 0.03,
+      "shap_share": 0.0002045432,
+      "score": 0.003446638
+    },
+    {
+      "sensor": "sensor_137",
+      "p": 0.5677192064,
+      "q": 0.8817970223,
+      "effect": 0.0395196908,
+      "stability": 0.0,
+      "shap_share": 0.0010454165,
+      "score": 0.0034085313
+    },
+    {
+      "sensor": "sensor_071",
+      "p": 0.9386743897,
+      "q": 0.9972497687,
+      "effect": -0.0053334556,
+      "stability": 0.01,
+      "shap_share": 0.0010476436,
+      "score": 0.0033801708
+    },
+    {
+      "sensor": "sensor_003",
+      "p": 0.9567550967,
+      "q": 0.9972497687,
+      "effect": 0.0037637699,
+      "stability": 0.01,
+      "shap_share": 0.0010748529,
+      "score": 0.0033777739
+    },
+    {
+      "sensor": "sensor_141",
+      "p": 0.8188087732,
+      "q": 0.9643265127,
+      "effect": 0.0158506732,
+      "stability": 0.03,
+      "shap_share": 0.0001941253,
+      "score": 0.0033724959
+    },
+    {
+      "sensor": "sensor_547",
+      "p": 0.443341716,
+      "q": 0.7971492404,
+      "effect": -0.0607956719,
+      "stability": 0.0,
+      "shap_share": 0.0007557324,
+      "score": 0.0033684364
+    },
+    {
+      "sensor": "sensor_448",
+      "p": 0.4006489313,
+      "q": 0.7898005343,
+      "effect": -0.0581051412,
+      "stability": 0.0,
+      "shap_share": 0.000543098,
+      "score": 0.0033596202
+    },
+    {
+      "sensor": "sensor_306",
+      "p": 0.4619236982,
+      "q": 0.8120819174,
+      "effect": 0.0508629627,
+      "stability": 0.0,
+      "shap_share": 0.0007684163,
+      "score": 0.0033552623
+    },
+    {
+      "sensor": "sensor_333",
+      "p": 0.7847626662,
+      "q": 0.9572379774,
+      "effect": 0.0188953488,
+      "stability": 0.03,
+      "shap_share": 0.0,
+      "score": 0.0033534497
+    },
+    {
+      "sensor": "sensor_088",
+      "p": 0.9871654136,
+      "q": 0.9972497687,
+      "effect": 0.0011269493,
+      "stability": 0.02,
+      "shap_share": 0.0007063112,
+      "score": 0.0033145004
+    },
+    {
+      "sensor": "sensor_428",
+      "p": 0.6953891632,
+      "q": 0.9501945131,
+      "effect": 0.0270772417,
+      "stability": 0.02,
+      "shap_share": 0.0001578881,
+      "score": 0.003310216
+    },
+    {
+      "sensor": "sensor_439",
+      "p": 0.9203616246,
+      "q": 0.9972497687,
+      "effect": -0.0069679413,
+      "stability": 0.01,
+      "shap_share": 0.0009812332,
+      "score": 0.0033003453
+    },
+    {
+      "sensor": "sensor_387",
+      "p": 0.7778999348,
+      "q": 0.9572379774,
+      "effect": 0.0195084064,
+      "stability": 0.01,
+      "shap_share": 0.0007772783,
+      "score": 0.0032929686
+    },
+    {
+      "sensor": "sensor_525",
+      "p": 0.750016119,
+      "q": 0.9501945131,
+      "effect": 0.0220364279,
+      "stability": 0.01,
+      "shap_share": 0.0007322562,
+      "score": 0.0032926341
+    },
+    {
+      "sensor": "sensor_204",
+      "p": 0.5882135215,
+      "q": 0.8944787482,
+      "effect": 0.0374411639,
+      "stability": 0.0,
+      "shap_share": 0.0009019168,
+      "score": 0.0032524512
+    },
+    {
+      "sensor": "sensor_182",
+      "p": 0.9697343448,
+      "q": 0.9972497687,
+      "effect": -0.0026376776,
+      "stability": 0.01,
+      "shap_share": 0.0009323987,
+      "score": 0.0032370589
+    },
+    {
+      "sensor": "sensor_356",
+      "p": 0.9903306586,
+      "q": 0.9972497687,
+      "effect": 0.0008528265,
+      "stability": 0.01,
+      "shap_share": 0.0009800331,
+      "score": 0.0032361988
+    },
+    {
+      "sensor": "sensor_322",
+      "p": 0.9764187861,
+      "q": 0.9972497687,
+      "effect": 0.0020583033,
+      "stability": 0.01,
+      "shap_share": 0.0009289797,
+      "score": 0.0032253254
+    },
+    {
+      "sensor": "sensor_408",
+      "p": 0.8324123764,
+      "q": 0.9669845101,
+      "effect": -0.0146437106,
+      "stability": 0.0,
+      "shap_share": 0.0011395032,
+      "score": 0.003196549
+    },
+    {
+      "sensor": "sensor_445",
+      "p": 0.3930284118,
+      "q": 0.7896136418,
+      "effect": -0.0590504361,
+      "stability": 0.0,
+      "shap_share": 0.0001101503,
+      "score": 0.0031911723
+    },
+    {
+      "sensor": "sensor_527",
+      "p": 0.4252032719,
+      "q": 0.7969220414,
+      "effect": -0.0551291423,
+      "stability": 0.0,
+      "shap_share": 0.0003321316,
+      "score": 0.0031874116
+    },
+    {
+      "sensor": "sensor_051",
+      "p": 0.4627403719,
+      "q": 0.8120819174,
+      "effect": 0.0507714826,
+      "stability": 0.0,
+      "shap_share": 0.0004517369,
+      "score": 0.0031487072
+    },
+    {
+      "sensor": "sensor_067",
+      "p": 0.7430154899,
+      "q": 0.9501945131,
+      "effect": -0.0226786478,
+      "stability": 0.0,
+      "shap_share": 0.0009996818,
+      "score": 0.0031389365
+    },
+    {
+      "sensor": "sensor_543",
+      "p": 0.4020155873,
+      "q": 0.7898005343,
+      "effect": -0.0402199074,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0031282185
+    },
+    {
+      "sensor": "sensor_290",
+      "p": 0.8182321953,
+      "q": 0.9643265127,
+      "effect": 0.0158991228,
+      "stability": 0.0,
+      "shap_share": 0.0010387064,
+      "score": 0.0031041307
+    },
+    {
+      "sensor": "sensor_253",
+      "p": 0.8160069757,
+      "q": 0.9643265127,
+      "effect": 0.0160971004,
+      "stability": 0.0,
+      "shap_share": 0.0010075471,
+      "score": 0.0030705609
+    },
+    {
+      "sensor": "sensor_364",
+      "p": 0.8869834983,
+      "q": 0.9898114976,
+      "effect": 0.009837963,
+      "stability": 0.01,
+      "shap_share": 0.0005737204,
+      "score": 0.003065245
+    },
+    {
+      "sensor": "sensor_169",
+      "p": 0.507337238,
+      "q": 0.8373893446,
+      "effect": 0.0461181924,
+      "stability": 0.0,
+      "shap_share": 0.0004131374,
+      "score": 0.0030447588
+    },
+    {
+      "sensor": "sensor_420",
+      "p": 0.4491545866,
+      "q": 0.8009021544,
+      "effect": 0.0497380604,
+      "stability": 0.0,
+      "shap_share": 0.000105444,
+      "score": 0.0030197062
+    },
+    {
+      "sensor": "sensor_099",
+      "p": 0.6466593515,
+      "q": 0.930639868,
+      "effect": -0.0317013464,
+      "stability": 0.0,
+      "shap_share": 0.0006571395,
+      "score": 0.0030059123
+    },
+    {
+      "sensor": "sensor_587",
+      "p": 0.9407382366,
+      "q": 0.9972497687,
+      "effect": -0.0051533817,
+      "stability": 0.01,
+      "shap_share": 0.0004689536,
+      "score": 0.0029756727
+    },
+    {
+      "sensor": "sensor_089",
+      "p": 0.6402482608,
+      "q": 0.9289876725,
+      "effect": 0.0323160331,
+      "stability": 0.0,
+      "shap_share": 0.0005364109,
+      "score": 0.0029616963
+    },
+    {
+      "sensor": "sensor_549",
+      "p": 0.6426936693,
+      "q": 0.929498336,
+      "effect": -0.0368052899,
+      "stability": 0.0,
+      "shap_share": 0.0005355349,
+      "score": 0.0029552898
+    },
+    {
+      "sensor": "sensor_222",
+      "p": 0.5471794571,
+      "q": 0.8739125142,
+      "effect": 0.0416209795,
+      "stability": 0.0,
+      "shap_share": 0.0003204601,
+      "score": 0.0029530019
+    },
+    {
+      "sensor": "sensor_147",
+      "p": 0.8528125424,
+      "q": 0.9688178127,
+      "effect": -0.0128380848,
+      "stability": 0.0,
+      "shap_share": 0.0008760699,
+      "score": 0.0029529249
+    },
+    {
+      "sensor": "sensor_125",
+      "p": 0.5380427576,
+      "q": 0.8624223263,
+      "effect": 0.0425561281,
+      "stability": 0.0,
+      "shap_share": 0.0003069221,
+      "score": 0.0029485642
+    },
+    {
+      "sensor": "sensor_443",
+      "p": 0.4989650292,
+      "q": 0.8360017849,
+      "effect": 0.046746356,
+      "stability": 0.0,
+      "shap_share": 0.0001292405,
+      "score": 0.002946367
+    },
+    {
+      "sensor": "sensor_475",
+      "p": 0.509965698,
+      "q": 0.8378646665,
+      "effect": 0.0455630355,
+      "stability": 0.0,
+      "shap_share": 0.0002042014,
+      "score": 0.0029424306
+    },
+    {
+      "sensor": "sensor_377",
+      "p": 0.950342837,
+      "q": 0.9972497687,
+      "effect": -0.0043098197,
+      "stability": 0.01,
+      "shap_share": 0.0003217534,
+      "score": 0.0028804674
+    },
+    {
+      "sensor": "sensor_239",
+      "p": 0.7504602875,
+      "q": 0.9501945131,
+      "effect": 0.0219907407,
+      "stability": 0.0,
+      "shap_share": 0.0006442479,
+      "score": 0.0028752039
+    },
+    {
+      "sensor": "sensor_494",
+      "p": 0.5867200515,
+      "q": 0.8944787482,
+      "effect": 0.0375852827,
+      "stability": 0.0,
+      "shap_share": 0.0001628989,
+      "score": 0.0028494329
+    },
+    {
+      "sensor": "sensor_454",
+      "p": 0.9889120529,
+      "q": 0.9972497687,
+      "effect": 0.0009757883,
+      "stability": 0.01,
+      "shap_share": 0.0003239164,
+      "score": 0.0028483495
+    },
+    {
+      "sensor": "sensor_270",
+      "p": 0.8177471013,
+      "q": 0.9643265127,
+      "effect": -0.0159457141,
+      "stability": 0.0,
+      "shap_share": 0.0006782116,
+      "score": 0.0028385958
+    },
+    {
+      "sensor": "sensor_456",
+      "p": 0.6241841902,
+      "q": 0.9163027273,
+      "effect": 0.0338781484,
+      "stability": 0.0,
+      "shap_share": 0.0001760984,
+      "score": 0.0028093768
+    },
+    {
+      "sensor": "sensor_061",
+      "p": 0.6007668445,
+      "q": 0.9103770613,
+      "effect": 0.0361880311,
+      "stability": 0.0,
+      "shap_share": 6.9548e-06,
+      "score": 0.002802334
+    },
+    {
+      "sensor": "sensor_186",
+      "p": 0.8324614873,
+      "q": 0.9669845101,
+      "effect": 0.0146368238,
+      "stability": 0.0,
+      "shap_share": 0.00063982,
+      "score": 0.0027891132
+    },
+    {
+      "sensor": "sensor_284",
+      "p": 0.9537879784,
+      "q": 0.9972497687,
+      "effect": -0.0040204678,
+      "stability": 0.0,
+      "shap_share": 0.0006880962,
+      "score": 0.0027497067
+    },
+    {
+      "sensor": "sensor_188",
+      "p": 0.7598048042,
+      "q": 0.9501945131,
+      "effect": 0.0211471611,
+      "stability": 0.0,
+      "shap_share": 0.0004062832,
+      "score": 0.0027371641
+    },
+    {
+      "sensor": "sensor_416",
+      "p": 0.7297207068,
+      "q": 0.9501945131,
+      "effect": -0.0238984088,
+      "stability": 0.0,
+      "shap_share": 0.000157136,
+      "score": 0.0026852563
+    },
+    {
+      "sensor": "sensor_168",
+      "p": 0.8328100598,
+      "q": 0.9669845101,
+      "effect": 0.0146465817,
+      "stability": 0.0,
+      "shap_share": 0.0004094516,
+      "score": 0.002673252
+    },
+    {
+      "sensor": "sensor_562",
+      "p": 0.8912126752,
+      "q": 0.9898114976,
+      "effect": 0.0094681954,
+      "stability": 0.0,
+      "shap_share": 0.0004399619,
+      "score": 0.0026655838
+    },
+    {
+      "sensor": "sensor_026",
+      "p": 0.8429047087,
+      "q": 0.9688178127,
+      "effect": -0.0137968328,
+      "stability": 0.0,
+      "shap_share": 0.0003805701,
+      "score": 0.0026565652
+    },
+    {
+      "sensor": "sensor_278",
+      "p": 0.8950530885,
+      "q": 0.9898114976,
+      "effect": -0.0091340269,
+      "stability": 0.0,
+      "shap_share": 0.0004270047,
+      "score": 0.0026489982
+    },
+    {
+      "sensor": "sensor_546",
+      "p": 0.7308152393,
+      "q": 0.9501945131,
+      "effect": 0.016660575,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0026394855
+    },
+    {
+      "sensor": "sensor_083",
+      "p": 0.895169187,
+      "q": 0.9898114976,
+      "effect": -0.0091221979,
+      "stability": 0.0,
+      "shap_share": 0.0004026817,
+      "score": 0.0026270107
+    },
+    {
+      "sensor": "sensor_473",
+      "p": 0.7622295489,
+      "q": 0.9501945131,
+      "effect": 0.0209302326,
+      "stability": 0.0,
+      "shap_share": 5.39871e-05,
+      "score": 0.0026100004
+    },
+    {
+      "sensor": "sensor_353",
+      "p": 0.8429725326,
+      "q": 0.9688178127,
+      "effect": 0.0137061404,
+      "stability": 0.0,
+      "shap_share": 0.0003018865,
+      "score": 0.0026066791
+    },
+    {
+      "sensor": "sensor_560",
+      "p": 0.7937784604,
+      "q": 0.9629443618,
+      "effect": 0.0180825761,
+      "stability": 0.0,
+      "shap_share": 5.955e-05,
+      "score": 0.0025899151
+    },
+    {
+      "sensor": "sensor_565",
+      "p": 0.9442541054,
+      "q": 0.9972497687,
+      "effect": 0.0057938482,
+      "stability": 0.0,
+      "shap_share": 0.0003798998,
+      "score": 0.0025854807
+    },
+    {
+      "sensor": "sensor_419",
+      "p": 0.970783734,
+      "q": 0.9972497687,
+      "effect": -0.0024975634,
+      "stability": 0.0,
+      "shap_share": 0.0004204647,
+      "score": 0.0025832904
+    },
+    {
+      "sensor": "sensor_309",
+      "p": 0.9461818878,
+      "q": 0.9972497687,
+      "effect": -0.0046807343,
+      "stability": 0.0,
+      "shap_share": 0.0003739661,
+      "score": 0.0025769244
+    },
+    {
+      "sensor": "sensor_124",
+      "p": 0.9633458936,
+      "q": 0.9972497687,
+      "effect": -0.0031897927,
+      "stability": 0.0,
+      "shap_share": 0.0001567651,
+      "score": 0.0024766877
+    },
+    {
+      "sensor": "sensor_544",
+      "p": 0.9115353843,
+      "q": 0.996851504,
+      "effect": 0.0053453947,
+      "stability": 0.0,
+      "shap_share": 0.0,
+      "score": 0.0024743103
+    }
+  ],
+  "clusters": {
+    "sensor_001": 0,
+    "sensor_002": 1,
+    "sensor_003": 2,
+    "sensor_004": 3,
+    "sensor_005": 4,
+    "sensor_007": 5,
+    "sensor_008": 6,
+    "sensor_009": 7,
+    "sensor_010": 8,
+    "sensor_011": 9,
+    "sensor_012": 10,
+    "sensor_013": 11,
+    "sensor_015": 12,
+    "sensor_016": 13,
+    "sensor_017": 14,
+    "sensor_018": 15,
+    "sensor_019": 11,
+    "sensor_020": 16,
+    "sensor_021": 17,
+    "sensor_022": 18,
+    "sensor_023": 19,
+    "sensor_024": 20,
+    "sensor_025": 21,
+    "sensor_026": 22,
+    "sensor_027": 23,
+    "sensor_028": 23,
+    "sensor_029": 24,
+    "sensor_030": 25,
+    "sensor_031": 26,
+    "sensor_032": 27,
+    "sensor_033": 28,
+    "sensor_034": 29,
+    "sensor_035": 30,
+    "sensor_036": 31,
+    "sensor_037": 30,
+    "sensor_038": 32,
+    "sensor_039": 33,
+    "sensor_040": 34,
+    "sensor_041": 35,
+    "sensor_042": 36,
+    "sensor_044": 37,
+    "sensor_045": 38,
+    "sensor_046": 39,
+    "sensor_047": 40,
+    "sensor_048": 41,
+    "sensor_049": 42,
+    "sensor_051": 40,
+    "sensor_052": 43,
+    "sensor_054": 44,
+    "sensor_055": 44,
+    "sensor_056": 45,
+    "sensor_057": 46,
+    "sensor_058": 47,
+    "sensor_059": 48,
+    "sensor_060": 49,
+    "sensor_061": 37,
+    "sensor_062": 50,
+    "sensor_063": 50,
+    "sensor_064": 51,
+    "sensor_065": 52,
+    "sensor_066": 52,
+    "sensor_067": 53,
+    "sensor_068": 54,
+    "sensor_069": 55,
+    "sensor_071": 53,
+    "sensor_072": 56,
+    "sensor_073": 53,
+    "sensor_074": 57,
+    "sensor_076": 58,
+    "sensor_077": 59,
+    "sensor_078": 60,
+    "sensor_079": 61,
+    "sensor_080": 62,
+    "sensor_081": 63,
+    "sensor_082": 64,
+    "sensor_083": 65,
+    "sensor_084": 66,
+    "sensor_085": 67,
+    "sensor_087": 68,
+    "sensor_088": 69,
+    "sensor_089": 70,
+    "sensor_090": 71,
+    "sensor_091": 72,
+    "sensor_092": 73,
+    "sensor_093": 74,
+    "sensor_094": 75,
+    "sensor_095": 76,
+    "sensor_096": 77,
+    "sensor_097": 76,
+    "sensor_099": 78,
+    "sensor_100": 79,
+    "sensor_101": 80,
+    "sensor_102": 78,
+    "sensor_103": 81,
+    "sensor_104": 82,
+    "sensor_105": 79,
+    "sensor_106": 74,
+    "sensor_107": 75,
+    "sensor_108": 83,
+    "sensor_109": 84,
+    "sensor_113": 85,
+    "sensor_114": 86,
+    "sensor_115": 87,
+    "sensor_116": 88,
+    "sensor_117": 89,
+    "sensor_118": 90,
+    "sensor_119": 91,
+    "sensor_120": 92,
+    "sensor_121": 93,
+    "sensor_122": 94,
+    "sensor_123": 95,
+    "sensor_124": 94,
+    "sensor_125": 94,
+    "sensor_126": 96,
+    "sensor_127": 97,
+    "sensor_128": 95,
+    "sensor_129": 98,
+    "sensor_130": 99,
+    "sensor_131": 100,
+    "sensor_132": 101,
+    "sensor_133": 102,
+    "sensor_134": 103,
+    "sensor_135": 104,
+    "sensor_136": 105,
+    "sensor_137": 106,
+    "sensor_138": 107,
+    "sensor_139": 108,
+    "sensor_140": 109,
+    "sensor_141": 110,
+    "sensor_143": 111,
+    "sensor_144": 112,
+    "sensor_145": 113,
+    "sensor_146": 114,
+    "sensor_147": 115,
+    "sensor_148": 10,
+    "sensor_149": 116,
+    "sensor_151": 117,
+    "sensor_152": 118,
+    "sensor_153": 119,
+    "sensor_154": 15,
+    "sensor_155": 116,
+    "sensor_156": 120,
+    "sensor_157": 121,
+    "sensor_160": 122,
+    "sensor_161": 123,
+    "sensor_162": 124,
+    "sensor_163": 125,
+    "sensor_164": 126,
+    "sensor_165": 127,
+    "sensor_166": 128,
+    "sensor_167": 129,
+    "sensor_168": 130,
+    "sensor_169": 131,
+    "sensor_170": 132,
+    "sensor_171": 133,
+    "sensor_172": 134,
+    "sensor_173": 135,
+    "sensor_174": 136,
+    "sensor_175": 135,
+    "sensor_176": 137,
+    "sensor_177": 138,
+    "sensor_178": 139,
+    "sensor_181": 140,
+    "sensor_182": 141,
+    "sensor_183": 142,
+    "sensor_184": 143,
+    "sensor_185": 144,
+    "sensor_186": 145,
+    "sensor_188": 146,
+    "sensor_189": 147,
+    "sensor_196": 148,
+    "sensor_197": 149,
+    "sensor_198": 150,
+    "sensor_199": 151,
+    "sensor_200": 152,
+    "sensor_201": 153,
+    "sensor_202": 149,
+    "sensor_203": 154,
+    "sensor_204": 155,
+    "sensor_205": 156,
+    "sensor_206": 157,
+    "sensor_208": 158,
+    "sensor_209": 159,
+    "sensor_211": 160,
+    "sensor_212": 161,
+    "sensor_213": 162,
+    "sensor_214": 163,
+    "sensor_215": 164,
+    "sensor_216": 165,
+    "sensor_217": 166,
+    "sensor_218": 167,
+    "sensor_219": 168,
+    "sensor_220": 169,
+    "sensor_222": 170,
+    "sensor_223": 69,
+    "sensor_224": 171,
+    "sensor_225": 172,
+    "sensor_226": 173,
+    "sensor_228": 174,
+    "sensor_229": 175,
+    "sensor_239": 176,
+    "sensor_240": 177,
+    "sensor_248": 178,
+    "sensor_249": 179,
+    "sensor_250": 87,
+    "sensor_251": 173,
+    "sensor_252": 180,
+    "sensor_253": 181,
+    "sensor_254": 182,
+    "sensor_255": 92,
+    "sensor_256": 183,
+    "sensor_268": 184,
+    "sensor_269": 185,
+    "sensor_270": 186,
+    "sensor_271": 105,
+    "sensor_272": 106,
+    "sensor_273": 107,
+    "sensor_274": 108,
+    "sensor_275": 109,
+    "sensor_276": 110,
+    "sensor_278": 111,
+    "sensor_279": 112,
+    "sensor_280": 113,
+    "sensor_281": 114,
+    "sensor_282": 115,
+    "sensor_283": 10,
+    "sensor_284": 116,
+    "sensor_286": 117,
+    "sensor_287": 118,
+    "sensor_288": 119,
+    "sensor_289": 15,
+    "sensor_290": 116,
+    "sensor_291": 120,
+    "sensor_292": 121,
+    "sensor_295": 122,
+    "sensor_296": 123,
+    "sensor_297": 124,
+    "sensor_298": 125,
+    "sensor_299": 126,
+    "sensor_300": 127,
+    "sensor_301": 128,
+    "sensor_302": 129,
+    "sensor_303": 130,
+    "sensor_304": 131,
+    "sensor_305": 132,
+    "sensor_306": 133,
+    "sensor_307": 134,
+    "sensor_308": 135,
+    "sensor_309": 136,
+    "sensor_310": 135,
+    "sensor_311": 137,
+    "sensor_312": 138,
+    "sensor_313": 139,
+    "sensor_317": 140,
+    "sensor_318": 141,
+    "sensor_319": 142,
+    "sensor_320": 143,
+    "sensor_321": 144,
+    "sensor_322": 145,
+    "sensor_324": 146,
+    "sensor_325": 147,
+    "sensor_332": 148,
+    "sensor_333": 149,
+    "sensor_334": 150,
+    "sensor_335": 151,
+    "sensor_336": 152,
+    "sensor_337": 187,
+    "sensor_338": 149,
+    "sensor_339": 154,
+    "sensor_340": 155,
+    "sensor_341": 156,
+    "sensor_342": 157,
+    "sensor_344": 158,
+    "sensor_345": 159,
+    "sensor_346": 188,
+    "sensor_347": 189,
+    "sensor_349": 160,
+    "sensor_350": 161,
+    "sensor_351": 162,
+    "sensor_352": 163,
+    "sensor_353": 164,
+    "sensor_354": 165,
+    "sensor_355": 166,
+    "sensor_356": 167,
+    "sensor_357": 168,
+    "sensor_358": 169,
+    "sensor_360": 170,
+    "sensor_361": 69,
+    "sensor_362": 171,
+    "sensor_363": 172,
+    "sensor_364": 173,
+    "sensor_366": 174,
+    "sensor_367": 175,
+    "sensor_368": 190,
+    "sensor_369": 191,
+    "sensor_377": 176,
+    "sensor_378": 177,
+    "sensor_386": 178,
+    "sensor_387": 179,
+    "sensor_388": 87,
+    "sensor_389": 173,
+    "sensor_390": 180,
+    "sensor_391": 181,
+    "sensor_392": 182,
+    "sensor_393": 92,
+    "sensor_394": 183,
+    "sensor_406": 184,
+    "sensor_407": 185,
+    "sensor_408": 186,
+    "sensor_409": 105,
+    "sensor_410": 106,
+    "sensor_411": 107,
+    "sensor_412": 108,
+    "sensor_413": 109,
+    "sensor_414": 110,
+    "sensor_416": 111,
+    "sensor_417": 112,
+    "sensor_418": 113,
+    "sensor_419": 192,
+    "sensor_420": 193,
+    "sensor_421": 10,
+    "sensor_422": 116,
+    "sensor_424": 194,
+    "sensor_425": 118,
+    "sensor_426": 119,
+    "sensor_427": 15,
+    "sensor_428": 116,
+    "sensor_429": 120,
+    "sensor_430": 121,
+    "sensor_431": 122,
+    "sensor_432": 123,
+    "sensor_433": 195,
+    "sensor_434": 196,
+    "sensor_435": 126,
+    "sensor_436": 127,
+    "sensor_437": 128,
+    "sensor_438": 129,
+    "sensor_439": 130,
+    "sensor_440": 131,
+    "sensor_441": 132,
+    "sensor_442": 133,
+    "sensor_443": 134,
+    "sensor_444": 135,
+    "sensor_445": 136,
+    "sensor_446": 135,
+    "sensor_447": 137,
+    "sensor_448": 138,
+    "sensor_449": 139,
+    "sensor_453": 140,
+    "sensor_454": 141,
+    "sensor_455": 142,
+    "sensor_456": 143,
+    "sensor_457": 144,
+    "sensor_458": 145,
+    "sensor_460": 146,
+    "sensor_461": 197,
+    "sensor_468": 148,
+    "sensor_469": 198,
+    "sensor_470": 150,
+    "sensor_471": 151,
+    "sensor_472": 152,
+    "sensor_473": 199,
+    "sensor_474": 200,
+    "sensor_475": 154,
+    "sensor_476": 155,
+    "sensor_477": 156,
+    "sensor_478": 157,
+    "sensor_480": 158,
+    "sensor_481": 159,
+    "sensor_483": 201,
+    "sensor_484": 202,
+    "sensor_485": 203,
+    "sensor_486": 204,
+    "sensor_487": 205,
+    "sensor_488": 206,
+    "sensor_489": 207,
+    "sensor_490": 208,
+    "sensor_491": 168,
+    "sensor_492": 169,
+    "sensor_494": 170,
+    "sensor_495": 69,
+    "sensor_496": 171,
+    "sensor_497": 172,
+    "sensor_498": 173,
+    "sensor_500": 209,
+    "sensor_501": 210,
+    "sensor_511": 211,
+    "sensor_512": 212,
+    "sensor_520": 178,
+    "sensor_521": 179,
+    "sensor_522": 87,
+    "sensor_523": 173,
+    "sensor_524": 180,
+    "sensor_525": 181,
+    "sensor_526": 182,
+    "sensor_527": 92,
+    "sensor_528": 183,
+    "sensor_540": 184,
+    "sensor_541": 185,
+    "sensor_542": 186,
+    "sensor_543": 213,
+    "sensor_544": 214,
+    "sensor_545": 215,
+    "sensor_546": 214,
+    "sensor_547": 216,
+    "sensor_548": 217,
+    "sensor_549": 218,
+    "sensor_550": 219,
+    "sensor_551": 220,
+    "sensor_552": 221,
+    "sensor_553": 219,
+    "sensor_554": 220,
+    "sensor_555": 221,
+    "sensor_556": 219,
+    "sensor_557": 220,
+    "sensor_558": 221,
+    "sensor_559": 222,
+    "sensor_560": 223,
+    "sensor_561": 223,
+    "sensor_562": 223,
+    "sensor_563": 224,
+    "sensor_564": 225,
+    "sensor_565": 226,
+    "sensor_566": 227,
+    "sensor_567": 226,
+    "sensor_568": 227,
+    "sensor_569": 226,
+    "sensor_570": 227,
+    "sensor_571": 228,
+    "sensor_572": 229,
+    "sensor_573": 230,
+    "sensor_574": 231,
+    "sensor_575": 230,
+    "sensor_576": 231,
+    "sensor_577": 230,
+    "sensor_578": 231,
+    "sensor_583": 232,
+    "sensor_584": 233,
+    "sensor_585": 233,
+    "sensor_586": 233,
+    "sensor_587": 234,
+    "sensor_588": 235,
+    "sensor_589": 235,
+    "sensor_590": 236
+  }
+}
