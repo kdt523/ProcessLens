@@ -19,3 +19,6 @@ recordings_dir: evals/recordings
 eval:
   n_planted: 30
   n_null: 10
+pricing_usd_per_million_tokens:   # for the eval's cost estimate; update to current prices
+  input: 0.30
+  output: 2.50

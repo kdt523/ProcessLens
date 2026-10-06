@@ -94,9 +94,15 @@ def benchmark(
 
 
 @app.command("agent-eval")
-def agent_eval() -> None:
-    """Evaluate the copilot (prompt v1 vs v2)."""
-    _not_yet(5)
+def agent_eval(
+    mode: str = typer.Option("record", help="record (live + store) | live | replay"),
+) -> None:
+    """Evaluate the copilot on planted-fault scenarios (prompt v1 vs v2)."""
+    from processlens.agent.evaluate import run_eval
+
+    res = run_eval(mode)
+    for version, v in res["versions"].items():
+        typer.echo(f"{version}: " + json.dumps(v["summary"], default=str))
 
 
 @app.command()

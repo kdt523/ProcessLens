@@ -63,7 +63,7 @@ app/ (Streamlit)   evals/   reports/{figures,metrics}   scripts/   tests/
 - [x] Phase 2: predictive model + inspection policy
 - [x] Phase 3: root-cause ranking
 - [x] Phase 4: planted-fault benchmark
-- [ ] Phase 5: LangGraph copilot + evals
+- [x] Phase 5: LangGraph copilot + evals (live eval pending GEMINI_API_KEY)
 - [ ] Phase 6: API, dashboard, drift
 - [ ] Phase 7: CI, model card, README (Docker + deploy skipped)
 - [ ] Phase 8: resume + interview kit
