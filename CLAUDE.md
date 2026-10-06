@@ -65,7 +65,7 @@ app/ (Streamlit)   evals/   reports/{figures,metrics}   scripts/   tests/
 - [x] Phase 4: planted-fault benchmark
 - [x] Phase 5: LangGraph copilot + evals (live eval pending GEMINI_API_KEY)
 - [x] Phase 6: API, dashboard, drift
-- [ ] Phase 7: CI, model card, README (Docker + deploy skipped)
-- [ ] Phase 8: resume + interview kit
+- [x] Phase 7: CI, model card, README (Docker + deploy skipped)
+- [x] Phase 8: resume + interview kit
 
 Update this checklist when a phase passes its acceptance checks.
