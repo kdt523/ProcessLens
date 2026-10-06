@@ -1,0 +1,5 @@
+# Inspection economics (relative units; assumptions stated in the report).
+cost_inspection: 1.0
+cost_missed_defect: 10.0
+sensitivity_ratios: [2, 5, 10, 20, 50]   # missed-defect : inspection
+inspection_budgets: [0.05, 0.10, 0.20, 0.30]

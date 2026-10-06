@@ -1,0 +1,5 @@
+# Drift monitoring (PSI).
+psi_bins: 10
+psi_warn: 0.10
+psi_alert: 0.25
+missing_rate_delta_alert: 0.10

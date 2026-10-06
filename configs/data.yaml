@@ -1,0 +1,22 @@
+# Data source, contract and audit settings.
+seed: 42
+source:
+  uci_id: 179
+  zip_url: https://archive.ics.uci.edu/static/public/179/secom.zip
+paths:
+  raw_dir: data/raw
+  processed: data/processed/secom.parquet
+  checksums: data/raw/checksums.json
+contract:
+  expected_rows: 1567        # documented by UCI; asserted at load time
+  label_values: [0, 1]
+  timestamp_dayfirst: true
+audit:
+  high_missing_threshold: 0.50
+  near_constant_unique_ratio: 0.01   # share of distinct values
+  near_constant_top_freq: 0.99       # share of the most common value
+  high_corr_threshold: 0.90
+  robust_z_threshold: 5.0
+  fdr_alpha: 0.05
+  report: reports/data_audit.md
+  figures_dir: reports/figures

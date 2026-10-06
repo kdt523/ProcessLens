@@ -1,0 +1,21 @@
+# Root-cause ranking engine.
+seed: 42
+window: {start: null, end: null}    # null = train window
+fdr_alpha: 0.05
+stability:
+  n_subsamples: 100
+  subsample_frac: 0.50
+  C: 0.05
+clusters:
+  min_abs_spearman: 0.80
+shap:
+  cv_folds: 4
+aggregate:
+  method: mrr                       # mrr | borda
+  top_k: 20
+evidence_rules:
+  strong: {max_q: 0.01, min_abs_effect: 0.20, min_stability: 0.60}
+  moderate: {max_q: 0.05, min_abs_effect: 0.10, min_stability: 0.30}
+temporal:
+  freq: W
+  n_bins: 4

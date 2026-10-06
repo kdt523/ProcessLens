@@ -1,0 +1,21 @@
+# LangGraph copilot.
+seed: 42
+llm:
+  provider: google_genai
+  model: gemini-2.5-flash
+  fallback_model: null
+  temperature: 0.0
+  max_output_tokens: 4096
+  timeout_s: 60
+graph:
+  max_revisions: 2
+  top_k_suspects: 5
+verifier:
+  rel_tolerance: 0.01
+  abs_tolerance: 0.001
+prompt_versions: [v1, v2]
+mode: replay              # replay | record | live
+recordings_dir: evals/recordings
+eval:
+  n_planted: 30
+  n_null: 10
